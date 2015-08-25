@@ -19,27 +19,38 @@
 3. [GREAT](http://bejerano.stanford.edu/great/public/html/) predicts functions of cis-regulatory regions.  
 
 ### Chromatin state Segmentation  
-1.[ChromHMM](http://compbio.mit.edu/ChromHMM/)  from Manolis Kellis in MIT.
+1. [ChromHMM](http://compbio.mit.edu/ChromHMM/)  from Manolis Kellis in MIT.
   >In ChromHMM the raw reads are assigned to non-overlapping bins of 200 bps and a sample-specific threshold is used to transform the count data to binary values
 
-2.[Segway](https://www.pmgenomics.ca/hoffmanlab/proj/segway/) from Hoffman lab. Base pair resolution. Takes longer time to run.  
+2. [Segway](https://www.pmgenomics.ca/hoffmanlab/proj/segway/) from Hoffman lab. Base pair resolution. Takes longer time to run.  
 3. [epicseg](https://github.com/lamortenera/epicseg) published 2015 in genome biology. Similiar speed with ChromHMM.   
 4. [Spectacle: fast chromatin state annotation using spectral learning](https://github.com/jiminsong/Spectacle). Also published 2015 in genome biology.  
 
 ### peak annotation 
 
-### Differential peak detection
+### Differential peak detection  
+Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/) here describing different tools.   
+1. [MultiGPS](http://mahonylab.org/software/multigps/)  
+2. [PePr](https://github.com/shawnzhangyx/PePr). It can also call peaks.  
+3. [histoneHMM](http://histonehmm.molgen.mpg.de/)  
+4. [diffreps](https://github.com/shenlab-sinai/diffreps) for histone.  developed by Shen Li's lab in Mount Sinai who also develped [ngs.plot](https://github.com/shenlab-sinai/ngsplot).  
+5. [diffbind bioconductor package](http://bioconductor.org/packages/release/bioc/html/DiffBind.html). Internally uses RNA-seq tools: EdgR or DESeq.  Most likely, I will use this tool.  
+6. [ChIPComp](http://web1.sph.emory.edu/users/hwu30/software/ChIPComp.html). Very little tutorial.  
+7. [csaw bioconductor package](http://bioconductor.org/packages/release/bioc/html/csaw.html)  
+8. [chromDiff](http://compbio.mit.edu/ChromDiff/Download.html). Also from from Manolis Kellis in MIT. Similar with ChromHMM, documentation is not that detailed. Will have a try on this.  
+
 
 ### Motif enrichment
+[HOMER](http://homer.salk.edu/homer/ngs/peakMotifs.html). It has really detailed documentation. It can also be used to call peaks.  
 
 ### Super-enhancer identification  
 
 ### bedgraph, bigwig manipulation tools
 [WiggleTools](https://github.com/Ensembl/WiggleTools)  
 [bigwig tool](https://github.com/CRG-Barcelona/bwtool/wiki)  
-samtools
-bedtools
-vcftools
+samtools  
+bedtools  
+vcftools  
 
 ### peaks overlapping significance test
 [The genomic association tester (GAT)](https://github.com/AndreasHeger/gat)  
