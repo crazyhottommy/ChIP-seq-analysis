@@ -20,7 +20,7 @@
 
 ### Chromatin state Segmentation  
 1.[ChromHMM](http://compbio.mit.edu/ChromHMM/)  from Manolis Kellis in MIT.
-  >In ChromHMM the raw reads are assigned to non-overlapping bins of 200 bps and a sample-specific threshold is used to     >transform the count data to binary values
+  >In ChromHMM the raw reads are assigned to non-overlapping bins of 200 bps and a sample-specific threshold is used to         >transform the count data to binary values
 2.[Segway](https://www.pmgenomics.ca/hoffmanlab/proj/segway/) from Hoffman lab. Base pair resolution. Takes longer time to run.
 3. [epicseg](https://github.com/lamortenera/epicseg) published 2015 in genome biology. Similiar speed with ChromHMM. 
 4. [Spectacle: fast chromatin state annotation using spectral learning](https://github.com/jiminsong/Spectacle). Also published 2015 in genome biology.  
