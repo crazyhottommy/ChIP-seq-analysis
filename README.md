@@ -12,6 +12,9 @@
 ### Peak calling  
 1. The most popular peak caller by Tao Liu: [MACS2](https://github.com/taoliu/MACS/). Now `--broad` flag supports broad peaks calling as well.  
 2. [SICER](http://home.gwu.edu/~wpeng/Software.htm) for broad histone modification ChIP-seq
+3. [HOMER](http://homer.salk.edu/homer/ngs/peaks.html) can also used to call Transcription factor ChIP-seq peaks and histone 
+    modification ChIP-seq peaks.
+** Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**
 
 ### Gene set enrichment analysis for ChIP-seq peaks  
 1. [Broad Enrich](http://broad-enrich.med.umich.edu/)  
@@ -41,7 +44,9 @@ Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/)
 
 
 ### Motif enrichment
-[HOMER](http://homer.salk.edu/homer/ngs/peakMotifs.html). It has really detailed documentation. It can also be used to call peaks.  
+[HOMER](http://homer.salk.edu/homer/ngs/peakMotifs.html). It has really detailed documentation. It can also be used to call peaks.   
+suggestions for finding motifs from histone modification ChIP-seq data from HOMER page:
+>Since you are looking at a region, you do not necessarily want to center the peak on the specific position with the highest tag density, which may be at the edge of the region.  Besides, in the case of histone modifications at enhancers, the highest signal will usually be found on nucleosomes surrounding the center of the enhancer, which is where the functional sequences and transcription factor binding sites reside.  Consider H3K4me marks surrounding distal PU.1 transcription factor peaks.  Typically, adding the -center option moves peaks further away from the functional sequence in these scenarios.
 
 ### Super-enhancer identification  
 
