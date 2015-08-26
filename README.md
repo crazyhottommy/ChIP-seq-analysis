@@ -20,6 +20,9 @@
 1. [Broad Enrich](http://broad-enrich.med.umich.edu/)  
 2. [ChIP Enrich](http://chip-enrich.med.umich.edu/)  
 3. [GREAT](http://bejerano.stanford.edu/great/public/html/) predicts functions of cis-regulatory regions.  
+4. [ENCODE ChIP-seq significance tool](http://encodeqt.simple-encode.org/). Given a list of genes, co-regulated TFs will be identified.  
+5. [cscan](http://159.149.160.51/cscan/) similar to the ENCODE significance tool.  
+
 
 ### Chromatin state Segmentation  
 1. [ChromHMM](http://compbio.mit.edu/ChromHMM/)  from Manolis Kellis in MIT.
@@ -44,9 +47,18 @@ Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/)
 
 
 ### Motif enrichment
-[HOMER](http://homer.salk.edu/homer/ngs/peakMotifs.html). It has really detailed documentation. It can also be used to call peaks.   
+1. [HOMER](http://homer.salk.edu/homer/ngs/peakMotifs.html). It has really detailed documentation. It can also be used to call peaks.   
 suggestions for finding motifs from histone modification ChIP-seq data from HOMER page:
 >Since you are looking at a region, you do not necessarily want to center the peak on the specific position with the highest tag density, which may be at the edge of the region.  Besides, in the case of histone modifications at enhancers, the highest signal will usually be found on nucleosomes surrounding the center of the enhancer, which is where the functional sequences and transcription factor binding sites reside.  Consider H3K4me marks surrounding distal PU.1 transcription factor peaks.  Typically, adding the -center option moves peaks further away from the functional sequence in these scenarios.
+
+2. [MEME suite](http://meme.ebi.edu.au/meme/index.html). It is probably the most popular motif finding tool in the papers.  
+3. [pScan-ChIP](http://159.149.160.51/pscan_chip_dev/)  
+4. [MotifMap](http://motifmap.ics.uci.edu/#MotifSearch)  
+5. [RAST](http://rsat01.biologie.ens.fr/rsa-tools/index.html) Regulatory Sequence Analysis Tools.  
+6. [ENCODE TF motif database](http://compbio.mit.edu/encode-motifs/)  
+7. [oPOSSUM](http://opossum.cisreg.ca/oPOSSUM3/) is a web-based system for the detection of over-represented conserved transcription factor binding sites and binding site combinations in sets of genes or sequences.  
+8.  my post [how to get a genome-wide motif bed file](http://crazyhottommy.blogspot.com/2014/02/how-to-get-genome-wide-motif-bed-file.html) 
+9.  Many other tools [here](http://omictools.com/motif-discovery-c84-p1.html)  
 
 ### Super-enhancer identification  
 
