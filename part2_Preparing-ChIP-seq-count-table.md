@@ -1,4 +1,4 @@
-### Preparing the ChIP-seq count table
+### Preparing ChIP-seq count table
 
 [Countinuing with part1](https://github.com/crazyhottommy/ChIP-seq-analysis/blob/master/part1_peak_calling.md), I've got a `merged.bed` containing the merged peaks and I will count how many reads are in those peaks using bedtools multicov and featureCounts from subRead.
 
