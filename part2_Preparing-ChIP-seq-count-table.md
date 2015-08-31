@@ -32,7 +32,7 @@ It is pretty fast in counting 6 bam files for a bed file containing
 
 The columns of counts are in the same sequences as the input bam files.
 
-#### Count by featureCount
+#### Count by featureCounts
 Make a saf file for featureCount in the [subread package](http://bioinf.wehi.edu.au/featureCounts/)  
 
 add peak id in the first column, add a strand info to the last column:  
