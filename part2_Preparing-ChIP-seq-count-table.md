@@ -1,4 +1,4 @@
-### Preparing for the ChIP-seq count table
+### Preparing the ChIP-seq count table
 
 Countinued with part1, I've got a `merged.bed` containing the merged peaks.
 I will count how many reads are in those peaks using bedtools multicov and featureCounts from subRead.
