@@ -29,7 +29,7 @@ It is pretty fast in counting 6 bam files for a bed file containing
 
 The columns of counts are in the same sequences as the input bam files.
 
-#### count by featureCount
+#### Count by featureCount
 Make a saf file for featureCount in the [subread package](http://bioinf.wehi.edu.au/featureCounts/)  
 
 add peak id in the first column, add a strand info to the last column:  
@@ -39,7 +39,7 @@ add peak id in the first column, add a strand info to the last column:
 featureCounts assumes that the default annotation file is GTF file. featureCounts is usually used to count RNAs-seq data. check the help message for other flags such as `-f`, `-t` and `-g`. use `-T` to specifiy how many threads you want to use, default is 1.  
 It is a faster alternative to [htseq-count](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html) which is widely used for gene-level RNA-seq counts.
 
-`time featureCounts -a subread.saf -F SAF -o counts_subread.txt ../../data/*bam -T ` 
+`time featureCounts -a subread.saf -F SAF -o counts_subread.txt ../../data/*bam -T 4` 
 
 `274.74s user 3.16s system 417% cpu 1:06.55 total`
 
