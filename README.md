@@ -51,6 +51,20 @@ An example of different parameters for homer `findPeaks`:
 
 ### Peak annotation 
 
+1. Homer [`annotatePeak`](http://homer.salk.edu/homer/ngs/annotation.html) 
+2. Bioconductor package [ChIPseeker](http://bioconductor.org/packages/release/bioc/html/ChIPseeker.html) by [Guangchuan Yu](http://ygc.name/)   
+   See an important post by him on 0 or 1 based [cooridnates](http://ygc.name/2015/08/07/parsing-bed-coordinates/).
+ 
+ >Most of the software for ChIP annotation doesn't considered this issue when annotating peak (0-based) to transcript (1-based). To my knowledge, only HOMER consider this issue. After I figure this out, I have updated ChIPseeker (version >= 1.4.3) to fix the issue.
+ 
+3. Bioconductor package [ChIPpeakAnno](http://bioconductor.org/packages/release/bioc/html/ChIPpeakAnno.html). There is a bug with this package, not sure if it is solved or not. Still a post from Guangchuan Yu: [Bug of R package ChIPpeakAnno](http://ygc.name/2014/01/14/bug-of-r-package-chippeakanno/). 
+
+ >I used R package ChIPpeakAnno for annotating peaks, and found that it handle  the DNA strand in the wrong way. Maybe the developers were from the computer science but not biology background.
+
+There are many other tools, I just listed three. 
+
+   
+    
 ### Differential peak detection  
 Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/) here describing different tools.   
 1. [MultiGPS](http://mahonylab.org/software/multigps/)  
@@ -125,11 +139,12 @@ Many papers draw meta-plot and heatmap on certain genomic regions (2kb around TS
 See an example from the ngs.plot:  
 ![](./images/meta-heatmap.png)
 
+
 **Tools**  
 
 1. [deeptools](https://github.com/fidelram/deepTools).It can do many others and have good documentation.
 It can also generate the heatmaps, but I personally use [ngs.plot](https://github.com/shenlab-sinai/ngsplot) which is esy to use. (developed in Mount Sinai).  
- 
+
 2. you can also draw heatmaps using R. just count (using either Homer or bedtools) the ChIP-seq reads in each bin and draw with heatmap.2 function. 
 [here](http://crazyhottommy.blogspot.com/2013/08/how-to-make-heatmap-based-on-chip-seq.html) and [here](http://crazyhottommy.blogspot.com/2013/04/how-to-make-tss-plot-using-rna-seq-and.html). Those are my pretty old blog posts, I now have a much better idea on how to make those graphs from scratch.
 
