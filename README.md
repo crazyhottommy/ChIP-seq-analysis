@@ -119,13 +119,36 @@ Example of a super enhancer plot:
 
 
 ### Heatmap, mata-plot 
-[deeptools](https://github.com/fidelram/deepTools).It can do many others and have good documentation.
+
+Many papers draw meta-plot and heatmap on certain genomic regions (2kb around TSS, genebody etc) using ChIP-seq data. 
+
+See an example from the ngs.plot:  
+![](./images/meta-heatmap.png)
+
+
+**Tools**  
+
+1. [deeptools](https://github.com/fidelram/deepTools).It can do many others and have good documentation.
 It can also generate the heatmaps, but I personally use [ngs.plot](https://github.com/shenlab-sinai/ngsplot) which is esy to use. (developed in Mount Sinai).  
 
-you can also draw heatmaps using R. just count (using either Homer or bedtools) the ChIP-seq reads in each bin and draw with heatmap.2 function. 
+2. you can also draw heatmaps using R. just count (using either Homer or bedtools) the ChIP-seq reads in each bin and draw with heatmap.2 function. 
 [here](http://crazyhottommy.blogspot.com/2013/08/how-to-make-heatmap-based-on-chip-seq.html) and [here](http://crazyhottommy.blogspot.com/2013/04/how-to-make-tss-plot-using-rna-seq-and.html). Those are my pretty old blog posts, I now have a much better idea on how to make those graphs from scratch.
 
-You can also use bioconductor [Genomation](http://www.bioconductor.org/packages/release/bioc/vignettes/genomation/inst/doc/GenomationManual-knitr.html). It is very versatile.
+3. You can also use bioconductor [Genomation](http://www.bioconductor.org/packages/release/bioc/vignettes/genomation/inst/doc/GenomationManual-knitr.html). It is very versatile.
+
+**One cavet is that the meta-plot (on the left) is an average view of ChIP-seq
+tag enrichment and may not reflect the real biological meaning for individual cases.**  
+
+See a post from Lior Patcher [How to average genome-wide data](How to average genome-wide data)  
+
+I replied the post:
+>for ChIP-seq, in addition to the average plot, a heatmap that with each region in each row should make it more clear to compare (although not quantitatively). a box-plot (or a histogram) is better in this case . I am really uncomfortable averaging the signal, as a single value (mean) is not a good description of the distribution.
+
+By Meromit Singer:  
+>thanks for the paper ref! Indeed, an additional important issue with averaging is that one could be looking at the aggregation of several (possibly very distinct) clusters. Another thing we should all keep in mind if we choose to make such plots..
+
+A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chromatin environment at regulatory elements](http://m.genome.cshlp.org/content/22/9/1735.full)
+
 
 ### Allele-specific analysis  
 
