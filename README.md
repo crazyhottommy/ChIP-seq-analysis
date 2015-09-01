@@ -28,7 +28,10 @@
 2. [SICER](http://home.gwu.edu/~wpeng/Software.htm) for broad histone modification ChIP-seq
 3. [HOMER](http://homer.salk.edu/homer/ngs/peaks.html) can also used to call Transcription factor ChIP-seq peaks and histone 
     modification ChIP-seq peaks.
-**Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**
+**Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**  
+
+An example of different parameters for homer `findPeaks`:  
+![](./images/variablePeaks.png)
 
 ### Gene set enrichment analysis for ChIP-seq peaks  
 1. [Broad Enrich](http://broad-enrich.med.umich.edu/)  
@@ -76,27 +79,30 @@ suggestions for finding motifs from histone modification ChIP-seq data from HOME
 
 ### Super-enhancer identification   
 
-The fancy "supper-enhancer" term was first introduced by [Richard Young](http://younglab.wi.mit.edu/publications.htm) in Whitehead Institute. Basically, super-enhancers are enhancers that span large genomic regions(~12.5kb). The concept of super-enhancer is not new. One of the most famous example is the Locus Control Region (LCR) that controls the globin gene expression, and this has been known for decades.
+The fancy "supper-enhancer" term was first introduced by [Richard Young](http://younglab.wi.mit.edu/publications.htm) in Whitehead Institute. Basically, super-enhancers are enhancers that span large genomic regions(~12.5kb). The concept of super-enhancer is not new. One of the most famous example is the Locus Control Region (LCR) that controls the globin gene expression, and this has been known for decades.  
+
+A review in Nature Genetics [What are super-enhancers?](http://www.nature.com/ng/journal/v47/n1/full/ng.3167.html)
 
 
 From the [HOMER page](http://homer.salk.edu/homer/ngs/peaks.html)
->**How finding super enhancers works:**
+**How finding super enhancers works:**
 
-Super enhancer discovery in HOMER emulates the original strategy used by the Young lab.  First, peaks are found just like any other ChIP-Seq data set.  Then, peaks found within a given distance are 'stitched' together into larger regions (by default this is set at 12.5 kb).  The super enhancer signal of each of these regions is then determined by the total normalized number reads minus the number of normalized reads in the input.  These regions are then sorted by their score, normalized to the highest score and the number of putative enhancer regions, and then super enhancers are identified as regions past the point where the slope is greater than 1.  
+>Super enhancer discovery in HOMER emulates the original strategy used by the Young lab.  First, peaks are found just like any other ChIP-Seq data set.  Then, peaks found within a given distance are 'stitched' together into larger regions (by default this is set at 12.5 kb).  The super enhancer signal of each of these regions is then determined by the total normalized number reads minus the number of normalized reads in the input.  These regions are then sorted by their score, normalized to the highest score and the number of putative enhancer regions, and then super enhancers are identified as regions past the point where the slope is greater than 1.  
 
 Example of a super enhancer plot:
-
+![](./images/super-enhancer-plot.png)
 
 >In the plot above, all of the peaks past 0.95 or so would be considered "super enhancers", while the one's below would be "typical" enhancers.  If the slope threshold of 1 seems arbitrary to you, well... it is!  This part is probably the 'weakest link' in the super enhancer definition.  However, the concept is still very useful.  Please keep in mind that most enhancers probably fall on a continuum between typical and super enhancer status, so don't bother fighting over the precise number of super enhancers in a given sample and instead look for useful trends in the data.
 
+**Using ROSE from Young lab**   
+[ROSE: RANK ORDERING OF SUPER-ENHANCERS](http://younglab.wi.mit.edu/super_enhancer_code.html)  
 
 
-### bedgraph, bigwig manipulation tools
+### Bedgraph, bigwig manipulation tools
 [WiggleTools](https://github.com/Ensembl/WiggleTools)  
 [bigwig tool](https://github.com/CRG-Barcelona/bwtool/wiki)  
-samtools  
-bedtools  
-vcftools  
+[samtools](http://www.htslib.org/)    
+[bedtools](http://bedtools.readthedocs.org/en/latest/) my all-time favorite tool from Araon Quinlan' lab. Great documentation!   
 [Hosting bigWig for UCSC visualization](http://crazyhottommy.blogspot.com/2014/02/hosting-bigwig-by-dropbox-for-ucsc.html)  
 [My first play with GRO-seq data, from sam to bedgraph for visualization](http://crazyhottommy.blogspot.com/2013/10/my-first-play-with-gro-seq-data-from.html)  
 [convert bam file to bigwig file and visualize in UCSC genome browser in a Box (GBiB)](http://crazyhottommy.blogspot.com/2014/10/convert-bam-file-to-bigwig-file-and.html)  
