@@ -119,23 +119,17 @@ Example of a super enhancer plot:
 
 
 ### Heatmap, mata-plot 
-<<<<<<< HEAD
 
 Many papers draw meta-plot and heatmap on certain genomic regions (2kb around TSS, genebody etc) using ChIP-seq data. 
 
 See an example from the ngs.plot:  
 ![](./images/meta-heatmap.png)
 
-
 **Tools**  
 
 1. [deeptools](https://github.com/fidelram/deepTools).It can do many others and have good documentation.
 It can also generate the heatmaps, but I personally use [ngs.plot](https://github.com/shenlab-sinai/ngsplot) which is esy to use. (developed in Mount Sinai).  
-=======
-[deeptools](https://github.com/fidelram/deepTools).It can do many others and have good documentation.
-It can also generate the heatmaps, but I personally use [ngs.plot](https://github.com/shenlab-sinai/ngsplot) which is easy to use. (developed in Mount Sinai).  
->>>>>>> c613a51a693ff28ee5dd1f152dc7160df90080bc
-
+ 
 2. you can also draw heatmaps using R. just count (using either Homer or bedtools) the ChIP-seq reads in each bin and draw with heatmap.2 function. 
 [here](http://crazyhottommy.blogspot.com/2013/08/how-to-make-heatmap-based-on-chip-seq.html) and [here](http://crazyhottommy.blogspot.com/2013/04/how-to-make-tss-plot-using-rna-seq-and.html). Those are my pretty old blog posts, I now have a much better idea on how to make those graphs from scratch.
 
