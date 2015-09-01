@@ -14,7 +14,7 @@ count multiple bam files:
 
 
 Make sure the header for each bam file is identical, otherwise an error saying "Can not open bam file" will show up.  
-See [here](https://groups.google.com/forum/#!msg/bedtools-discuss/_LNuoRWHn50/14MaqyzyzXsJ) and [here](https://github.com/arq5x/bedtools2/issues/52). For bam files downloaded from USCS, some header contains chrY in the header, some do not, and the order of chrX, chrY, chrM may be different.  
+See [here](https://groups.google.com/forum/#!msg/bedtools-discuss/_LNuoRWHn50/14MaqyzyzXsJ) and [here](https://github.com/arq5x/bedtools2/issues/52). For bam files downloaded from UCSC, some header contains chrY in the header, some do not, and the order of chrX, chrY, chrM may be different.  
 
 change bam header:  
 `samtools view -H ../../data/wgEncodeSydhHistonePanc1H3k27acUcdAlnRep1.bam > bam_header.txt`  
