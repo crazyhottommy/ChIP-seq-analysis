@@ -33,6 +33,9 @@
 An example of different parameters for homer `findPeaks`:  
 ![](./images/variablePeaks.png)
 
+4. [TF ChIP-seq peak calling using the Irreproducibility Discovery Rate (IDR) framework](https://sites.google.com/site/anshulkundaje/projects/idr)  
+
+
 ### Gene set enrichment analysis for ChIP-seq peaks  
 1. [Broad Enrich](http://broad-enrich.med.umich.edu/)  
 2. [ChIP Enrich](http://chip-enrich.med.umich.edu/)  
