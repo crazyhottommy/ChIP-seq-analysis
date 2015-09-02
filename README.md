@@ -55,7 +55,7 @@ An example of different parameters for homer `findPeaks`:
 
 1. Homer [`annotatePeak`](http://homer.salk.edu/homer/ngs/annotation.html) 
 2. Bioconductor package [ChIPseeker](http://bioconductor.org/packages/release/bioc/html/ChIPseeker.html) by [Guangchuan Yu](http://ygc.name/)   
-   See an important post by him on 0 or 1 based [cooridnates](http://ygc.name/2015/08/07/parsing-bed-coordinates/).
+   See an important post by him on 0 or 1 based [coordinates](http://ygc.name/2015/08/07/parsing-bed-coordinates/).
  
  >Most of the software for ChIP annotation doesn't considered this issue when annotating peak (0-based) to transcript (1-based). To my knowledge, only HOMER consider this issue. After I figure this out, I have updated ChIPseeker (version >= 1.4.3) to fix the issue.
  
