@@ -37,7 +37,7 @@ An example of different parameters for homer `findPeaks`:
 1. [Broad Enrich](http://broad-enrich.med.umich.edu/)  
 2. [ChIP Enrich](http://chip-enrich.med.umich.edu/)  
 3. [GREAT](http://bejerano.stanford.edu/great/public/html/) predicts functions of cis-regulatory regions.  
-4. [ENCODE ChIP-seq significance tool](http://encodeqt.simple-encode.org/). Given a list of genes, co-regulated TFs will be identified.  
+4. [ENCODE ChIP-seq significance tool](http://encodeqt.simple-encode.org/). Given a list of genes, co-regulating TFs will be identified.  
 5. [cscan](http://159.149.160.51/cscan/) similar to the ENCODE significance tool.  
 
 
