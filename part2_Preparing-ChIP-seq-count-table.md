@@ -59,7 +59,7 @@ file will be generated detailing how many reads are assigned or not.
 
 
 #### Join the two counts table to compare the differences
-Join the two counts table using the common peak id column:  
+Join the two counts table using the common peak id column, use `csvjoin` from [csvkit](http://csvkit.readthedocs.org/en/latest/index.html#)    
 
 `csvjoin -t -c1,4 <(cat counts_subread.txt | sed '1,2d') counts_bedtools.txt |  cut -d"," -f1-12,17-22 > joined_counts_table.csv`   
 
