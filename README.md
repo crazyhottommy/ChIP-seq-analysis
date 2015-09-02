@@ -63,17 +63,23 @@ An example of different parameters for homer `findPeaks`:
 
 There are many other tools, I just listed three. 
 
-   
-    
 ### Differential peak detection  
-Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/) here describing different tools.   
+Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/) here describing different tools.  
+
 1. [MultiGPS](http://mahonylab.org/software/multigps/)  
+
 2. [PePr](https://github.com/shawnzhangyx/PePr). It can also call peaks.  
+
 3. [histoneHMM](http://histonehmm.molgen.mpg.de/)  
+
 4. [diffreps](https://github.com/shenlab-sinai/diffreps) for histone.  developed by Shen Li's lab in Mount Sinai who also develped [ngs.plot](https://github.com/shenlab-sinai/ngsplot).  
+
 5. [diffbind bioconductor package](http://bioconductor.org/packages/release/bioc/html/DiffBind.html). Internally uses RNA-seq tools: EdgR or DESeq.  Most likely, I will use this tool.  
-6. [ChIPComp](http://web1.sph.emory.edu/users/hwu30/software/ChIPComp.html). Very little tutorial.  
-7. [csaw bioconductor package](http://bioconductor.org/packages/release/bioc/html/csaw.html)  
+
+6. [ChIPComp](http://web1.sph.emory.edu/users/hwu30/software/ChIPComp.html). Very little tutorial. Now it is on bioconductor.
+
+7. [csaw bioconductor package](http://bioconductor.org/packages/release/bioc/html/csaw.html). Tutorial [here](https://www.bioconductor.org/help/course-materials/2015/BioC2015/csaw_lab.html)  
+
 8. [chromDiff](http://compbio.mit.edu/ChromDiff/Download.html). Also from from Manolis Kellis in MIT. Similar with ChromHMM, documentation is not that detailed. Will have a try on this.  
 
 
