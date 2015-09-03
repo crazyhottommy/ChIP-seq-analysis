@@ -35,7 +35,12 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 **For cancer cells, an input control can be used to correct for copy-number bias.**
 
 
-1. The most popular peak caller by Tao Liu: [MACS2](https://github.com/taoliu/MACS/). Now `--broad` flag supports broad peaks calling as well.  
+[A quote from Tao Liu:](https://groups.google.com/forum/#!searchin/macs-announcement/h3k27ac/macs-announcement/9_LB5EsjS_Y/nwgsPN8lR-kJ) who develped MACS1/2
+
+>I remember in a PloS One paper last year by Elizabeth G. Wilbanks et al.,  authors pointed out the best way to sort results in MACS is by -10*log10(pvalue) then fold enrichment. I agree with them. You don't have to worry about FDR too much if your input data are far more than ChIP data. MACS1.4 calculates FDR by swapping samples, so if your input signal has some strong bias somewhere in the genome, your FDR result would be bad. Bad FDR may mean something but it's just secondary.
+
+1. The most popular peak caller by Tao Liu: [MACS2](https://github.com/taoliu/MACS/). Now `--broad` flag supports broad peaks calling as well.
+
 2. [TF ChIP-seq peak calling using the Irreproducibility Discovery Rate (IDR) framework](https://sites.google.com/site/anshulkundaje/projects/idr) and many [Software Tools Used to Create the ENCODE Resource](https://genome.ucsc.edu/ENCODE/encodeTools.html)    
 3. [SICER](http://home.gwu.edu/~wpeng/Software.htm) for broad histone modification ChIP-seq
 4. [HOMER](http://homer.salk.edu/homer/ngs/peaks.html) can also used to call Transcription factor ChIP-seq peaks and histone 
