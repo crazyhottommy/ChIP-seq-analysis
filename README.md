@@ -25,6 +25,16 @@
 4. [ENCODE tutorials](http://www.genome.gov/27553900)  
 
 ### Peak calling  
+
+Be careful with the peaks you get:  
+[Active promoters give rise to false positive ‘Phantom Peaks’ in ChIP-seq experiments](http://nar.oxfordjournals.org/content/early/2015/06/27/nar.gkv637.long)    
+
+It is good to have controls for your ChIP-seq experiments. A DNA input control (no antibody is applied) is prefered.
+The IgG control is also fine, but because so little DNA is there, you might get many duplicated reads due to PCR artifact.
+
+**For cancer cells, an input control can be used to correct for copy-number bias.**
+
+
 1. The most popular peak caller by Tao Liu: [MACS2](https://github.com/taoliu/MACS/). Now `--broad` flag supports broad peaks calling as well.  
 2. [TF ChIP-seq peak calling using the Irreproducibility Discovery Rate (IDR) framework](https://sites.google.com/site/anshulkundaje/projects/idr) and many [Software Tools Used to Create the ENCODE Resource](https://genome.ucsc.edu/ENCODE/encodeTools.html)    
 3. [SICER](http://home.gwu.edu/~wpeng/Software.htm) for broad histone modification ChIP-seq
