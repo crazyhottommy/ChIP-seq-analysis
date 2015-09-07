@@ -17,7 +17,7 @@
 4. [ChIP–seq: advantages and challenges of a maturing technology](http://www.nature.com/nrg/journal/v10/n10/abs/nrg2641.html)
 5. [ChIP–seq and beyond: new and improved methodologies to detect and characterize protein–DNA interactions](http://www.nature.com/nrg/journal/v13/n12/abs/nrg3306.html) 
 6. [Beyond library size: a field guide to NGS normalization](http://biorxiv.org/content/early/2014/06/19/006403)
-7. [All ENCODE nature paper portol](http://www.nature.com/encode/threads)  
+7. [ENCODE paper portol](http://www.nature.com/encode/threads)  
 8. [Enhancer discovery and characterization](http://www.nature.com/encode/threads/enhancer-discovery-and-characterization)  
 
     **Protocols**  
