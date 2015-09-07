@@ -187,6 +187,8 @@ By Meromit Singer:
 
 A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chromatin environment at regulatory elements](http://m.genome.cshlp.org/content/22/9/1735.full)
 
+### Enhancer databases
+* [FANTOM project](http://fantom.gsc.riken.jp/5/)  CAGE for promoters and enhancers.
 
 ### Allele-specific analysis  
 
