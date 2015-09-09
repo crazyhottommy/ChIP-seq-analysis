@@ -116,7 +116,8 @@ suggestions for finding motifs from histone modification ChIP-seq data from HOME
 6. [ENCODE TF motif database](http://compbio.mit.edu/encode-motifs/)  
 7. [oPOSSUM](http://opossum.cisreg.ca/oPOSSUM3/) is a web-based system for the detection of over-represented conserved transcription factor binding sites and binding site combinations in sets of genes or sequences.  
 8.  my post [how to get a genome-wide motif bed file](http://crazyhottommy.blogspot.com/2014/02/how-to-get-genome-wide-motif-bed-file.html) 
-9.  Many other tools [here](http://omictools.com/motif-discovery-c84-p1.html)  
+9.  Many other tools [here](http://omictools.com/motif-discovery-c84-p1.html)
+10.  [A review of ensemble methods for de novo motif discovery in ChIP-Seq data](http://bib.oxfordjournals.org/content/early/2015/04/17/bib.bbv022.abstract)  
 
 ### Super-enhancer identification   
 
