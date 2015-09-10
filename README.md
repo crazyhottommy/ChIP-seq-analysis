@@ -117,7 +117,9 @@ suggestions for finding motifs from histone modification ChIP-seq data from HOME
 7. [oPOSSUM](http://opossum.cisreg.ca/oPOSSUM3/) is a web-based system for the detection of over-represented conserved transcription factor binding sites and binding site combinations in sets of genes or sequences.  
 8.  my post [how to get a genome-wide motif bed file](http://crazyhottommy.blogspot.com/2014/02/how-to-get-genome-wide-motif-bed-file.html) 
 9.  Many other tools [here](http://omictools.com/motif-discovery-c84-p1.html)
-10.  [A review of ensemble methods for de novo motif discovery in ChIP-Seq data](http://bib.oxfordjournals.org/content/early/2015/04/17/bib.bbv022.abstract)  
+10. [A review of ensemble methods for de novo motif discovery in ChIP-Seq data](http://bib.oxfordjournals.org/content/early/2015/04/17/bib.bbv022.abstract)  
+11. [melina2](http://melina2.hgc.jp/public/index.html). If you only have one sequence and want to know what TFs might bind
+    there, this is a very useful tool.
 
 ### Super-enhancer identification   
 
@@ -201,3 +203,4 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 
 ### SNPs affect on TF binding
+[RegulomeDB](http://www.regulomedb.org/)  Use RegulomeDB to identify DNA features and regulatory elements in non-coding regions of the human genome by entering dbSNP id, chromosome regions or single Nucleotides.  
