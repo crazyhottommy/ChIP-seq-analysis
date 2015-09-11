@@ -54,6 +54,15 @@ An example of different parameters for homer `findPeaks`:
 ![](./images/variablePeaks.png)
 
 
+* [A significant proportion of transcription-factor binding sites may be nonfunctional](http://judgestarling.tumblr.com/post/64874995999/hypotheses-about-the-functionality-of) A post from Judge Starling  
+
+* Several papers have shown that changes of adjacent TF binding poorly correlates with gene expression change:
+[Extensive Divergence of Transcription Factor Binding in Drosophila Embryos with Highly Conserved Gene Expression](http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1003748)  
+[Transcription Factors Bind Thousands of Active and Inactive Regions in theDrosophila Blastoderm](http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.0060027)    
+
+[The Functional Consequences of Variation in Transcription Factor Binding](http://arxiv.org/abs/1310.5166)  
+>" On average, 14.7% of genes bound by a factor were differentially expressed following the knockdown of that factor, suggesting that most interactions between TF and chromatin do not result in measurable changes in gene expression levels of putative target genes. "
+
 ### Gene set enrichment analysis for ChIP-seq peaks  
 1. [Broad Enrich](http://broad-enrich.med.umich.edu/)  
 2. [ChIP Enrich](http://chip-enrich.med.umich.edu/)  
@@ -199,6 +208,10 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [DENdb: database of integrated human enhancers](http://www.cbrc.kaust.edu.sa/dendb/)  
 * [VISTA enhancer browser](http://enhancer.lbl.gov/)  
 * 
+
+### Enhancer target prediction 
+
+* [Assessing Computational Methods for Transcription Factor Target Gene Identification Based on ChIP-seq Data](http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1003342#pcbi.1003342.s019) 
 
 ### Allele-specific analysis  
 
