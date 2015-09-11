@@ -54,6 +54,8 @@ An example of different parameters for homer `findPeaks`:
 ![](./images/variablePeaks.png)
 
 
+### Binding does not infer functionality  
+
 * [A significant proportion of transcription-factor binding sites may be nonfunctional](http://judgestarling.tumblr.com/post/64874995999/hypotheses-about-the-functionality-of) A post from Judge Starling  
 
 * Several papers have shown that changes of adjacent TF binding poorly correlates with gene expression change:
