@@ -116,6 +116,7 @@ Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/)
 7. [csaw bioconductor package](http://bioconductor.org/packages/release/bioc/html/csaw.html). Tutorial [here](https://www.bioconductor.org/help/course-materials/2015/BioC2015/csaw_lab.html)  
 
 8. [chromDiff](http://compbio.mit.edu/ChromDiff/Download.html). Also from from Manolis Kellis in MIT. Similar with ChromHMM, documentation is not that detailed. Will have a try on this.  
+9. [MACS2 can detect differential peaks as well](https://github.com/taoliu/MACS/wiki/Call-differential-binding-events)  
 
 
 ### Motif enrichment
