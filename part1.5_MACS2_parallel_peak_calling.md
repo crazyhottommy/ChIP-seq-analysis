@@ -43,7 +43,7 @@ Assume, we have 10 distinct names in the sample_name.txt and each peak calling t
 Adding `&` in the end will put the program in the background and start the next command, but it will inititate as many instances as cpus . This is not good citizen behavior on a shared computing cluster.
 
 
-**Alternatively, we can use `xargs` to restrict the number of CPUs a command uses.**
+**Alternatively, we can use `xargs` `-P` flag to restrict the number of CPUs a command uses.**
 
 ```bash
 ### call peaks can be parallelized by xargs
