@@ -73,6 +73,7 @@ An example of different parameters for homer `findPeaks`:
 4. [ENCODE ChIP-seq significance tool](http://encodeqt.simple-encode.org/). Given a list of genes, co-regulating TFs will be identified.  
 5. [cscan](http://159.149.160.51/cscan/) similar to the ENCODE significance tool.  
 6. [CompGO: an R package for comparing and visualizing Gene Ontology enrichment differences between DNA binding experiments](http://www.biomedcentral.com/1471-2105/16/275)  
+7. [interactive and collaborative HTML5 gene list enrichment analysis tool](http://amp.pharm.mssm.edu/Enrichr/)
 
 
 ### Chromatin state Segmentation  
