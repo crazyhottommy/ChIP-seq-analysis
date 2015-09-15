@@ -1,3 +1,4 @@
+### Convert bam to bigwig for ChIP-seq bam
 
 [Bigwig](http://genome.ucsc.edu/goldenpath/help/bigWig.html) is very good for visualization in IGV and UCSC genome browser.There are many tools to convert bam to bigwig. 
 
