@@ -99,7 +99,7 @@ An example of different parameters for homer `findPeaks`:
 There are many other tools, I just listed three. 
 
 ### Differential peak detection  
-Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/) here describing different tools.  
+Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/) and [here](http://crazyhottommy.blogspot.com/2013/10/compare-chip-seq-data-for-different.html) describing different tools.  
 
 1. [MultiGPS](http://mahonylab.org/software/multigps/)  
 
