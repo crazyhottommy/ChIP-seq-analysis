@@ -59,7 +59,11 @@ The fraglen is from [strand cross-correlation analysis](https://github.com/crazy
 
 We are using `deeptools` for bigwig production, so we do not specify `-B`(output bedgraph) and `-SPMR`(for normalized bedgraph).
 
-for sharp peaks:  
+For each histone-modification ChIP-seq, we will have two sets of peaks (broad and narrow).
+
+Use`--nomodel` and provide the `--extsize` of either 147 bp or the fragment length predicted by [strand cross-correlation analysis](https://github.com/crazyhottommy/ChIP-seq-analysis/blob/master/part0_quality_control.md#calculate-fragment-length-nsc-and-rsc-by-phantompeakqualtools) 
+
+for narrow peaks:  
 `macs2 callpeak -t IP.bam -c Input.bam -n test -p 0.01 --nomodel --extsize fragment_length --keep-dup all -g hs`  
  
 for borad regions:  
