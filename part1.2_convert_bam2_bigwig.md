@@ -2,11 +2,6 @@
 
 [Bigwig](http://genome.ucsc.edu/goldenpath/help/bigWig.html) is very good for visualization in IGV and UCSC genome browser.There are many tools to convert bam to bigwig. 
 
-See several old posts
-* [Three ways to convert bam/bed file to bigwig, separated by strand](http://onetipperday.blogspot.com/2012/07/three-ways-to-convert-bambed-file-to.html)  
-* [SeqAnswer](http://seqanswers.com/forums/showthread.php?t=17297)
-* [Biostars](https://www.biostars.org/p/2699/)  
-
 Make sure you understand the other two closely related file formats:  
  
 * [bedgraph](http://genome.ucsc.edu/goldenpath/help/bedgraph.html):The bedGraph format is an older format used to display sparse data or data that contains elements of varying size.  
@@ -85,7 +80,7 @@ Check several subcommands from MACS2:
 
 Because in real experiment, we fragment the genome into small fragments of ~200bp, and pull down the protein bound DNA with antibodies. However, we only sequence the first 36bp(50bp, or 100bp depending on your library). To recapitulate the real experiment, we need to extend it to the fragment size.
 
-That's what MACS buiding model is doing. MACS calculates the length `d` that the reads need to be extended.
+That's what MACS buiding model is doing. MACS calculatea the length `d` that the reads need to be extended.
 
 Two examples of extending reads:  
 1. [HTSeq TSS plot](http://www-huber.embl.de/users/anders/HTSeq/doc/tss.html) 
@@ -94,7 +89,7 @@ Two examples of extending reads:
 >Mappability filtering, pooling and subsampling. **The raw Release 9 read alignment files contain reads that are pre-extended to 200 bp**. However, there were significant differences in the original read lengths across the Release 9 raw data sets reflecting differences between centres and changes of sequencing technology during the course of the project (36 bp, 50 bp, 76 bp and 100 bp). To avoid artificial differences due to mappability, for each consolidated data set the **raw mapped reads were uniformly truncated to 36 bp and then refiltered using a 36-bp custom mappability track to only retain reads that map to positions (taking strand into account) at which the corresponding 36-mers starting at those positions are unique in the genome.** Filtered data sets were then merged across technical/biological replicates, and where necessary to obtain a single consolidated sample for every histone mark or DNase-seq in each standardized epigenome.
 
 ## Keep in mind when you convert ChIP-seq bam to bigwig files:
-* extend the reads to 200bp or `d` predicted by MACS
+* extend the reads to 200bp, `d` predicted by MACS, or fragment length predicted by [phantomPeakqualtools](https://github.com/crazyhottommy/ChIP-seq-analysis/blob/master/part0_quality_control.md#calculate-fragment-length-nsc-and-rsc-by-phantompeakqualtools)
 * normalize (to library size, RPKM or 1x genomic content like `deeptools`. see below)
 
 ### Using bedtools 
