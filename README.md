@@ -219,9 +219,13 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 ### Enhancer target prediction 
 
 * [Assessing Computational Methods for Transcription Factor Target Gene Identification Based on ChIP-seq Data](http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1003342#pcbi.1003342.s019) 
+* [Protein binding and methylation on looping chromatin accurately predict distal regulatory interactions](http://biorxiv.org/content/early/2015/07/09/022293)
 
 ### Allele-specific analysis  
 
 
 ### SNPs affect on TF binding
-[RegulomeDB](http://www.regulomedb.org/)  Use RegulomeDB to identify DNA features and regulatory elements in non-coding regions of the human genome by entering dbSNP id, chromosome regions or single Nucleotides.  
+* [RegulomeDB](http://www.regulomedb.org/)  Use RegulomeDB to identify DNA features and regulatory elements in non-coding regions of the human genome by entering dbSNP id, chromosome regions or single Nucleotides.  
+* [motifbreakR](http://bioconductor.org/packages/devel/bioc/html/motifbreakR.html) A Package For Predicting The Disruptiveness Of Single Nucleotide Polymorphisms On Transcription Factor Binding Sites.
+* [Whole Genome Regulatory Variant Evaluation for Transcription Factor Binding](http://biorxiv.org/content/early/2015/04/01/017392)  
+* 
