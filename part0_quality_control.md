@@ -18,7 +18,8 @@ According to a [guideline](http://cistrome.org/chilin/_downloads/instructions.pd
 
 2. Uniquely mapped reads. According to Encode best practise, for most transcription factors (TFs), ~10 million of uniquely mapped reads are good enough; for histone modifications, ~20 millions uniquely mapped reads are recommended. The more reads one sequences, the more peaks will show up. However,the peak number will saturate when a certain number of reads (~say 30 million for TFs) are sequenced. **A good uniquely mapped ratio is ≥ 60%.** bowtie1 will ouput this number, or we can get it by samtools.
   
-**Duplicated reads** are reads with the same coordinates for the 5' and 3' end (may due to PCR artifact)
+**Duplicated reads** are reads with the same coordinates for the 5' and 3' end (maybe due to PCR artifact)
+A special case is MNase-seq in which an enzyme is used to cut the DNA, and then sequence the nucelosome bound sequences. One will expect to find many duplicated reads. see [here](https://ethanomics.wordpress.com/2012/01/06/to-filter-or-not-to-filter-duplicate-reads-chip-seq/)
   
 A read can be mapped to mulitple places, because of repetitive sequences in the genome, the aligner(BWA, bowtie) can not assign it uniquely to a place.  
 For ChIP-seq, we only want the **uniquely mapped reads**.
