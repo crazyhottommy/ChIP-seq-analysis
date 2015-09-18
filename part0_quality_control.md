@@ -1,6 +1,6 @@
 ## Quality control of the ChIP-seq data.
 
-First read these two papers:
+First read these papers:
 
 [ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia](http://www.ncbi.nlm.nih.gov/pubmed/22955991)  
 [Practical Guidelines for the Comprehensive Analysis of ChIP-seq Data](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003326)   
