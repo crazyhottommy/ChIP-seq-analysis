@@ -17,8 +17,28 @@ According to a [guideline](http://cistrome.org/chilin/_downloads/instructions.pd
   
 2. Raw reads number. According to Encode best practise, for most transcription factors (TFs), ~10 million of uniquely mapped reads are good enough; for histone modifications, ~20 millions uniquely mapped reads are recommended. The more reads one sequences, the more peaks will show up. However,the peak number will saturate when a certain number of reads (~say 30 million for TFs) are sequenced.
   
-3. Uniquely mapped reads. A good uniquely mapped ratio is ≥ 60%. bowtie1 will ouput this number, samtools flagstat can also
-  get this ratio.
+3. Uniquely mapped reads. A good uniquely mapped ratio is ≥ 60%. bowtie1 will ouput this number.
+  
+**Duplicated reads** are reads with the same coordinates for the 5' and 3' end (may due to PCR artifact)
+  
+A read can be mapped to mulitple places, because of repetitive sequences in the genome, the aligner(BWA, bowtie) can not assign it uniquely to a place.  
+For ChIP-seq, we only want the **uniquely mapped reads**.
+
+
+[Print uniquely mapped reads](https://wikis.utexas.edu/display/bioiteam/Samtools+tricks)
+`samtools view -bq 1 <bam>`
+
+It looks like one should [abandon](https://www.biostars.org/p/101533/#101537) the concept of uniquely mapped reads
+>Bowtie2 will give an alignment a MAPQ score of 0 or 1 if it can map equally well to more than one location. Further, there's not always a perfect correspondence between the MAPQ of a read and the summary metrics it prints at the end (I'd need to go through the code again to determine how it arrives at the printed summary metrics, that's not documented anywhere). Finally, you would be well served to completely abandon the concept of "uniquely mapped". It is never useful and is always misleading, since you're simply lying to by labeling something unique. You're better served by simply filtering on a meaningful MAPQ (5 or 10 are often reasonable choices), which has the benefit of actually doing what you want, namely filtering according the the likelihood that an alignment is correct.
+>
+
+Simply filter the bam with  MAPQ (mapping quality of the reads), 5 or 10 is usually reasonable:
+ 
+`samtools view -b -q 10 foo.bam > foo.filtered.bam`  
+or if you only want the number:  
+`samtools view -c -b -q 10 foo.bam`
+
+
 4. Peak number for each replicate called by MACS2 with fixed extension size (~200bp) and qvalue cutoff. A good peaks number depends on your experiment.
 5. Peak number for each replicates called by MACS2 where the fold change is ≥ 10.
 6. Peak number for each replicates called by MACS2 where the fold change is ≥ 20.
