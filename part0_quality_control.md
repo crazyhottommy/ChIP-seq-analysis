@@ -15,10 +15,8 @@ According to a [guideline](http://cistrome.org/chilin/_downloads/instructions.pd
 
 ### peak calling independent statistics
 1. Fastq reads median quality score >= 25. This can be gotten by [FASTQC from Babaraham Institute](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/). Many other good tools like Bismark for DNA methylation data mapping, and SeqMonk, a pretty cool GUI tool alternative to IGV are from this insititute as well.   According to Kadir, the sequencing core members will do initial quality control with the fastq files and will flag the file if quality of the file is bad.  In addition, they will trim off the adaptors when de-duplex.
-  
-2. Raw reads number. According to Encode best practise, for most transcription factors (TFs), ~10 million of uniquely mapped reads are good enough; for histone modifications, ~20 millions uniquely mapped reads are recommended. The more reads one sequences, the more peaks will show up. However,the peak number will saturate when a certain number of reads (~say 30 million for TFs) are sequenced.
-  
-3. Uniquely mapped reads. A good uniquely mapped ratio is ≥ 60%. bowtie1 will ouput this number.
+
+2. Uniquely mapped reads. According to Encode best practise, for most transcription factors (TFs), ~10 million of uniquely mapped reads are good enough; for histone modifications, ~20 millions uniquely mapped reads are recommended. The more reads one sequences, the more peaks will show up. However,the peak number will saturate when a certain number of reads (~say 30 million for TFs) are sequenced. **A good uniquely mapped ratio is ≥ 60%.** bowtie1 will ouput this number, or we can get it by samtools.
   
 **Duplicated reads** are reads with the same coordinates for the 5' and 3' end (may due to PCR artifact)
   
