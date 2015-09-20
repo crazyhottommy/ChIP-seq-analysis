@@ -223,6 +223,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 ### Allele-specific analysis  
 * [WASP: allele-specific software for robust molecular quantitative trait locus discovery](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3582.html)
+* [ABC -- (Allele-specific Binding from ChIP-Seq)](https://github.com/mlupien/ABC/)
 
 ### SNPs affect on TF binding
 * [RegulomeDB](http://www.regulomedb.org/)  Use RegulomeDB to identify DNA features and regulatory elements in non-coding regions of the human genome by entering dbSNP id, chromosome regions or single Nucleotides.  
