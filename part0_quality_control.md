@@ -150,7 +150,7 @@ However, it is useful to manually take a look at the cross-correlation plot to m
 
 It is better to specifiy a temp directory, and later you can remove everything in the temp dir.
 
-`time Rscript /scratch/genomic_med/mtang1/softwares/phantompeakqualtools/run_spp.R -c=KRLAB-B-BT20-R1-04-A-NC.sorted.bam -savp -out=KRLAB-B-BT20-R1-04-A-NC-cross-correlation.txt -tmpdir="."`
+`time Rscript /scratch/genomic_med/mtang1/softwares/phantompeakqualtools/run_spp.R -c=sample.sorted.bam -savp -out=sample-cross-correlation.txt -tmpdir="."`
 
 
 `real	35m10.321s
@@ -169,6 +169,26 @@ NSC: 1.042359
 RSC: 1.014053
 
 **These are very robust matrices for ChIP-seq quality evaluation.** 
+
+
+### The thresholds for TF ChIP-seq and histone modification ChIPs-seq are different.
+
+I had a conversation with Anshul Kundaje(An ENCODE person and author of phantompeakqualtools) on twitter:
+
+For  ChIP-seq quality control with phantompeakqualtools, do you repeat the experiment only when BOTH NSC < 1.05 AND RSC < 0.8? @anshul thx
+
+>Dataset is flagged when both NSC & RSC below these thresholds for TF ChIP-seq (different from histones) 
+>
+
+Thx. what's the cut-off for histone ChIP-seq? and sometimes, we have NSC > 1.05 but RSC < 0.8, or NSC < 1.05 but RSC > 0.8.
+>
+> Depends on histone. See [here](https://docs.google.com/spreadsheets/d/1yikGx4MsO9Ei36b64yOy9Vb6oPC5IBGlFbYEt-N6gOM/edit#gid=15) for approx. distribution of NSC/RSC for histones (Col AZ-BR) For **broad marks NSC usually in the range of 1.03. RSC in the range of 0.4-0.8.Narrow marks more similar to TF range**.
+
+do you have a note on what histone-modifications are broad and narrow?
+
+>I dont have a comprehensive list. Shud create one. For now ask me specific mark - I can tell u signal-to-noise categorization.
+
+thx. I am quality control (narrow?)H3K4me3, H3K4me, H3K27ac. and (broad?) H3K9me3, H3K27me3, H3K79me2. Looking forward to the list
 
 ### Measuring global ChIP enrichment (FRiP)
 
