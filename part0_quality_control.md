@@ -153,18 +153,24 @@ The fragment length cross-correlation (which is due to clustering of relatively 
 
 **Marks that tend to be enriched at repeat-like regions and those that have low signal to noise ratios with diffused genome-wide patterns can have stronger read-length peaks and RSC values < 0.8**
 
-#### A very old post by Ashul in the MACS google group back to 2012
+#### A very [old post](https://groups.google.com/forum/#!msg/macs-announcement/XawMJuBLYrc/ErL5oWVUWdYJ) by Ashul in the MACS google group back to 2012
 discussion on [biostars](https://www.biostars.org/p/18548/)
 
 >A useful way of estimating fragment length (different from how MACS does it) is to compute a strand cross-correlation profile of read start density on the + and - strand i.e. you compute the number of read starts at each position on the + strand and separately on the - strand for each chromosome. Then simply shift these vectors wrt each other and compute the correlation for each shift. You can then plot a cross-correlation profile as the cross-correlation values on the y-axis and the shift that you used to compute the correlation on the x-axis. This is the cross-correlation profile for the dataset. Due to the 'shift' phenomenon of reads on the + and - strand around true binding sites, one would get a peak in the cross-correlation profile at the predominant fragment length. 
 
 >For a really strong ChIP-seq dataset such as say CTCF in human cells (great antibody and 45-60K peaks typically), the cross-correlation profile looks like what u see in the attached Figure CTCF.pdf. Notice the RED vertical line which is the dominant peak at the true peak shift. Also notice the little bump (the blue vertical line). This is at read-length.
 
+![](./images/CTCF.png)
+
 >At the other extreme, lets take a control dataset (input DNA). The cross-correlation profile is shown in CONTROL.pdf. Now notice how the strongest peak is the blue line (read length) and there is basically almost no other significant peak in the profile. The absence of a peak shud be expected since unlike a ChIP-seq dataset for input DNA one expects no significant clustering of fragments around specific target sites (except potentially weak biases in open chromatin regions depending on the protocol used). Now the read-length peak occurs due to unique mappability properties of the mapped reads. If a position 'i' on the + strand in the genome is uniquely mappable (i.e. a read starting at 'i' on the + strand maps uniquely), it implies that the position 'i+readlength-1' is also uniquely mappable on the - strand (ie. a read starting at i+readlength-1 on the - strand maps uniquely to that position). So in the input dataset or in random scattering of reads to uniquely mappable locations (in a genome made up of unmappable, multimappable locations and unique mappable locations), there is a greater odds of finding reads starting on the + and - strand separated by read-length than any other shift. Which is why the cross-correlation profile peaks at read-length compared to other values of strand-shift and the cross-correlation at the true fragment length/peak-shift is washed away since there are is no significant +/- strand read density shift in the input dataset.
+
+![](./images/input_control.png)
 
 >Now take a look at what you get for some a ChIP-seq dataset that is an inbetween case.
 
 >POL2B.pdf : has few peaks (just about 3000 detectable ones in the human genome), this particular antibody is not very efficient (there are other POL2 antibodies that are very effective) and these are broad scattered peaks (following elongation patterns of POL2). Notice how you now have 2 peaks in the cross-correlation profile. One at the true peak shift (~185-200 bp) thats the one marked in red and the other at read length (the one marked in blue). For such weaker datasets, the read-length peak starts to dominate. Depending on the data quality characteristics of the dataset, the read-length peak scales relative to the true fragment length peak.
+
+![](./images/RNApol2.png)
 
 >So long story short, MACS effectively tends to just pick up just the strongest peak in the cross-correlation profile (although it uses a different method of estimating the peak-shift) and for datasets that have the properties listed at the top of this email, basically it picks up the read length. For strong datasets, it picks up the true shift. What one needs to do is find the peak in the cross-correlation profile ignoring any peak at read-length (which may be stronger or weaker than the other peaks in the profile). This always gives reliable estimates of fragment length (d/peak-shift). We have confirmed this using paired-end sequencing on a variety of different TFs and histone marks with different binding characteristics and ubiqiuity (where you can actually observe the distribution of fragment lengths for comparison). We have seen this phenomenon in a large number of datasets (ENCODE and modENCODE datasets). We have a paper in press right now that deals with this phenomenon as well as how it can be used as a useful data quality measure. Once it is published I can send a link to those interested.
 
@@ -229,11 +235,13 @@ Thx. what's the cut-off for histone ChIP-seq? and sometimes, we have NSC > 1.05 
 >
 > Depends on histone. See [here](https://docs.google.com/spreadsheets/d/1yikGx4MsO9Ei36b64yOy9Vb6oPC5IBGlFbYEt-N6gOM/edit#gid=15) for approx. distribution of NSC/RSC for histones (Col AZ-BR) For **broad marks NSC usually in the range of 1.03. RSC in the range of 0.4-0.8.Narrow marks more similar to TF range**.
 
-do you have a note on what histone-modifications are broad and narrow?
+do you have a note on what histone-modifications are broad and narrow? For H3K4me3, it can be broad as well. see this paper [Broad H3K4me3 is associated with increased transcription elongation and enhancer activity at tumor-suppressor genes](http://www.ncbi.nlm.nih.gov/pubmed/26301496) 
 
->I dont have a comprehensive list. Shud create one. For now ask me specific mark - I can tell u signal-to-noise categorization.
+>Yes. H3K4me3 can have broad domains but **overall** it is more predominantly a narrow mark from signal-to-noise perspective. I dont have a comprehensive list. Shud create one. For now ask me specific mark - I can tell u signal-to-noise categorization.
 
 thx. I am quality control (narrow?)H3K4me3, H3K4me, H3K27ac. and (broad?) H3K9me3, H3K27me3, H3K79me2. Looking forward to the list
+
+>this categorization is correct. Although H3K79me2 usually has high SNR between narrow and broad marks.
 
 ### Measuring global ChIP enrichment (FRiP)
 
