@@ -35,7 +35,7 @@ the quality for each base is very good, but the perbase sequence content does no
 Then I used [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) to trim the adapters and the low quality bases.
 `$ trimmomatic SE  in.fastq in_trimmed.fastq ILLUMINACLIP:Truseq_adaptor.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36`
 
-the Truseq_adaptor.fa file contains the adapter sequences. see a post here.
+the Truseq_adaptor.fa file contains the adapter sequences.
 
 ```
 $ cat Truseq_adaptor.fa
