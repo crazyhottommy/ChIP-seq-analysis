@@ -66,6 +66,11 @@ An example of different parameters for homer `findPeaks`:
 [The Functional Consequences of Variation in Transcription Factor Binding](http://arxiv.org/abs/1310.5166)  
 >" On average, 14.7% of genes bound by a factor were differentially expressed following the knockdown of that factor, suggesting that most interactions between TF and chromatin do not result in measurable changes in gene expression levels of putative target genes. "
 
+* paper [A large portion of the ChIP-seq signal does not correspond to true binding](http://www.ncbi.nlm.nih.gov/pubmed/26388941?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)
+ [BIDCHIPS: Bias-Decomposition of ChIP-seq Signals](http://www.perkinslab.ca/Software.html)
+* 
+
+
 ### Gene set enrichment analysis for ChIP-seq peaks  
 1. [Broad Enrich](http://broad-enrich.med.umich.edu/)  
 2. [ChIP Enrich](http://chip-enrich.med.umich.edu/)  
