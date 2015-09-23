@@ -119,7 +119,7 @@ The fragment length cross-correlation (which is due to clustering of relatively 
 
 ![](./images/CTCF.png)
 
->At the other extreme, lets take a control dataset (input DNA). The cross-correlation profile is shown in CONTROL.pdf. Now notice how the strongest peak is the blue line (read length) and there is basically almost no other significant peak in the profile. The absence of a peak shud be expected since unlike a ChIP-seq dataset for input DNA one expects no significant clustering of fragments around specific target sites (except potentially weak biases in open chromatin regions depending on the protocol used). Now the read-length peak occurs due to unique mappability properties of the mapped reads. If a position 'i' on the + strand in the genome is uniquely mappable (i.e. a read starting at 'i' on the + strand maps uniquely), it implies that the position 'i+readlength-1' is also uniquely mappable on the - strand (ie. a read starting at i+readlength-1 on the - strand maps uniquely to that position). So in the input dataset or in random scattering of reads to uniquely mappable locations (in a genome made up of unmappable, multimappable locations and unique mappable locations), there is a greater odds of finding reads starting on the + and - strand separated by read-length than any other shift. Which is why the cross-correlation profile peaks at read-length compared to other values of strand-shift and the cross-correlation at the true fragment length/peak-shift is washed away since there are is no significant +/- strand read density shift in the input dataset.
+>At the other extreme, lets take a control dataset (input DNA). The cross-correlation profile is shown in CONTROL.pdf. Now notice how the strongest peak is the blue line (read length) and there is basically almost no other significant peak in the profile. The absence of a peak shud be expected since unlike a ChIP-seq dataset for input DNA one expects no significant clustering of fragments around specific target sites (except potentially weak biases in open chromatin regions depending on the protocol used). Now the read-length peak occurs due to unique mappability properties of the mapped reads. **If a position 'i' on the + strand in the genome is uniquely mappable (i.e. a read starting at 'i' on the + strand maps uniquely), it implies that the position 'i+readlength-1' is also uniquely mappable on the - strand (ie. a read starting at i+readlength-1 on the - strand maps uniquely to that position)**. So in the input dataset or in random scattering of reads to uniquely mappable locations (in a genome made up of unmappable, multimappable locations and unique mappable locations), **there is a greater odds of finding reads starting on the + and - strand separated by read-length than any other shift.** Which is why the cross-correlation profile peaks at read-length compared to other values of strand-shift and the cross-correlation at the true fragment length/peak-shift is washed away since there are is no significant +/- strand read density shift in the input dataset.
 
 ![](./images/input_control.png)
 
@@ -139,21 +139,7 @@ The fragment length cross-correlation (which is due to clustering of relatively 
 >Anshul.
 
 
-#### see a discussion on [biostars](https://www.biostars.org/p/18548/):  
->Having an "opposite strand" peak at the read length indicates that in many cases pairs of reads are mapping as approximate reverse complements of each other. That is, if a read maps at position X on the plus strand, then it is likely that another read will map at position X + read length on the minus strand. Here is an ASCII art diagram of what is happening:
->
-```
-       --------------------->
-==========================================================
-       <---------------------
-```
->Can anyone explain why many pairs of tags would map as reverse complements of each other? The data is single-end Illumina sequencing. The linked article calls this "the signal from tags mapping as palindromes". I suppose this means that a read could map as its own reverse complement, and that if many reads do so, they will produce this peak. However, I wrote a script to see if any of my reads are identical to their reverse complement, and it didn't find any.
-
-
->Can anyone explain why many pairs of tags would map as reverse complements of each other? The data is single-end Illumina sequencing. The linked article calls this "the signal from tags mapping as palindromes". I suppose this means that a read could map as its own reverse complement, and that if many reads do so, they will produce this peak. However, I wrote a script to see if any of my reads are identical to their reverse complement, and it didn't find any.
-
-Answer:
->The reason for the peak at read length is due to varying mappability along the genome. If a 23mer one on strand is uniquely mappable, the reverse complement 23mer on the other strand is also uniquely mappable, and therefore you're more likely to get reads mapping exactly there than at some other point where the mappability is unknown.
+#### see a discussion on [biostars](https://www.biostars.org/p/18548/) 
 
 
 ### Calculate fragment length, NSC and RSC by [phantompeakqualtools](https://code.google.com/p/phantompeakqualtools/)
