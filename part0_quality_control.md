@@ -87,6 +87,75 @@ From paper [ChIP-seq guidelines and practices of the ENCODE and modENCODE consor
 
 >These measures form the basis for one of the current quality standards for ENCODE data sets. **We repeat replicates with NSC values <1.05 and RSC values <0.8** and, if additional replicates produce low values, we include a note with the reported data set (Box 3). We illustrate the application of our ChIP-seq quality metrics to a failed pair of replicates in Figure 5, A–E. Initially, two EGR1 ChIP-seq replicates were generated in the K562 cell line. Based on the cross-correlation profiles, FRiP score, and number of called regions, these replicates were flagged as marginal in quality. The experiments were repeated, with all quality control metrics improving considerably. On this basis, the superior measurements replaced the initial ones in the ENCODE database.
 
+
+### Understanding NSC and RSC
+From Ashul:
+
+####Normalized strand cross-correlation coefficient (NSC)
+
+Genome-wide correlation between + and - strand read counts when shifted by fraglen/2 relative to background. Represents enrichment of clustered ChIP fragments around target sites. 
+
+Input-DNA values  are used as a reference for calibration.
+
+Diffused marks such as H3K9me3 inherently have lower signal to noise ratios and hence NSC compared to strong active marks such as H3K4me3.
+
+**Samples with very low seq. depth can have abnormally high NSC** since there is a significant depletion of 'background'. i.e. these samples tend to have higher specificity but very low sensitivity." 
+
+####Relative strand cross-correlation coefficient (RSC)
+
+Relative enrichment of fragment-length cross-correlation to read-length cross-correlation (phantom peak). 
+
+The read-length cross-correlation is a baseline correlation that is entirely due to an inherent mappability-bias for reads to separated on + and - strand by read-length.
+
+The fragment length cross-correlation (which is due to clustering of relatively fixed sized fragment around target sites) should be able to beat the read-length correlation for highly enriched datasets with sufficient localized target sites. So a RSC value > 0.8 is desirable in general.
+
+**Marks that tend to be enriched at repeat-like regions and those that have low signal to noise ratios with diffused genome-wide patterns can have stronger read-length peaks and RSC values < 0.8**
+
+#### A very [old post](https://groups.google.com/forum/#!msg/macs-announcement/XawMJuBLYrc/ErL5oWVUWdYJ) by Ashul in the MACS google group back to 2012
+
+>A useful way of estimating fragment length (different from how MACS does it) is to compute a strand cross-correlation profile of read start density on the + and - strand i.e. you compute the number of read starts at each position on the + strand and separately on the - strand for each chromosome. Then simply shift these vectors wrt each other and compute the correlation for each shift. You can then plot a cross-correlation profile as the cross-correlation values on the y-axis and the shift that you used to compute the correlation on the x-axis. This is the cross-correlation profile for the dataset. Due to the 'shift' phenomenon of reads on the + and - strand around true binding sites, one would get a peak in the cross-correlation profile at the predominant fragment length. 
+
+>For a really strong ChIP-seq dataset such as say CTCF in human cells (great antibody and 45-60K peaks typically), the cross-correlation profile looks like what u see in the attached Figure CTCF.pdf. Notice the RED vertical line which is the dominant peak at the true peak shift. Also notice the little bump (the blue vertical line). This is at read-length.
+
+![](./images/CTCF.png)
+
+>At the other extreme, lets take a control dataset (input DNA). The cross-correlation profile is shown in CONTROL.pdf. Now notice how the strongest peak is the blue line (read length) and there is basically almost no other significant peak in the profile. The absence of a peak shud be expected since unlike a ChIP-seq dataset for input DNA one expects no significant clustering of fragments around specific target sites (except potentially weak biases in open chromatin regions depending on the protocol used). Now the read-length peak occurs due to unique mappability properties of the mapped reads. If a position 'i' on the + strand in the genome is uniquely mappable (i.e. a read starting at 'i' on the + strand maps uniquely), it implies that the position 'i+readlength-1' is also uniquely mappable on the - strand (ie. a read starting at i+readlength-1 on the - strand maps uniquely to that position). So in the input dataset or in random scattering of reads to uniquely mappable locations (in a genome made up of unmappable, multimappable locations and unique mappable locations), there is a greater odds of finding reads starting on the + and - strand separated by read-length than any other shift. Which is why the cross-correlation profile peaks at read-length compared to other values of strand-shift and the cross-correlation at the true fragment length/peak-shift is washed away since there are is no significant +/- strand read density shift in the input dataset.
+
+![](./images/input_control.png)
+
+>Now take a look at what you get for some a ChIP-seq dataset that is an inbetween case.
+
+>POL2B.pdf : has few peaks (just about 3000 detectable ones in the human genome), this particular antibody is not very efficient (there are other POL2 antibodies that are very effective) and these are broad scattered peaks (following elongation patterns of POL2). Notice how you now have 2 peaks in the cross-correlation profile. One at the true peak shift (~185-200 bp) thats the one marked in red and the other at read length (the one marked in blue). For such weaker datasets, the read-length peak starts to dominate. Depending on the data quality characteristics of the dataset, the read-length peak scales relative to the true fragment length peak.
+
+![](./images/RNApol2.png)
+
+>So long story short, MACS effectively tends to just pick up just the strongest peak in the cross-correlation profile (although it uses a different method of estimating the peak-shift) and for datasets that have the properties listed at the top of this email, basically it picks up the read length. For strong datasets, it picks up the true shift. What one needs to do is find the peak in the cross-correlation profile ignoring any peak at read-length (which may be stronger or weaker than the other peaks in the profile). This always gives reliable estimates of fragment length (d/peak-shift). We have confirmed this using paired-end sequencing on a variety of different TFs and histone marks with different binding characteristics and ubiqiuity (where you can actually observe the distribution of fragment lengths for comparison). We have seen this phenomenon in a large number of datasets (ENCODE and modENCODE datasets). We have a paper in press right now that deals with this phenomenon as well as how it can be used as a useful data quality measure. Once it is published I can send a link to those interested.
+
+>If you would like to have some code that computes the fragment length based on the cross-correlation method shoot me an email. I am hesitant to link it here without Tao's permission, since it uses the code-base from another peak caller. You can then use the --shift-size parameter set to 1/2 the estimated fragment length with --no-model. You will notice significantly better results with a correctly estimated 'd'.
+
+>I think at some point, it might be useful to have this cross-correlation method incorporated within MACS so as to make the d estimation more robust (which is probably one of the only unstable aspects of an otherwise fantastic peak caller).
+
+>Thanks,
+>Anshul.
+
+
+#### see a discussion on [biostars](https://www.biostars.org/p/18548/):  
+>Having an "opposite strand" peak at the read length indicates that in many cases pairs of reads are mapping as approximate reverse complements of each other. That is, if a read maps at position X on the plus strand, then it is likely that another read will map at position X + read length on the minus strand. Here is an ASCII art diagram of what is happening:
+>
+```
+       --------------------->
+==========================================================
+       <---------------------
+```
+>Can anyone explain why many pairs of tags would map as reverse complements of each other? The data is single-end Illumina sequencing. The linked article calls this "the signal from tags mapping as palindromes". I suppose this means that a read could map as its own reverse complement, and that if many reads do so, they will produce this peak. However, I wrote a script to see if any of my reads are identical to their reverse complement, and it didn't find any.
+
+
+>Can anyone explain why many pairs of tags would map as reverse complements of each other? The data is single-end Illumina sequencing. The linked article calls this "the signal from tags mapping as palindromes". I suppose this means that a read could map as its own reverse complement, and that if many reads do so, they will produce this peak. However, I wrote a script to see if any of my reads are identical to their reverse complement, and it didn't find any.
+
+Answer:
+>The reason for the peak at read length is due to varying mappability along the genome. If a 23mer one on strand is uniquely mappable, the reverse complement 23mer on the other strand is also uniquely mappable, and therefore you're more likely to get reads mapping exactly there than at some other point where the mappability is unknown.
+
+
 ### Calculate fragment length, NSC and RSC by [phantompeakqualtools](https://code.google.com/p/phantompeakqualtools/)
 
 ```
@@ -131,58 +200,6 @@ Datasets with NSC values much less than 1.1 (< 1.05) tend to have low signal to 
 
 >RSC values range from 0 to larger positive values. 1 is the critical threshold.
 RSC values significantly lower than 1 (< 0.8) tend to have low signal to noise. The low scores can be due to failed and poor quality ChIP, low read sequence quality and hence lots of mismappings, shallow sequencing depth (significantly below saturation) or a combination of these. Like the NSC, datasets with few binding sites (< 200) which is biologically justifiable also show low RSC scores.
-
-
-From Ashul:
-
-####Normalized strand cross-correlation coefficient (NSC)
-
-Genome-wide correlation between + and - strand read counts when shifted by fraglen/2 relative to background. Represents enrichment of clustered ChIP fragments around target sites. 
-
-Input-DNA values  are used as a reference for calibration.
-
-Diffused marks such as H3K9me3 inherently have lower signal to noise ratios and hence NSC compared to strong active marks such as H3K4me3.
-
-**Samples with very low seq. depth can have abnormally high NSC** since there is a significant depletion of 'background'. i.e. these samples tend to have higher specificity but very low sensitivity." 
-
-####Relative strand cross-correlation coefficient (RSC)
-
-Relative enrichment of fragment-length cross-correlation to read-length cross-correlation (phantom peak). 
-
-The read-length cross-correlation is a baseline correlation that is entirely due to an inherent mappability-bias for reads to separated on + and - strand by read-length.
-
-The fragment length cross-correlation (which is due to clustering of relatively fixed sized fragment around target sites) should be able to beat the read-length correlation for highly enriched datasets with sufficient localized target sites. So a RSC value > 0.8 is desirable in general.
-
-**Marks that tend to be enriched at repeat-like regions and those that have low signal to noise ratios with diffused genome-wide patterns can have stronger read-length peaks and RSC values < 0.8**
-
-#### A very [old post](https://groups.google.com/forum/#!msg/macs-announcement/XawMJuBLYrc/ErL5oWVUWdYJ) by Ashul in the MACS google group back to 2012
-discussion on [biostars](https://www.biostars.org/p/18548/)
-
->A useful way of estimating fragment length (different from how MACS does it) is to compute a strand cross-correlation profile of read start density on the + and - strand i.e. you compute the number of read starts at each position on the + strand and separately on the - strand for each chromosome. Then simply shift these vectors wrt each other and compute the correlation for each shift. You can then plot a cross-correlation profile as the cross-correlation values on the y-axis and the shift that you used to compute the correlation on the x-axis. This is the cross-correlation profile for the dataset. Due to the 'shift' phenomenon of reads on the + and - strand around true binding sites, one would get a peak in the cross-correlation profile at the predominant fragment length. 
-
->For a really strong ChIP-seq dataset such as say CTCF in human cells (great antibody and 45-60K peaks typically), the cross-correlation profile looks like what u see in the attached Figure CTCF.pdf. Notice the RED vertical line which is the dominant peak at the true peak shift. Also notice the little bump (the blue vertical line). This is at read-length.
-
-![](./images/CTCF.png)
-
->At the other extreme, lets take a control dataset (input DNA). The cross-correlation profile is shown in CONTROL.pdf. Now notice how the strongest peak is the blue line (read length) and there is basically almost no other significant peak in the profile. The absence of a peak shud be expected since unlike a ChIP-seq dataset for input DNA one expects no significant clustering of fragments around specific target sites (except potentially weak biases in open chromatin regions depending on the protocol used). Now the read-length peak occurs due to unique mappability properties of the mapped reads. If a position 'i' on the + strand in the genome is uniquely mappable (i.e. a read starting at 'i' on the + strand maps uniquely), it implies that the position 'i+readlength-1' is also uniquely mappable on the - strand (ie. a read starting at i+readlength-1 on the - strand maps uniquely to that position). So in the input dataset or in random scattering of reads to uniquely mappable locations (in a genome made up of unmappable, multimappable locations and unique mappable locations), there is a greater odds of finding reads starting on the + and - strand separated by read-length than any other shift. Which is why the cross-correlation profile peaks at read-length compared to other values of strand-shift and the cross-correlation at the true fragment length/peak-shift is washed away since there are is no significant +/- strand read density shift in the input dataset.
-
-![](./images/input_control.png)
-
->Now take a look at what you get for some a ChIP-seq dataset that is an inbetween case.
-
->POL2B.pdf : has few peaks (just about 3000 detectable ones in the human genome), this particular antibody is not very efficient (there are other POL2 antibodies that are very effective) and these are broad scattered peaks (following elongation patterns of POL2). Notice how you now have 2 peaks in the cross-correlation profile. One at the true peak shift (~185-200 bp) thats the one marked in red and the other at read length (the one marked in blue). For such weaker datasets, the read-length peak starts to dominate. Depending on the data quality characteristics of the dataset, the read-length peak scales relative to the true fragment length peak.
-
-![](./images/RNApol2.png)
-
->So long story short, MACS effectively tends to just pick up just the strongest peak in the cross-correlation profile (although it uses a different method of estimating the peak-shift) and for datasets that have the properties listed at the top of this email, basically it picks up the read length. For strong datasets, it picks up the true shift. What one needs to do is find the peak in the cross-correlation profile ignoring any peak at read-length (which may be stronger or weaker than the other peaks in the profile). This always gives reliable estimates of fragment length (d/peak-shift). We have confirmed this using paired-end sequencing on a variety of different TFs and histone marks with different binding characteristics and ubiqiuity (where you can actually observe the distribution of fragment lengths for comparison). We have seen this phenomenon in a large number of datasets (ENCODE and modENCODE datasets). We have a paper in press right now that deals with this phenomenon as well as how it can be used as a useful data quality measure. Once it is published I can send a link to those interested.
-
->If you would like to have some code that computes the fragment length based on the cross-correlation method shoot me an email. I am hesitant to link it here without Tao's permission, since it uses the code-base from another peak caller. You can then use the --shift-size parameter set to 1/2 the estimated fragment length with --no-model. You will notice significantly better results with a correctly estimated 'd'.
-
->I think at some point, it might be useful to have this cross-correlation method incorporated within MACS so as to make the d estimation more robust (which is probably one of the only unstable aspects of an otherwise fantastic peak caller).
-
->Thanks,
->Anshul.
-
 
 #### NOTES:
 
