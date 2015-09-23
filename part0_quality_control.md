@@ -8,6 +8,7 @@ First read these papers:
 [Impact of sequencing depth in ChIP-seq experiments](http://nar.oxfordjournals.org/content/early/2014/03/05/nar.gku178)  
 [Systematic evaluation of factors influencing ChIP-seq fidelity](http://www.nature.com/nmeth/journal/v9/n6/full/nmeth.1985.html)  
 [Impact of artifact removal on ChIP quality metrics in ChIP-seq and ChIP-exo data](http://www.ncbi.nlm.nih.gov/pubmed/24782889)  
+[Large-Scale Quality Analysis of Published ChIP-seq Data](http://www.g3journal.org/content/4/2/209.full)  
 
 
 

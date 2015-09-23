@@ -82,11 +82,20 @@ Because in real experiment, we fragment the genome into small fragments of ~200b
 
 That's what MACS buiding model is doing. MACS calculatea the length `d` that the reads need to be extended.
 
-Two examples of extending reads:  
+Three examples of extending reads:  
 1. [HTSeq TSS plot](http://www-huber.embl.de/users/anders/HTSeq/doc/tss.html) 
    ![](./images/HTSeq-extend200.png)
 2. paper [Integrative analysis of 111 reference human epigenomes](http://www.nature.com/nature/journal/v518/n7539/full/nature14248.html) Methods part:
->Mappability filtering, pooling and subsampling. **The raw Release 9 read alignment files contain reads that are pre-extended to 200 bp**. However, there were significant differences in the original read lengths across the Release 9 raw data sets reflecting differences between centres and changes of sequencing technology during the course of the project (36 bp, 50 bp, 76 bp and 100 bp). To avoid artificial differences due to mappability, for each consolidated data set the **raw mapped reads were uniformly truncated to 36 bp and then refiltered using a 36-bp custom mappability track to only retain reads that map to positions (taking strand into account) at which the corresponding 36-mers starting at those positions are unique in the genome.** Filtered data sets were then merged across technical/biological replicates, and where necessary to obtain a single consolidated sample for every histone mark or DNase-seq in each standardized epigenome.
+>Mappability filtering, pooling and subsampling. **The raw Release 9 read alignment files contain reads that are pre-extended to 200 bp**. However, there were significant differences in the original read lengths across the Release 9 raw data sets reflecting differences between centres and changes of sequencing technology during the course of the project (36 bp, 50 bp, 76 bp and 100 bp). To avoid artificial differences due to mappability, for each consolidated data set the **raw mapped reads were uniformly truncated to 36 bp and then refiltered using a 36-bp custom mappability track to only retain reads that map to positions (taking strand into account) at which the corresponding 36-mers starting at those positions are unique in the genome.** Filtered data sets were then merged across technical/biological replicates, and where necessary to obtain a single consolidated sample for every histone >mark or DNase-seq in each standardized epigenome.  
+
+
+3 paper [Impact of artifact removal on ChIP quality metrics in ChIP-seq and ChIP-exo data](http://www.ncbi.nlm.nih.gov/pubmed/24782889)
+
+"IGV screenshot of an example CTCF ChIP signal showing the distribution of Watson and Crick signal around the CTCF motif and the distribution of Watson and Crick signal following extension of reads to the expected fragment length."
+
+![](./images/extend_200.png)
+
+
 
 ## Keep in mind when you convert ChIP-seq bam to bigwig files:
 * extend the reads to 200bp, `d` predicted by MACS, or fragment length predicted by [phantomPeakqualtools](https://github.com/crazyhottommy/ChIP-seq-analysis/blob/master/part0_quality_control.md#calculate-fragment-length-nsc-and-rsc-by-phantompeakqualtools)
