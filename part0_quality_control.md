@@ -115,6 +115,9 @@ The fragment length cross-correlation (which is due to clustering of relatively 
 
 >A useful way of estimating fragment length (different from how MACS does it) is to compute a strand cross-correlation profile of read start density on the + and - strand i.e. **you compute the number of read starts at each position on the + strand and separately on the - strand for each chromosome. Then simply shift these vectors wrt each other and compute the correlation for each shift.** You can then plot a cross-correlation profile as the cross-correlation values on the y-axis and the shift that you used to compute the correlation on the x-axis. This is the cross-correlation profile for the dataset. Due to the 'shift' phenomenon of reads on the + and - strand around true binding sites, one would get a peak in the cross-correlation profile at the predominant fragment length. 
 
+**Side notes from me: for reads starting at EACH position, there are three conditions: only one read starts (no duplicates) at there, or there is no read starts (no reads mapping), or several reads (potential PCR duplicates). So in reality, the number of reads are calculated by implicit aggregation over 5 bp sliding windows.**
+
+
 >For a really strong ChIP-seq dataset such as say CTCF in human cells (great antibody and 45-60K peaks typically), the cross-correlation profile looks like what u see in the attached Figure CTCF.pdf. Notice the RED vertical line which is the dominant peak at the true peak shift. Also notice the little bump (the blue vertical line). This is at read-length.
 
 ![](./images/CTCF.png)
