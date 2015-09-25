@@ -67,8 +67,9 @@ An example of different parameters for homer `findPeaks`:
 >" On average, 14.7% of genes bound by a factor were differentially expressed following the knockdown of that factor, suggesting that most interactions between TF and chromatin do not result in measurable changes in gene expression levels of putative target genes. "
 
 * paper [A large portion of the ChIP-seq signal does not correspond to true binding](http://www.ncbi.nlm.nih.gov/pubmed/26388941?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)
- [BIDCHIPS: Bias-Decomposition of ChIP-seq Signals](http://www.perkinslab.ca/Software.html)
-* 
+* [BIDCHIPS: Bias-Decomposition of ChIP-seq Signals](http://www.perkinslab.ca/Software.html)  
+	**mappability, GC-content and chromatin accessibility** affect ChIP-seq read counts. 
+ 
 
 
 ### Gene set enrichment analysis for ChIP-seq peaks  
