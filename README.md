@@ -10,6 +10,7 @@
 6. [European Nucleotide Archive](http://www.ebi.ac.uk/ena). Sequences are available in fastq format.
 7. [Data bases and software from Sheirly Liu's lab at Harvard](http://liulab.dfci.harvard.edu/WEBSITE/software.htm)
 8. [Blueprint epigenome](http://dcc.blueprint-epigenome.eu/#/home)
+9. [A collection of tools and papers for nucelosome positioning and TF ChIP-seq](http://generegulation.info/)
 
 ### Papers on ChIP-seq
 1. [ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia](http://www.ncbi.nlm.nih.gov/pubmed/22955991) 
@@ -238,3 +239,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [motifbreakR](http://bioconductor.org/packages/devel/bioc/html/motifbreakR.html) A Package For Predicting The Disruptiveness Of Single Nucleotide Polymorphisms On Transcription Factor Binding Sites.
 * [Whole Genome Regulatory Variant Evaluation for Transcription Factor Binding](http://biorxiv.org/content/early/2015/04/01/017392)  
 * 
+
+### Integration of different data sets
+
+[methylPipe and compEpiTools: a suite of R packages for the integrative analysis of epigenomics data](http://www.ncbi.nlm.nih.gov/pubmed/26415965?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)  
