@@ -105,7 +105,10 @@ Three examples of extending reads:
 
 Install `bedClip` and `bedGraphToBigWig` [UCSC utilities](http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/) first.
 
-**Not sure, how to extend the reads to 200bp using bedtools**,
+**Not sure, how to extend the reads to 200bp using bedtools**
+
+**one can convert the bam to bed and the use bedtools slop to extend the reads to 3' for 200bp and then feed into bedtools coverage biostar [post](https://www.biostars.org/p/49163/)**
+
 without extending:  
 
 ```bash
