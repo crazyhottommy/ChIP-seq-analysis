@@ -107,6 +107,7 @@ Install `bedClip` and `bedGraphToBigWig` [UCSC utilities](http://hgdownload.soe.
 
 **one can convert the bam to bed and the use bedtools slop to extend the reads to 3' for 200bp and then feed into bedtools coverage biostar [post](https://www.biostars.org/p/49163/)**
 
+for 36bp single-end ChIP-seq reads:  
 ```
 bamToBed -i input.bam | slopBed -i - -g genome_file_of_chr_sizes -s -r 164 | bedToBam -i - -g genome_file_of_chr_sizes > output_extended.bam
 ```
