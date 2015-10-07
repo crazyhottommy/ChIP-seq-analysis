@@ -110,13 +110,11 @@ Install `bedClip` and `bedGraphToBigWig` [UCSC utilities](http://hgdownload.soe.
 ```
 bamToBed -i input.bam | slopBed -i - -g genome_file_of_chr_sizes -s -r 164 | bedToBam -i - -g genome_file_of_chr_sizes > output_extended.bam
 ```
-
-without extending:  
-
+ 
 ```bash
 #! /bin/bash
 
-for bam in *bam
+for bam in *extended.bam
 do 
 echo $bam 
 genomeCoverageBed -ibam $bam -bg -g hg19.genome.info > $(basename $bam .bam).bdg
