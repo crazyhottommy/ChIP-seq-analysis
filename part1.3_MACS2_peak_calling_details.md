@@ -12,7 +12,7 @@ MACS2 is used to call broad and narrow peaks for **histone ChIP-seq:**
 >Narrow peaks and broad domains were also generated for the unconsolidated, 36-bp mappability filtered histone mark ChIP-seq and DNase-seq Release 9 data sets using MACSv2.0.10 with the same settings as specified above.
 
 
-The description actually is not accurate in the paper. for MACS2
+**The description actually is not accurate in the paper**. for MACS2
 >--extsize EXTSIZE The arbitrary extension size in bp. When nomodel is true, MACS will use this value as fragment size to extend each read towards 3' end, then pile them up. **It's exactly twice the number of obsolete SHIFTSIZE.** In previous language, each read is moved 5'->3' direction to middle of fragment by 1/2 d, then extended to both direction with 1/2 d. This is equivalent to say each read is extended towards 5'->3' into a d size fragment. DEFAULT: 200. EXTSIZE and SHIFT can be combined when necessary. Check SHIFT option.
 >
 
