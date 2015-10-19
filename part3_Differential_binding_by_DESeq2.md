@@ -37,4 +37,5 @@ From EdgeR author Aaron Lun:
 
 In a word, subracting input control counts from the IP counts violates the DESeq2 and EdgeR assumption and should not be used. The blacklist method may be the way to go.
 
+There is a nice tutorial using bioconductor in f1000 research [From reads to regions: a Bioconductor workflow to detect differential binding in ChIP-seq data](http://f1000research.com/articles/4-1080/v1)
 
