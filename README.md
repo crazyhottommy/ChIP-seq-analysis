@@ -171,6 +171,7 @@ Example of a super enhancer plot:
 ### Bedgraph, bigwig manipulation tools
 [WiggleTools](https://github.com/Ensembl/WiggleTools)  
 [bigwig tool](https://github.com/CRG-Barcelona/bwtool/wiki)  
+[bigwig-python](https://github.com/brentp/bw-python)  
 [samtools](http://www.htslib.org/)    
 [bedtools](http://bedtools.readthedocs.org/en/latest/) my all-time favorite tool from Araon Quinlan' lab. Great documentation!   
 [Hosting bigWig for UCSC visualization](http://crazyhottommy.blogspot.com/2014/02/hosting-bigwig-by-dropbox-for-ucsc.html)  
