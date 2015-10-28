@@ -230,6 +230,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 * [Assessing Computational Methods for Transcription Factor Target Gene Identification Based on ChIP-seq Data](http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1003342#pcbi.1003342.s019) 
 * [Protein binding and methylation on looping chromatin accurately predict distal regulatory interactions](http://biorxiv.org/content/early/2015/07/09/022293)
+* [i-cisTarget](http://gbiomed.kuleuven.be/apps/lcb/i-cisTarget/)
 
 ### Allele-specific analysis  
 * [WASP: allele-specific software for robust molecular quantitative trait locus discovery](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3582.html)
@@ -240,6 +241,12 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [motifbreakR](http://bioconductor.org/packages/devel/bioc/html/motifbreakR.html) A Package For Predicting The Disruptiveness Of Single Nucleotide Polymorphisms On Transcription Factor Binding Sites.
 * [Whole Genome Regulatory Variant Evaluation for Transcription Factor Binding](http://biorxiv.org/content/early/2015/04/01/017392) as on 10/20/2015, the tool WAVE is not released yet.
 * [GERV: A Statistical Method for Generative Evaluation of Regulatory Variants for Transcription Factor Binding](http://www.ncbi.nlm.nih.gov/pubmed/26476779?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter) From the same group as above.
+
+### co-occurring TFs
+
+* In-silico Search for co-occuring transcription factors: [INSECT](http://bioinformatics.ibioba-mpsp-conicet.gov.ar:84/INSECT/index.html) 
+* CO-factors associated with Uniquely-bound GEnomic Regions:[COUGER](http://couger.oit.duke.edu/)  
+* 
 
 ### Integration of different data sets
 
