@@ -184,7 +184,7 @@ Example of a super enhancer plot:
 [The genomic association tester (GAT)](https://github.com/AndreasHeger/gat)  
 [poverlap](https://github.com/brentp/poverlap) from Brent Pedersen. Now he is working with Aaron Quinlan at university of Utah.  
 [Genometric Correlation (GenometriCorr): an R package for spatial correlation of genome-wide interval datasets](http://genometricorr.sourceforge.net/)  
-[Location overlap analysis for enrichment of genomic ranges](http://bioconductor.org/packages/release/bioc/html/LOLA.html) bioconductor package. 
+[Location overlap analysis for enrichment of genomic ranges](http://bioconductor.org/packages/release/bioc/html/LOLA.html) bioconductor package.   
 [regioneR](http://bioconductor.org/packages/release/bioc/html/regioneR.html) Association analysis of genomic regions based on permutation tests
 
 ### RNA-seq data integration
