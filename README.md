@@ -234,6 +234,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Assessing Computational Methods for Transcription Factor Target Gene Identification Based on ChIP-seq Data](http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1003342#pcbi.1003342.s019) 
 * [Protein binding and methylation on looping chromatin accurately predict distal regulatory interactions](http://biorxiv.org/content/early/2015/07/09/022293)
 * [i-cisTarget](http://gbiomed.kuleuven.be/apps/lcb/i-cisTarget/)
+* [Model-based Analysis of Regulation of Gene Expression](http://cistrome.org/MARGE/) from Shirley Liu's lab.
 
 ### Allele-specific analysis  
 * [WASP: allele-specific software for robust molecular quantitative trait locus discovery](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3582.html)
