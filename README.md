@@ -227,7 +227,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [FANTOM project](http://fantom.gsc.riken.jp/5/)  CAGE for promoters and enhancers.
 * [DENdb: database of integrated human enhancers](http://www.cbrc.kaust.edu.sa/dendb/)  
 * [VISTA enhancer browser](http://enhancer.lbl.gov/)  
-* 
+* [Super-enhancer database](http://www.bio-bigdata.com/SEA/)
 
 ### Enhancer target prediction 
 
