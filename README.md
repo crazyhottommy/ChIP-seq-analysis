@@ -188,6 +188,7 @@ Example of a super enhancer plot:
 [Genometric Correlation (GenometriCorr): an R package for spatial correlation of genome-wide interval datasets](http://genometricorr.sourceforge.net/)  
 [Location overlap analysis for enrichment of genomic ranges](http://bioconductor.org/packages/release/bioc/html/LOLA.html) bioconductor package.   
 [regioneR](http://bioconductor.org/packages/release/bioc/html/regioneR.html) Association analysis of genomic regions based on permutation tests
+[similaRpeak](http://bioconductor.org/packages/devel/bioc/html/similaRpeak.html): Metrics to estimate a level of similarity between two ChIP-Seq profiles
 
 ### RNA-seq data integration
 [Beta](http://cistrome.org/BETA/) from Shirley Liu's lab in Harvard.  Tao Liu's previous lab.  
