@@ -243,7 +243,6 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 ### SNPs affect on TF binding
 * [RegulomeDB](http://www.regulomedb.org/)  Use RegulomeDB to identify DNA features and regulatory elements in non-coding regions of the human genome by entering dbSNP id, chromosome regions or single Nucleotides.  
 * [motifbreakR](http://bioconductor.org/packages/devel/bioc/html/motifbreakR.html) A Package For Predicting The Disruptiveness Of Single Nucleotide Polymorphisms On Transcription Factor Binding Sites.
-* [Whole Genome Regulatory Variant Evaluation for Transcription Factor Binding](http://biorxiv.org/content/early/2015/04/01/017392) as on 10/20/2015, the tool WAVE is not released yet.
 * [GERV: A Statistical Method for Generative Evaluation of Regulatory Variants for Transcription Factor Binding](http://www.ncbi.nlm.nih.gov/pubmed/26476779?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter) From the same group as above.
 * [PRIME: Predicted Regulatory Impact of a Mutation in an Enhancer](https://github.com/aertslab/primescore)  
 
