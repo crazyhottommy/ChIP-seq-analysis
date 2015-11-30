@@ -50,6 +50,7 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 3. [SICER](http://home.gwu.edu/~wpeng/Software.htm) for broad histone modification ChIP-seq
 4. [HOMER](http://homer.salk.edu/homer/ngs/peaks.html) can also used to call Transcription factor ChIP-seq peaks and histone 
     modification ChIP-seq peaks.
+5. [MUSIC](https://github.com/gersteinlab/MUSIC)
 **Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**  
 
 An example of different parameters for homer `findPeaks`:  
