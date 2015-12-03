@@ -69,4 +69,5 @@ for narrow peaks:
 for borad regions:  
 `macs2 callpeak -t IP.bam -c Input.bam -n test --broad -p 0.01 --nomodel --extsize fragment_length --keep-dup all -g hs`
 
-
+It turns out that ENCODE intentionally use a relax `p value 0.01` for calling peaks and then filter the peaks afterwards.
+In my experience, I would set `q value of 0.01`([q value is to control false discover rate](http://crazyhottommy.blogspot.com/2015/03/understanding-p-value-multiple.html) )  for narrow peaks and `q value of 0.05` for broad peaks.
