@@ -261,3 +261,9 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 [methylPipe and compEpiTools: a suite of R packages for the integrative analysis of epigenomics data](http://www.ncbi.nlm.nih.gov/pubmed/26415965?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)  
 
 [Copy number information from targeted sequencing using off-target reads](https://bioconductor.org/packages/release/bioc/html/CopywriteR.html) bioconductor CopywriteR package.  
+
+
+### ATAC-seq
+* [RASQUAL](https://github.com/dg13/rasqual) (Robust Allele Specific QUAntification and quality controL) maps QTLs for sequenced based cellular traits by combining population and allele-specific signals. [paper: Fine-mapping cellular QTLs with RASQUAL and ATAC-seq](http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.3467.html) 
+* [ATAC-seq Forum](https://sites.google.com/site/atacseqpublic/home?pli=1)  
+* [Single-cell ATAC-Seq](http://cole-trapnell-lab.github.io/projects/sc-atac/)  
