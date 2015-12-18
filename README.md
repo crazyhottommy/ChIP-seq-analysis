@@ -52,6 +52,7 @@ The IgG control is also fine, but because so little DNA is there, you might get 
     modification ChIP-seq peaks.
 5. [MUSIC](https://github.com/gersteinlab/MUSIC)
 6. [permseq](https://github.com/keleslab/permseq)  R package for mapping protein-DNA interactions in highly repetitive regions of the genomes with prior-enhanced read mapping. [Paper](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4618727/pdf/pcbi.1004491.pdf) on PLos Comp.
+7. [Ritornello](http://www.biorxiv.org/content/early/2015/12/11/034090): High fidelity control-free chip-seq peak calling. No input is required!
 **Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**  
 
 An example of different parameters for homer `findPeaks`:  
