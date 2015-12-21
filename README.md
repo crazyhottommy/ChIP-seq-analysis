@@ -241,6 +241,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Assessing Computational Methods for Transcription Factor Target Gene Identification Based on ChIP-seq Data](http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1003342#pcbi.1003342.s019) 
 * [Protein binding and methylation on looping chromatin accurately predict distal regulatory interactions](http://biorxiv.org/content/early/2015/07/09/022293)
 * [i-cisTarget](http://gbiomed.kuleuven.be/apps/lcb/i-cisTarget/)
+* [protocol iRegulon and i-cisTarget: Reconstructing Regulatory Networks Using Motif and Track Enrichment](http://www.ncbi.nlm.nih.gov/pubmed/26678384?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)  
 * [Model-based Analysis of Regulation of Gene Expression](http://cistrome.org/MARGE/) from Shirley Liu's lab.
 
 ### Allele-specific analysis  
@@ -256,6 +257,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 ### co-occurring TFs
 
 * In-silico Search for co-occuring transcription factors: [INSECT](http://bioinformatics.ibioba-mpsp-conicet.gov.ar:84/INSECT/index.html) 
+* [INSECT 2](http://bioinformatics.ibioba-mpsp-conicet.gov.ar/INSECT2/)
 * CO-factors associated with Uniquely-bound GEnomic Regions:[COUGER](http://couger.oit.duke.edu/)  
 * 
 
