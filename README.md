@@ -267,7 +267,9 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 [methylPipe and compEpiTools: a suite of R packages for the integrative analysis of epigenomics data](http://www.ncbi.nlm.nih.gov/pubmed/26415965?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)  
 
-[Copy number information from targeted sequencing using off-target reads](https://bioconductor.org/packages/release/bioc/html/CopywriteR.html) bioconductor CopywriteR package.  
+[Copy number information from targeted sequencing using off-target reads](https://bioconductor.org/packages/release/bioc/html/CopywriteR.html) bioconductor CopywriteR package.   
+
+[3CPET](http://www.bioconductor.org/packages/release/bioc/html/R3CPET.html): Finding Co-factor Complexes in Chia-PET experiment using a Hierarchical Dirichlet Process
 
 
 ### ATAC-seq
