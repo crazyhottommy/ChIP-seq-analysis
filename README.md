@@ -218,6 +218,7 @@ It can also generate the heatmaps, but I personally use [ngs.plot](https://githu
 [here](http://crazyhottommy.blogspot.com/2013/08/how-to-make-heatmap-based-on-chip-seq.html) and [here](http://crazyhottommy.blogspot.com/2013/04/how-to-make-tss-plot-using-rna-seq-and.html). Those are my pretty old blog posts, I now have a much better idea on how to make those graphs from scratch.
 
 3. You can also use bioconductor [Genomation](http://www.bioconductor.org/packages/release/bioc/vignettes/genomation/inst/doc/GenomationManual-knitr.html). It is very versatile.
+4. [ChAsE](http://www.epigenomes.ca/tools.html)
 
 **One cavet is that the meta-plot (on the left) is an average view of ChIP-seq
 tag enrichment and may not reflect the real biological meaning for individual cases.**  
