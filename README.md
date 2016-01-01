@@ -269,7 +269,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * 
 
 ### Conservation of the peak underlying DNA sequences
-* [bioconductor annotation package phastCons100way.UCSC.hg19]([https://bioconductor.org/packages/release/data/annotation/html/phastCons100way.UCSC.hg19.html)
+* [bioconductor annotation package phastCons100way.UCSC.hg19](https://bioconductor.org/packages/release/data/annotation/html/phastCons100way.UCSC.hg19.html)
 * 
 
 
