@@ -286,6 +286,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [RASQUAL](https://github.com/dg13/rasqual) (Robust Allele Specific QUAntification and quality controL) maps QTLs for sequenced based cellular traits by combining population and allele-specific signals. [paper: Fine-mapping cellular QTLs with RASQUAL and ATAC-seq](http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.3467.html) 
 * [ATAC-seq Forum](https://sites.google.com/site/atacseqpublic/home?pli=1)  
 * [Single-cell ATAC-Seq](http://cole-trapnell-lab.github.io/projects/sc-atac/)  
+* [Global Prediction of Chromatin Accessibility Using RNA-seq from Small Number of Cells](http://www.biorxiv.org/content/early/2016/01/01/035816)  from RNA-seq to DNA accessibility.
+* 
 
 ### DNase-seq
 * [pyDNase](https://github.com/jpiper/pyDNase) - a library for analyzing DNase-seq data. [paper: Wellington-bootstrap: differential DNase-seq footprinting identifies cell-type determining transcription factors](http://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2081-4)  
