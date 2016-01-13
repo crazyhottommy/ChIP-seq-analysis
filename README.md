@@ -292,3 +292,6 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 ### DNase-seq
 * [pyDNase](https://github.com/jpiper/pyDNase) - a library for analyzing DNase-seq data. [paper: Wellington-bootstrap: differential DNase-seq footprinting identifies cell-type determining transcription factors](http://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2081-4)  
 * 
+
+### Hi-C TAD
+* [TopDom : An efficient and Deterministic Method for identifying Topological Domains in Genomes](http://zhoulab.usc.edu/TopDom/)
