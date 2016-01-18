@@ -300,3 +300,5 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 ### Hi-C TAD
 * [TopDom : An efficient and Deterministic Method for identifying Topological Domains in Genomes](http://zhoulab.usc.edu/TopDom/)
 * [DBPnet: Inferring cooperation of DNA binding proteins in 3D genome](http://wanglab.ucsd.edu/star/DBPnet/index.html) 
+* [Systematic identification of cooperation between DNA binding proteins in 3D space](Systematic identification of cooperation between DNA binding proteins in 3D space)  
+
