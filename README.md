@@ -160,6 +160,7 @@ suggestions for finding motifs from histone modification ChIP-seq data from HOME
 14. [msCentipede: Modeling Heterogeneity across Genomic Sites and Replicates Improves Accuracy in the Inference of Transcription Factor Binding](http://rajanil.github.io/msCentipede/)  
 15. [DiffLogo: A comparative visualisation of sequence motifs](http://bioconductor.org/packages/release/bioc/html/DiffLogo.html) 
 16. [Weeder (version: 2.0)](http://159.149.160.51/modtools/)
+17. [MCAST: scanning for cis-regulatory motif clusters](http://bioinformatics.oxfordjournals.org/content/early/2016/01/14/bioinformatics.btv750.short?rss=1) Part of MEME suite.
 
 ### Super-enhancer identification   
 
