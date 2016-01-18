@@ -242,6 +242,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [DENdb: database of integrated human enhancers](http://www.cbrc.kaust.edu.sa/dendb/)  
 * [VISTA enhancer browser](http://enhancer.lbl.gov/)  
 * [Super-enhancer database](http://www.bio-bigdata.com/SEA/)
+* [Genome-wide identification and characterization of HOT regions in the human genome](http://biorxiv.org/content/early/2016/01/07/036152.abstract)  
 
 ### Enhancer target prediction 
 
@@ -250,8 +251,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [i-cisTarget](http://gbiomed.kuleuven.be/apps/lcb/i-cisTarget/)
 * [protocol iRegulon and i-cisTarget: Reconstructing Regulatory Networks Using Motif and Track Enrichment](http://www.ncbi.nlm.nih.gov/pubmed/26678384?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)  
 * [Model-based Analysis of Regulation of Gene Expression](http://cistrome.org/MARGE/) from Shirley Liu's lab.
-* [DBPnet: Inferring cooperation of DNA binding proteins in 3D genome](http://wanglab.ucsd.edu/star/DBPnet/index.html)  [paper](http://biorxiv.org/content/early/2016/01/07/036145.abstract)  
-* 
+
 
 ### Allele-specific analysis  
 * [WASP: allele-specific software for robust molecular quantitative trait locus discovery](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3582.html)
