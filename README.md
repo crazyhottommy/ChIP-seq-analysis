@@ -116,7 +116,8 @@ There are many other tools, I just listed three.
 * [DNAshapeR predicts DNA shape features in an ultra-fast, high-throughput manner from genomic sequencing data](http://tsupeichiu.github.io/DNAshapeR/)  
 
 ### Differential peak detection  
-Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/) and [here](http://crazyhottommy.blogspot.com/2013/10/compare-chip-seq-data-for-different.html) describing different tools.  
+Look at a [post](http://andre-rendeiro.me/2015/04/03/chipseq_diffbind_analysis/) and [here](http://crazyhottommy.blogspot.com/2013/10/compare-chip-seq-data-for-different.html) describing different tools. 
+A review paper [A comprehensive comparison of tools for differential ChIP-seq analysis](http://bib.oxfordjournals.org/content/early/2016/01/12/bib.bbv110.short?rss=1)  
 
 1. [MultiGPS](http://mahonylab.org/software/multigps/)  
 
