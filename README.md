@@ -294,7 +294,9 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [ATAC-seq Forum](https://sites.google.com/site/atacseqpublic/home?pli=1)  
 * [Single-cell ATAC-Seq](http://cole-trapnell-lab.github.io/projects/sc-atac/)  
 * [Global Prediction of Chromatin Accessibility Using RNA-seq from Small Number of Cells](http://www.biorxiv.org/content/early/2016/01/01/035816)  from RNA-seq to DNA accessibility. [tool on github](https://github.com/WeiqiangZhou/BIRD)  
+* [NucleoATAC](https://github.com/GreenleafLab/NucleoATAC):Python package for calling nucleosomes using ATAC-Seq data 
 * 
+
 
 ### DNase-seq
 * [pyDNase](https://github.com/jpiper/pyDNase) - a library for analyzing DNase-seq data. [paper: Wellington-bootstrap: differential DNase-seq footprinting identifies cell-type determining transcription factors](http://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2081-4)  
