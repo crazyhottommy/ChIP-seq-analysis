@@ -255,7 +255,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Protein binding and methylation on looping chromatin accurately predict distal regulatory interactions](http://biorxiv.org/content/early/2015/07/09/022293)
 * [i-cisTarget](http://gbiomed.kuleuven.be/apps/lcb/i-cisTarget/)
 * [protocol iRegulon and i-cisTarget: Reconstructing Regulatory Networks Using Motif and Track Enrichment](http://www.ncbi.nlm.nih.gov/pubmed/26678384?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)  
-* [Model-based Analysis of Regulation of Gene Expression](http://cistrome.org/MARGE/) from Shirley Liu's lab.
+* [Model-based Analysis of Regulation of Gene Expression: MARGE](http://cistrome.org/MARGE/) from Shirley Liu's lab. MARGE is a robust methodology that leverages a comprehensive library of genome-wide H3K27ac ChIP-seq profiles to predict key regulated genes and cis-regulatory regions in human or mouse. 
 
 
 ### Allele-specific analysis  
