@@ -89,6 +89,7 @@ An example of different parameters for homer `findPeaks`:
 6. [CompGO: an R package for comparing and visualizing Gene Ontology enrichment differences between DNA binding experiments](http://www.biomedcentral.com/1471-2105/16/275)  
 7. [interactive and collaborative HTML5 gene list enrichment analysis tool](http://amp.pharm.mssm.edu/Enrichr/)
 8. [GeNets](http://www.broadinstitute.org/genets#computations) from Broad. Looks very promising.
+9. [Bioconductor EnrichmentBrowser](https://www.bioconductor.org/packages/3.3/bioc/html/EnrichmentBrowser.html)
 
 
 ### Chromatin state Segmentation  
