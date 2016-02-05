@@ -99,6 +99,9 @@ An example of different parameters for homer `findPeaks`:
 2. [Segway](https://www.pmgenomics.ca/hoffmanlab/proj/segway/) from Hoffman lab. Base pair resolution. Takes longer time to run.  
 3. [epicseg](https://github.com/lamortenera/epicseg) published 2015 in genome biology. Similiar speed with ChromHMM.   
 4. [Spectacle: fast chromatin state annotation using spectral learning](https://github.com/jiminsong/Spectacle). Also published 2015 in genome biology.  
+5. [chromstaR](http://biorxiv.org/content/early/2016/02/04/038612): Tracking combinatorial chromatin state dynamics in space and time
+
+
 
 ### Peak annotation 
 
