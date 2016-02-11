@@ -146,9 +146,16 @@ A review paper [A comprehensive comparison of tools for differential ChIP-seq an
 
 
 ### Motif enrichment
-1. [HOMER](http://homer.salk.edu/homer/ngs/peakMotifs.html). It has really detailed documentation. It can also be used to call peaks.   
+1. [HOMER](http://homer.salk.edu/homer/ngs/peakMotifs.html). It has really detailed documentation. It can also be used to call peaks. 
+
+For TF ChIP-seq, one can usually find the summit of the peak (macs14 will report the summit), and extend the summit to both sides to 100bp-500bp. One can then use those 100bp-500 bp small regions to do motif analysis. Usually, oen should find the motif for the ChIPed TF in the ChIP-seq experiment if it is a DNA binding protein.
+
+It is trickier to do motif analysis using histone modification ChIP-seq. For example, the average peak size of H3K27ac is 2~3 kb. If one wants to find TF binding motifs from H3K27ac ChIP-seq data, it is good to narrow down the region a bit. MEME and many other motif finding tools require that the DNA sequence length to be small (~500bp). One way is to use `findPeaks` in homer turning on `-nfr`(nucleosome free region) flag, and then do motif analysis in those regions.
+
 suggestions for finding motifs from histone modification ChIP-seq data from HOMER page:
->Since you are looking at a region, you do not necessarily want to center the peak on the specific position with the highest tag density, which may be at the edge of the region.  Besides, in the case of histone modifications at enhancers, the highest signal will usually be found on nucleosomes surrounding the center of the enhancer, which is where the functional sequences and transcription factor binding sites reside.  Consider H3K4me marks surrounding distal PU.1 transcription factor peaks.  Typically, adding the -center option moves peaks further away from the functional sequence in these scenarios.
+>Since you are looking at a region, you do not necessarily want to center the peak on the specific position with the highest tag density, which may be at the edge of the region.  Besides, in the case of histone modifications at enhancers, the highest signal will usually be found on nucleosomes surrounding the center of the enhancer, which is where the functional sequences and transcription factor binding sites reside.  Consider H3K4me marks surrounding distal PU.1 transcription factor peaks.  Typically, adding the -center >option moves peaks further away from the functional sequence in these scenarios.
+
+Other strategy similar to `-nfr` was developed in this paper: [Dissecting neural differentiation regulatory networks through epigenetic footprinting](http://www.ncbi.nlm.nih.gov/pubmed/25533951). In the method part of the paper, the authors computed a depletion score within the peaks, and use the footprinted regions to do motif analysis. (Thanks [kadir](https://twitter.com/canerakdemir) for pointing out the paper)
 
 2. [MEME suite](http://meme.ebi.edu.au/meme/index.html). It is probably the most popular motif finding tool in the papers.  [protocol:Motif-based analysis of large nucleotide data sets using MEME-ChIP](http://www.nature.com/nprot/journal/v9/n6/full/nprot.2014.083.html)  
 3. [JASPAR database](http://jaspar.binf.ku.dk/  )
