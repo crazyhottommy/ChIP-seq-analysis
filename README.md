@@ -157,6 +157,8 @@ suggestions for finding motifs from histone modification ChIP-seq data from HOME
 
 Other strategy similar to `-nfr` was developed in this paper: [Dissecting neural differentiation regulatory networks through epigenetic footprinting](http://www.ncbi.nlm.nih.gov/pubmed/25533951). In the method part of the paper, the authors computed a depletion score within the peaks, and use the footprinted regions to do motif analysis. (Thanks [kadir](https://twitter.com/canerakdemir) for pointing out the paper)
 
+I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational method to Predict Active Regulatory Elements, specifically enhancers and promoters. H3K27ac and H3K4me can be used to define active enhancers.
+
 2. [MEME suite](http://meme.ebi.edu.au/meme/index.html). It is probably the most popular motif finding tool in the papers.  [protocol:Motif-based analysis of large nucleotide data sets using MEME-ChIP](http://www.nature.com/nprot/journal/v9/n6/full/nprot.2014.083.html)  
 3. [JASPAR database](http://jaspar.binf.ku.dk/  )
 3. [pScan-ChIP](http://159.149.160.51/pscan_chip_dev/)  
