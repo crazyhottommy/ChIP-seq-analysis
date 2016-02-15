@@ -116,7 +116,7 @@ An example of different parameters for homer `findPeaks`:
 
  >I used R package ChIPpeakAnno for annotating peaks, and found that it handle  the DNA strand in the wrong way. Maybe the developers were from the computer science but not biology background.
 
-There are many other tools, I just listed three. 
+4. [annotatr](https://github.com/rcavalcante/annotatr/) Annotation of Genomic Regions to Genomic Annotations 
 
 * [DNAshapeR predicts DNA shape features in an ultra-fast, high-throughput manner from genomic sequencing data](http://tsupeichiu.github.io/DNAshapeR/)  
 
