@@ -178,6 +178,7 @@ I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational me
 16. [Weeder (version: 2.0)](http://159.149.160.51/modtools/)
 17. [MCAST: scanning for cis-regulatory motif clusters](http://bioinformatics.oxfordjournals.org/content/early/2016/01/14/bioinformatics.btv750.short?rss=1) Part of MEME suite.
 18. [Sequence-based Discovery of Regulons](http://iregulon.aertslab.org/) iRegulon detects the TF, the targets and the motifs/tracks from a set of genes.
+19. [Regulatory genomic toolbox](http://www.regulatory-genomics.org/motif-analysis/introduction/)
 
 ### Super-enhancer identification   
 
@@ -314,7 +315,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 ### DNase-seq
 * [pyDNase](https://github.com/jpiper/pyDNase) - a library for analyzing DNase-seq data. [paper: Wellington-bootstrap: differential DNase-seq footprinting identifies cell-type determining transcription factors](http://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2081-4)  
-* 
+* [paper: Analysis of computational footprinting methods for DNase sequencing experiments](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3772.html) [tool](http://www.regulatory-genomics.org/hint/introduction/) 
 
 ### Hi-C TAD
 * [TopDom : An efficient and Deterministic Method for identifying Topological Domains in Genomes](http://zhoulab.usc.edu/TopDom/)
