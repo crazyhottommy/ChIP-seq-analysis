@@ -282,7 +282,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [motifbreakR](http://bioconductor.org/packages/devel/bioc/html/motifbreakR.html) A Package For Predicting The Disruptiveness Of Single Nucleotide Polymorphisms On Transcription Factor Binding Sites.
 * [GERV: A Statistical Method for Generative Evaluation of Regulatory Variants for Transcription Factor Binding](http://www.ncbi.nlm.nih.gov/pubmed/26476779?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter) From the same group as above.
 * [PRIME: Predicted Regulatory Impact of a Mutation in an Enhancer](https://github.com/aertslab/primescore) 
-* [paper: Which Genetics Variants in DNase-Seq Footprints Are More Likely to Alter Binding?](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005875)
+* [paper: Which Genetics Variants in DNase-Seq Footprints Are More Likely to Alter Binding?](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005875) [website](http://genome.grid.wayne.edu/centisnps/)
 * [paper: Large-scale identification of sequence variants influencing human transcription factor occupancy in vivo](http://www.nature.com/ng/journal/v47/n12/abs/ng.3432.html) 
 
 ### co-occurring TFs
