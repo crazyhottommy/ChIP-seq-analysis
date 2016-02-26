@@ -101,7 +101,7 @@ An example of different parameters for homer `findPeaks`:
 4. [Spectacle: fast chromatin state annotation using spectral learning](https://github.com/jiminsong/Spectacle). Also published 2015 in genome biology.  
 5. [chromstaR](http://biorxiv.org/content/early/2016/02/04/038612): Tracking combinatorial chromatin state dynamics in space and time
 6. [epilogos](http://epilogos.broadinstitute.org/) visualization and analysis of chromatin state model data.
-
+7. [Accurate promoter and enhancer identification in 127 ENCODE and Roadmap Epigenomics cell types and tissues by GenoSTAN](http://biorxiv.org/content/early/2016/02/24/041020)
 
 
 ### Peak annotation 
