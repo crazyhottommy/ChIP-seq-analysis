@@ -244,6 +244,7 @@ It can also generate the heatmaps, but I personally use [ngs.plot](https://githu
 3. You can also use bioconductor [Genomation](http://www.bioconductor.org/packages/release/bioc/vignettes/genomation/inst/doc/GenomationManual-knitr.html). It is very versatile.
 4. [ChAsE](http://www.epigenomes.ca/tools.html)
 5. [Metaseq](https://pythonhosted.org/metaseq/example_session.html)
+6. [A biostar post discussing the tools: Visualizations of ChIP-Seq data using Heatmaps](https://www.biostars.org/p/180314/)
 
 **One cavet is that the meta-plot (on the left) is an average view of ChIP-seq
 tag enrichment and may not reflect the real biological meaning for individual cases.**  
