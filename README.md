@@ -20,7 +20,8 @@
 5. [ChIP–seq and beyond: new and improved methodologies to detect and characterize protein–DNA interactions](http://www.nature.com/nrg/journal/v13/n12/abs/nrg3306.html) 
 6. [Beyond library size: a field guide to NGS normalization](http://biorxiv.org/content/early/2014/06/19/006403)
 7. [ENCODE paper portol](http://www.nature.com/encode/threads)  
-8. [Enhancer discovery and characterization](http://www.nature.com/encode/threads/enhancer-discovery-and-characterization)  
+8. [Enhancer discovery and characterization](http://www.nature.com/encode/threads/enhancer-discovery-and-characterization) 
+9. 2016 review [Recent advances in ChIP-seq analysis: from quality management to whole-genome annotation](http://bib.oxfordjournals.org/content/early/2016/03/15/bib.bbw023.full)
 
     **Protocols**  
 1. [A computational pipeline for comparative ChIP-seq analyses](http://www.ncbi.nlm.nih.gov/pubmed/22179591)    
