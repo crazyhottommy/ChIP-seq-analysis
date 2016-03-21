@@ -11,6 +11,7 @@
 7. [Data bases and software from Sheirly Liu's lab at Harvard](http://liulab.dfci.harvard.edu/WEBSITE/software.htm)
 8. [Blueprint epigenome](http://dcc.blueprint-epigenome.eu/#/home)
 9. [A collection of tools and papers for nucelosome positioning and TF ChIP-seq](http://generegulation.info/)
+10. [review paper:Deciphering ENCODE](http://www.cell.com/trends/genetics/fulltext/S0168-9525(16)00017-2)
 
 ### Papers on ChIP-seq
 1. [ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia](http://www.ncbi.nlm.nih.gov/pubmed/22955991) 
