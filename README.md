@@ -290,6 +290,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [PRIME: Predicted Regulatory Impact of a Mutation in an Enhancer](https://github.com/aertslab/primescore) 
 * [paper: Which Genetics Variants in DNase-Seq Footprints Are More Likely to Alter Binding?](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005875) [website](http://genome.grid.wayne.edu/centisnps/)
 * [paper: Large-scale identification of sequence variants influencing human transcription factor occupancy in vivo](http://www.nature.com/ng/journal/v47/n12/abs/ng.3432.html) 
+* [A Sicence paper:Survey of variation in human transcription factors reveals prevalent DNA binding changes](http://science.sciencemag.org/content/351/6280/1450)
 
 ### co-occurring TFs
 
