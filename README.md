@@ -57,6 +57,7 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 7. [Ritornello](http://www.biorxiv.org/content/early/2015/12/11/034090): High fidelity control-free chip-seq peak calling. No input is required!
 8. Tumor samples are heterogeneous containing different cell types. [MixChIP: a probabilistic method for cell type specific protein-DNA binding analysis](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0834-3) 
 9. [Detecting broad domains and narrow peaks in ChIP-seq data with hiddenDomains](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0991-z) [tool](http://hiddendomains.sourceforge.net/)
+10. [BroadPeak: a novel algorithm for identifying broad peaks in diffuse ChIP-seq datasets](http://bioinformatics.oxfordjournals.org/content/29/4/492)
 
 **Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**  
 
