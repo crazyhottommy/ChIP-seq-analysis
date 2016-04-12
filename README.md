@@ -255,7 +255,7 @@ It can also generate the heatmaps, but I personally use [ngs.plot](https://githu
 **One cavet is that the meta-plot (on the left) is an average view of ChIP-seq
 tag enrichment and may not reflect the real biological meaning for individual cases.**  
 
-See a post from Lior Patcher [How to average genome-wide data](How to average genome-wide data)  
+See a post from Lior Patcher [How to average genome-wide data](https://liorpachter.wordpress.com/2015/07/13/how-to-average-genome-wide-data/)  
 
 I replied the post:
 >for ChIP-seq, in addition to the average plot, a heatmap that with each region in each row should make it more clear to compare (although not quantitatively). a box-plot (or a histogram) is better in this case . I am really uncomfortable averaging the signal, as a single value (mean) is not a good description of the distribution.
