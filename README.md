@@ -336,3 +336,4 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Systematic identification of cooperation between DNA binding proteins in 3D space](Systematic identification of cooperation between DNA binding proteins in 3D space)  
 * [DiffHiC](https://www.bioconductor.org/packages/release/bioc/html/diffHic.html) package maintained by Aaron Lun, who is the author of [csaw](https://bioconductor.org/packages/release/bioc/html/csaw.html) and [InteractionSet]( https://github.com/LTLA/InteractionSet) as well.
 * [protocol:Practical Analysis of Genome Contact Interaction Experiments](http://link.springer.com/protocol/10.1007/978-1-4939-3578-9_9)
+* [4D genome: a general repository for chromatin interaction data](http://4dgenome.research.chop.edu/)
