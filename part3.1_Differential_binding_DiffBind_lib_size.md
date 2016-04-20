@@ -1,5 +1,5 @@
 
-### library size and normalization
+### library size and normalization for ChIP-seq
 I have discussed how to use DESeq2 to do differential binding for ChIP-seq at [here](https://github.com/crazyhottommy/ChIP-seq-analysis/blob/master/part3_Differential_binding_by_DESeq2.md).  
 I am experimenting [`DiffBind`](http://bioconductor.org/packages/release/bioc/html/DiffBind.html) to do the same thing, which internally uses EdgR, DESeq and DESeq2.
 The author `Rory Stark` is very responsive on the [bioconductor support site](https://support.bioconductor.org/) and has answered several of my questions.
