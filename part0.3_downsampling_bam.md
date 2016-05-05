@@ -33,4 +33,11 @@ sys	0m29.872s
 Using multiple cpu with `sambamba` is much faster and an index file is generated on the fly.
 
 If one wants to get say 15 million reads, one needs to do `samtools flag stat` or `samtools idxstats` to get the total number of reads,
-and then calculate the proportion by:  `15 million/total = proportion`. Finally, feed the proportion to `-s` flag. One might want to remove the unmapped the reads and the duplicated reads in the bam file before downsampling. One might also need to sort the subsampled bam file again and index it.
+and then calculate the proportion by:  `15 million/total = proportion`. 
+
+`samtools idxstats` is much faster when the bam is sorted and indexed:
+>Retrieve and print stats in the index file. The output is TAB delimited with each line consisting of reference sequence name, sequence length, # mapped reads and # unmapped reads.
+
+Total number of reads: `samtools idxstats example.bam | cut -f3 | awk 'BEGIN {total=0} {total += $1} END {print total}'`
+
+Finally, feed the proportion to `-s` flag. One might want to remove the unmapped the reads and the duplicated reads in the bam file before downsampling. One might also need to sort the subsampled bam file again and index it.
