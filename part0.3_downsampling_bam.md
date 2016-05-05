@@ -20,11 +20,17 @@ It seems `samtools` and `sambamba` are the tools to use, but they are both outpu
 
 ```bash
 time samtools view -s 3.6 -b my.bam -o subsample.bam
+real	6m9.141s
+user	5m59.842s
+sys	0m8.912s
+
 time sambamba view -f bam -t 10 --subsampling-seed=3 -s 0.6 my.bam -o subsample.bam
+real	1m34.937s
+user	11m55.222s
+sys	0m29.872s
 ```
-`-s 3.6` set seed of 3 and %60 of the reads by samtools.
+`-s 3.6` set seed of 3 and 60% of the reads by samtools.
+Using multiple cpu with `sambamba` is much faster and an index file is generated on the fly.
 
 If one wants to get say 15 million reads, one needs to do `samtools flag stat` or `samtools idxstats` to get the total number of reads,
-and then calculate the proportion by:  `15 million/total = proportion`. Finally, feed the proportion to `-s` flag.
-
-
+and then calculate the proportion by:  `15 million/total = proportion`. Finally, feed the proportion to `-s` flag. One might want to remove the unmapped the reads and the duplicated reads in the bam file before downsampling. One might also need to sort the subsampled bam file again and index it.
