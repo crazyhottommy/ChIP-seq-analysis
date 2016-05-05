@@ -16,7 +16,7 @@ million reads (median depth). **These uniformly subsampled data sets were then u
 for all further processing steps (peak calling, signal coverage tracks, chromatin states)**.
 
 After reading several posts [here](https://www.biostars.org/p/76791/) and [here](https://groups.google.com/forum/#!topic/bedtools-discuss/gf0KeAJN2Cw).
-It seems `samtools` and `sambamba` are the tools to use, but they are both output a proportion number of reads. 
+It seems `samtools` and `sambamba` are the tools to use, but they both output a proportion number of reads. 
 
 ```bash
 time samtools view -s 3.6 -b my.bam -o subsample.bam
