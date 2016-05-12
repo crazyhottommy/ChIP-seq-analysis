@@ -23,6 +23,7 @@
 7. [ENCODE paper portol](http://www.nature.com/encode/threads)  
 8. [Enhancer discovery and characterization](http://www.nature.com/encode/threads/enhancer-discovery-and-characterization) 
 9. 2016 review [Recent advances in ChIP-seq analysis: from quality management to whole-genome annotation](http://bib.oxfordjournals.org/content/early/2016/03/15/bib.bbw023.full)
+10. [bioinformatics paper:Features that define the best ChIP-seq peak calling algorithms](http://bib.oxfordjournals.org/content/early/2016/05/10/bib.bbw035.short?rss=1) compares different peak callers for TFs and histones.
 
     **Protocols**  
 1. [A computational pipeline for comparative ChIP-seq analyses](http://www.ncbi.nlm.nih.gov/pubmed/22179591)    
