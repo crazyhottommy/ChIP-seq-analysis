@@ -71,3 +71,27 @@ for borad regions:
 
 It turns out that ENCODE intentionally use a relax `p value 0.01` for calling peaks and then filter the peaks afterwards by [IDR](https://sites.google.com/site/anshulkundaje/projects/idr).
 In my experience, I would set `q value of 0.01`([q value is to control false discover rate](http://crazyhottommy.blogspot.com/2015/03/understanding-p-value-multiple.html) )  for narrow peaks and `q value of 0.05` for broad peaks.
+
+Please check this [issue](https://github.com/taoliu/MACS/issues/76) for MACS2:
+
+Jgarthur:
+>I ran MACS2 (2.1.0.20140616) to call peaks on chromatin accessibility data (ATAC-seq) with the following options:
+
+`-t reads.bam -f BAM -g mm --nomodel --shift -100 --extsize 200 -p 1e-4 --broad`
+
+>I wanted to check sensitivity to the p-value cutoff specified by -p (which I believe controls narrow peak calling before merging to broad peaks?). Running with, e.g., -p 1e-3 or -p 1e-10 gave identical output to the first run. The output is different than using -q 0.01, however. Is this the intended behavior?
+
+
+Tao Liu:
+>Broad peak cutoff is controlled by '--broad-cutoff'. The '-p' option controls the narrower regions inside broad regions. BTW, in the newest release, there is a new tool to give you p-value cutoff analysis "macs2 callpeak --cutoff-analysis" (without using --broad mode). It will try pvalue cutoff from 1 to 1e-10 and collect how many peaks and bps can be called as enriched regions. You may want to give it a try.
+
+Jgarthur:
+>Am I correct in saying that in --broad mode, the value set by -q or -p does not matter at all, but whether one sets -q or -p determines the meaning of --broad-cutoff as a q-value or p-value threshold?
+
+>My own testing indicates, e.g., that "--broad -q {x} --broad-cutoff .01" is unaffected by the choice of x, though the output still displays "# qvalue cutoff = {x}"
+
+Tao liu:
+>Yes. You are right. But -q or -p also determines the narrower calls inside broad regions. MACS2 broad mode does a 2-level peak calling and embed stronger/narrower calls in weaker/broader calls.
+
+>Thanks for reminding me this output issue. I will fix that so it will be displayed as '#qvalue cutoff for narrow region = {x}' and '# qvalue cutoff for broad region = {y}' will be correctly displayed.
+
