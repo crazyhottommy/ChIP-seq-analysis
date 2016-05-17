@@ -1,0 +1,18 @@
+## read the following
+## flexible bioinformatics pipelines with snakemake http://watson.nci.nih.gov/~sdavis/blog/flexible_bioinformatics_pipelines_with_snakemake/
+## Build bioinformatics pipelines with Snakemake https://slowkow.com/notes/snakemake-tutorial/
+## snakemake ChIP-seq pipeline example https://hpc.nih.gov/apps/snakemake.html
+## https://bitbucket.org/snakemake/snakemake/issues/28/clustering-jobs-with-snakemake
+## https://github.com/inodb/snakemake-parallel-bwa
+## http://www.annotathon.org/courses/ABD/practical/snakemake/snake_intro.html
+
+## execute shell in strict mode
+shell.prefix("set -eo pipefail; ")
+
+configfile: "config.yaml"
+
+# localrules will let the rule run locally rather than submitting to cluster 
+# computing nodes, this is for very small jobs 
+
+localrules: all
+
