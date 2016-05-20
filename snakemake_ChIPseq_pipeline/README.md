@@ -5,6 +5,6 @@
 [submit all the jobs immediately](https://bitbucket.org/snakemake/snakemake/issues/28/clustering-jobs-with-snakemake)  
 [snakemake-parallel-bwa](https://github.com/inodb/snakemake-parallel-bwa)  
 [RNA-seq snakemake example](http://www.annotathon.org/courses/ABD/practical/snakemake/snake_intro.html)  
-[unctions as inputs and derived parameters](https://groups.google.com/forum/#!msg/Snakemake/0tLS6KrXA5E/Oe5umTdluq4J)  
+[functions as inputs and derived parameters](https://groups.google.com/forum/#!msg/Snakemake/0tLS6KrXA5E/Oe5umTdluq4J)  
 [snakemake FAQ](https://bitbucket.org/snakemake/snakemake/wiki/FAQ)  
 [snakemake tutorial from the developer](http://snakemake.bitbucket.org/snakemake-tutorial.htm)  
