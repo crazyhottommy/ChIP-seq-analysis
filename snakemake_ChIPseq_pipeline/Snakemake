@@ -9,3 +9,136 @@ configfile: "config.yaml"
 
 localrules: all
 
+ALL_SAMPLES = config["samples"] + config["controls"]
+ALL_BAM     = expand("03aln/{sample}.sorted.bam 03aln/{sample}.sorted.bam.bai 03aln/{sample}.sorted.bam.flagstat".split(), \
+        sample = ALL_SAMPLES)
+ALL_FASTQC  = expand("02fqc/{sample}_fastqc.zip", sample = ALL_SAMPLES)
+ALL_PEAKS = expand("04peak/{sample}_peaks.narrowPeak", sample = config["samples_narrow"]) + \
+        expand("04peak/{sample}_peaks.broadPeak", sample = config["samples_broad"])
+
+rule all:
+    input: ALL_FASTQC + ALL_BAM + ALL_PEAKS
+
+rule gzip_fastqc:
+
+
+rule fastqc:
+    input:  "01seq/{sample}.fastq.gz"
+    output: "02fqc/{sample}_fastqc.zip", "02fqc/{sample}_fastqc.html"
+    log:    "00log/{sample}_fastqc"
+    threads: 2
+    params:
+        mem  = "2G",
+        time = "20",
+        gres = "lscratch:10"
+    message: "fastqc {input}: {threads} / {params.mem}"
+    shell:
+        """
+        module load fastqc
+        fastqc -o 02fqc -d /lscratch/$SLURM_JOBID -f fastq --noextract {input[0]}
+        """
+
+## use trimmomatic to trim low quality bases and adaptors
+rule clean_fastq:
+    input:   "01seq/{sample}.fastq.gz"
+    output:  temp("01seq/{sample}.clean.fastq.gz")
+    log:     "00log/{sample}.clean_fastq"
+    threads: 4
+    params:
+        mem="2G",
+        time="30"
+    message: "clean_fastq {input}: {threads} threads / {params.mem}"
+    shell:
+        """
+        module load fastxtoolkit
+        trimmomatic SE {input} {output} \
+        ILLUMINACLIP:Truseq_adaptor.fa:2:30:10 LEADING:3 \
+        TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 2> {log}
+        """
+
+
+rule align:
+    input:  "01seq/{sample}.clean.fastq.gz"
+    output: temp("03aln/{sample}.unsorted.bam")
+    threads: 10
+    params:
+        bowtie = "--chunkmbs 320 --best -p 10 ",
+        mem    = "10G",
+        time   = "45"
+    message: "aligning {input}: {threads} threads / {params.mem}"
+    log: "00log/{sample}.align"
+    shell:
+        """
+        module load bowtie/1.1.1 samtools/1.2
+        gunzip -c {input} \
+            | bowtie {params.bowtie} --threads={threads} {config[idx_bt1]} - 2> {log} \
+            | samtools view -Sb - \
+            >  {output}
+        """
+
+rule sort_bam:
+    input:  "03aln/{sample}.unsorted.bam"
+    output: "03aln/{sample}.sorted.bam"
+    log:    "00log/{sample}.sort_bam"
+    threads: 10
+    params:
+        mem  = "12G",
+        time = "15"
+    message: "sort_bam {input}: {threads} threads / {params.mem}"
+    shell:
+        """
+        module load samtools/1.2
+        samtools sort -m 1G -@ {threads} -O bam -T {output}.tmp {input} > {output} 2> {log}
+        """
+
+rule index_bam:
+    input:  "03aln/{sample}.sorted.bam"
+    output: "03aln/{sample}.sorted.bam.bai"
+    log:    "00log/{sample}.index_bam"
+    threads: 1
+    params:
+        mem   = "500M",
+        time  = "10"
+    message: "index_bam {input}: {threads} threads / {params.mem}"
+    shell:
+        """
+        module load samtools/1.2
+        samtools index {input} 2> {log}
+        """
+
+rule flagstat_bam:
+    input:  "03aln/{sample}.sorted.bam"
+    output: "03aln/{sample}.sorted.bam.flagstat"
+    log:    "00log/{sample}.flagstat_bam"
+    threads: 1
+    params:
+        mem   = "500M",
+        time  = "10"
+    message: "flagstat_bam {input}: {threads} threads / {params.mem}"
+    shell:
+        """
+        module load samtools/1.2
+        samtools flagstat {input} > {output} 2> {log}
+        """
+
+rule call_peaks:
+    input:  "03aln/{sample}.sorted.bam", "03aln/control.sorted.bam"
+    output: "04peak/{sample}_model.r", "04peak/{sample}_peaks.narrowPeak",
+            "04peak/{sample}_peaks.xls", "04peak/{sample}_summits.bed",
+            "04peak/{sample}_model.pdf"
+    log:    "00log/{sample}.find_narrow_peaks"
+    threads: 2
+    params:
+        mem  = "4G",
+        time = "30"
+    message: "find_narrow_peaks {input}: {threads} threads / {params.mem}"
+    shell:
+        """
+        module load macs/2.1.0.20150420 R
+        macs14 -t {input[0]} \
+                -c {input[1]} -f BAM -g {config[macs_g]} \
+                --outdir 04peak -n {wildcards.sample} -q 0.001 &> {log}
+        cd 04peak && Rscript {wildcards.sample}_model.r
+        """
+
+
