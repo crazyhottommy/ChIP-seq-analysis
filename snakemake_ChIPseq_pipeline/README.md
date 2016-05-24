@@ -9,6 +9,10 @@
 [snakemake FAQ](https://bitbucket.org/snakemake/snakemake/wiki/FAQ)  
 [snakemake tutorial from the developer](http://snakemake.bitbucket.org/snakemake-tutorial.htm)  
 
+### examples
+https://github.com/slowkow/snakefiles/blob/master/bsub.py  
+https://github.com/broadinstitute/viral-ngs/tree/master/pipes
+
 
 ### Key features of snakemake
 * Snakemake automatically creates missing directories.
