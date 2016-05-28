@@ -1,0 +1,161 @@
+shell.prefix("set -eo pipefail; ")
+
+configfile: "config.yaml"
+
+localrules: all
+# localrules will let the rule run locally rather than submitting to cluster
+# computing nodes, this is for very small jobs
+
+## list all samples
+CONTROLS = ["sampleG1","sampleG2"]
+CASES = ["sampleA", "sampleB"]
+
+
+## list BAM files
+CONTROL_BAM = expand("04aln/{sample}.sorted.bam", sample=CONTROLS)
+CASE_BAM = expand("04aln/{sample}.sorted.bam", sample=CASES)
+
+## create target for peak-calling: will call the rule call_peaks in order to generate bed files
+## note: the "zip" function allow the correct pairing of the BAM files
+ALL_PEAKS   = expand("05peak/{case}_vs_{control}_peaks.bed", zip, case=CASES, control=CONTROLS)
+ALL_SAMPLES = CONTROLS + CASES
+ALL_BAM     = CONTROL_BAM + CASE_BAM
+ALL_FASTQ   = expand("01seq/{sample}.fastq", sample = ALL_SAMPLES)
+ALL_CLEAN_FASTQ = expand("03seqClean/{sample}_clean.fastq", sample = ALL_SAMPLES)
+ALL_FASTQC  = expand("02fqc/{sample}_fastqc.zip", sample = ALL_SAMPLES)
+
+rule all:
+    input: ALL_FASTQC + ALL_BAM + ALL_PEAKS + ALL_CLEAN_FASTQ
+
+## for each sample, there are multiple fastq.gz from different lanes, merge them
+## because the number of the fastq.gz files in the folder is not fixed, need to be
+## determined by a function
+
+import glob
+def get_fastqs(wildcards):
+    return glob.glob("rawfastqs/"+ wildcards.sample+"/"+ wildcards.sample + "_L00[0-9].fastq.gz")
+
+rule merge_fastqs:
+    input: get_fastqs
+    output: "01seq/{sample}.fastq"
+    log: "00log/{sample}_unzip"
+    threads: 1
+    message: "merging fastqs gunzip -c {input} > {output}"
+    shell: "gunzip -c {input} > {output} 2> {log}"
+
+rule fastqc:
+    input:  "01seq/{sample}.fastq"
+    output: "02fqc/{sample}_fastqc.zip", "02fqc/{sample}_fastqc.html"
+    log:    "00log/{sample}_fastqc"
+    threads: 2
+    resources:
+        mem  = 2 ,
+        time = 20
+    message: "fastqc {input}: {threads} / {resources.mem}"
+    shell:
+        """
+        module load fastqc
+        fastqc -o 02fqc -f fastq --noextract {input[0]}
+        """
+
+## use trimmomatic to trim low quality bases and adaptors
+rule clean_fastq:
+    input:   "01seq/{sample}.fastq"
+    output:  temp("03seqClean/{sample}_clean.fastq")
+    log:     "00log/{sample}_clean_fastq"
+    threads: 4
+    resources:
+        mem= 2,
+        time= 30
+    message: "clean_fastq {input}: {threads} threads / {resources.mem}"
+    shell:
+        """
+        module load fastxtoolkit
+        trimmomatic SE {input} {output} \
+        ILLUMINACLIP:Truseq_adaptor.fa:2:30:10 LEADING:3 \
+        TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 2> {log}
+        """
+
+
+rule align:
+    input:  "03seqClean/{sample}_clean.fastq"
+    output: temp("04aln/{sample}.unsorted.bam")
+    threads: 10
+    params: bowtie = "--chunkmbs 320 --best -p 10 "
+    resources:
+        mem    = 10,
+        time   = 45
+    message: "aligning {input}: {threads} threads / {resources.mem}"
+    log: "00log/{sample}.align"
+    shell:
+        """
+        module load bowtie/1.1.1 samtools/1.2
+        bowtie {params.bowtie} --threads={threads} {config[idx_bt1]} {input} 2> {log} \
+            | samtools view -Sb - \
+            >  {output}
+        """
+
+rule sort_bam:
+    input:  "04aln/{sample}.unsorted.bam"
+    output: "04aln/{sample}.sorted.bam"
+    log:    "00log/{sample}.sort_bam"
+    threads: 10
+    resources:
+        mem  = 12,
+        time = 15
+    message: "sort_bam {input}: {threads} threads / {resources.mem}"
+    shell:
+        """
+        module load samtools/1.2
+        samtools sort -m 1G -@ {threads} -O bam -T {output}.tmp {input} > {output} 2> {log}
+        """
+
+rule index_bam:
+    input:  "04aln/{sample}.sorted.bam"
+    output: "04aln/{sample}.sorted.bam.bai"
+    log:    "00log/{sample}.index_bam"
+    threads: 1
+    resources:
+        mem   = 500,
+        time  = 10
+    message: "index_bam {input}: {threads} threads / {resources.mem}"
+    shell:
+        """
+        module load samtools/1.2
+        samtools index {input} 2> {log}
+        """
+
+rule flagstat_bam:
+    input:  "04aln/{sample}.sorted.bam"
+    output: "04aln/{sample}.sorted.bam.flagstat"
+    log:    "00log/{sample}.flagstat_bam"
+    threads: 1
+    resources:
+        mem   = 500,
+        time  = 10
+    message: "flagstat_bam {input}: {threads} threads / {resources.mem}"
+    shell:
+        """
+        module load samtools/1.2
+        samtools flagstat {input} > {output} 2> {log}
+        """
+
+rule call_peaks:
+    input: control = "04aln/{control_id}.sorted.bam", case="04aln/{case_id}.sorted.bam"
+    output: bed="05peak/{case_id}_vs_{control_id}_peaks.bed"
+    log: "00log/{case_id}_vs_{control_id}_call_peaks.log"
+    params:
+        name = "{case_id}_vs_{control_id}"
+    resources:
+        mem  = 4,
+        time = 30
+
+    message: "call_peaks macs14 {input}: {threads} threads / {resources.mem}"
+    shell:
+        """
+        module load macs14 R
+        macs14 -t {input.case} \
+            -c {input.control} -f BAM -g {config[macs_g]} \
+            --outdir 04peak -n {params.name} -p 10e-5 &> {log}
+            cd 05peak && Rscript {params.name}_model.r
+        """

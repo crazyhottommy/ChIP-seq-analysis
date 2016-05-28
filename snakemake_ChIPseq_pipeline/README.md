@@ -17,6 +17,65 @@ https://github.com/broadinstitute/viral-ngs/tree/master/pipes
 ### Key features of snakemake
 * Snakemake automatically creates missing directories.
 
-wildcards and Input function:
+* wildcards and Input function
 
 To access wildcards in a shell command:  {wildcards.sample}
+
+`{wildcards}` is greedy `(.+)`:
+`{sample}.fastq` could be matching `sampleA.fastq` if there is no sub-folder anymore, but even `whateverfolder/sampleA.fastq` can be matched as well.
+
+### A working snakemake pipeline for ChIP-seq
+
+The folder structure is like this:
+
+```
+├── README.md
+├── Snakemake
+├── config.yaml
+└── rawfastqs
+    ├── sampleA
+    │   ├── sampleA_L001.fastq.gz
+    │   ├── sampleA_L002.fastq.gz
+    │   └── sampleA_L003.fastq.gz
+    ├── sampleB
+    │   ├── sampleB_L001.fastq.gz
+    │   ├── sampleB_L002.fastq.gz
+    │   └── sampleB_L003.fastq.gz
+    ├── sampleG1
+    │   ├── sampleG1_L001.fastq.gz
+    │   ├── sampleG1_L002.fastq.gz
+    │   └── sampleG1_L003.fastq.gz
+    └── sampleG2
+        ├── sampleG2_L001.fastq.gz
+        ├── sampleG2_L002.fastq.gz
+        └── sampleG2_L003.fastq.gz
+
+```
+
+There is a folder named `rawfastqs` containing all the raw fastqs. each sample subfolder contains multiple fastq files from different lanes.
+
+In this example, I have two control (Input) samples and two corresponding case(IP) samples.
+
+```
+CONTROLS = ["sampleG1","sampleG2"]
+CASES = ["sampleA", "sampleB"]
+```
+putting them in a list inside the `Snakefile`. If there are many more samples,
+need to generate it with `python` programmatically.
+
+
+```bash
+## dry run
+snakemake -np
+
+## work flow diagram
+snakemake --forceall --dag | dot -Tpng | display
+
+```
+![](../images/snakemake_flow.png)
+
+
+###To Do:  
+
+* Make the pipeline more flexiable. e.g. specify the folder name containing raw fastqs, now it is hard coded.
+* write a wrapper script for submitting jobs in `moab`. Figuring out dependencies and `--immediate-submit`
