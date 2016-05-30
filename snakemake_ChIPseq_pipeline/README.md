@@ -29,7 +29,7 @@ One needs to think snakemake in a bottom-up way: snakemake will first look for t
 https://github.com/slowkow/snakefiles/blob/master/bsub.py  
 https://github.com/broadinstitute/viral-ngs/tree/master/pipes
 
-### A working snakemake pipeline for ChIP-seq
+### [A working snakemake pipeline for ChIP-seq](https://github.com/crazyhottommy/ChIP-seq-analysis/tree/master/snakemake_ChIPseq_pipeline)
 
 The folder structure is like this:
 
