@@ -13,13 +13,16 @@
 https://github.com/slowkow/snakefiles/blob/master/bsub.py  
 https://github.com/broadinstitute/viral-ngs/tree/master/pipes
 
+### Why using snakemake
+[Snakemake](https://bitbucket.org/snakemake/snakemake/wiki/Home) is a python3 based pipeline building tool (a python variant of GNU [make](https://www.gnu.org/software/make/)) specialized for bioinformatics. I put my notes managing different versions of python [here](https://github.com/crazyhottommy/RNA-seq-analysis/blob/master/use_multiple_version_python.md). You can write any python codes inside the Snakefile.
 
 ### Key features of snakemake
+
 * Snakemake automatically creates missing directories.
 
 * wildcards and Input function
 
-To access wildcards in a shell command:  {wildcards.sample}
+To access wildcards in a shell command:  `{wildcards.sample}`
 
 `{wildcards}` is greedy `(.+)`:
 `{sample}.fastq` could be matching `sampleA.fastq` if there is no sub-folder anymore, but even `whateverfolder/sampleA.fastq` can be matched as well.
