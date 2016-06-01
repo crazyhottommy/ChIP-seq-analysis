@@ -33,6 +33,13 @@
 4. [ENCODE tutorials](http://www.genome.gov/27553900) 
 5. [A User's Guide to the Encyclopedia of DNA Elements (ENCODE)](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001046)  
 
+### Quality Control
+Data downloaded from GEO usually are raw fastq files. One needs to do quality control (QC) on them.
+
+* [fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
+* [multiqc](http://multiqc.info/) Aggregate results from bioinformatics analyses across many samples into a single report. Could be very useful to summarize the QC report. 
+
+
 ### Peak calling  
 
 Be careful with the peaks you get:  
@@ -61,6 +68,7 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 9. [Detecting broad domains and narrow peaks in ChIP-seq data with hiddenDomains](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0991-z) [tool](http://hiddendomains.sourceforge.net/)
 10. [BroadPeak: a novel algorithm for identifying broad peaks in diffuse ChIP-seq datasets](http://bioinformatics.oxfordjournals.org/content/29/4/492)
 11. [epic: diffuse domain ChIP-Seq caller based on SICER]( https://github.com/endrebak/epic). It is a re-writen of SICER for faster processing using more CPUs. (Will try it for broad peak for sure).
+12. [Cistrome](http://cistrome.org/Cistrome/Cistrome_Project.html): The best place for wet lab scientist to check the binding sites. Developed by Shierly Liu lab in Harvard.
 
 **Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**  
 
