@@ -14,11 +14,14 @@ To access wildcards in a shell command:  `{wildcards.sample}`
 
 One needs to think snakemake in a bottom-up way: snakemake will first look for the output files, and substitue the file names to the `{wildcards}`, and look for which rule can be used to creat the output, and then look for input files that are defined by the `{wildcards}`.
 
+The `wildcards` is pretty confusing to me. read the posts in the google group by [searching wildcards](https://groups.google.com/forum/#!searchin/snakemake/wildcards) 
+
 #### Read the following
 [flexible bioinformatics pipelines with snakemake](http://watson.nci.nih.gov/~sdavis/blog/flexible_bioinformatics_pipelines_with_snakemake/)    
 [Build bioinformatics pipelines with Snakemake](https://slowkow.com/notes/snakemake-tutorial/)  
 [snakemake ChIP-seq pipeline example](https://hpc.nih.gov/apps/snakemake.html)  
 [submit all the jobs immediately](https://bitbucket.org/snakemake/snakemake/issues/28/clustering-jobs-with-snakemake)  
+[cluster job submission wrappers](https://groups.google.com/forum/#!searchin/snakemake/dependencies/snakemake/1QelazgzilY/oBgZoP19BL4J)  
 [snakemake-parallel-bwa](https://github.com/inodb/snakemake-parallel-bwa)  
 [RNA-seq snakemake example](http://www.annotathon.org/courses/ABD/practical/snakemake/snake_intro.html)  
 [functions as inputs and derived parameters](https://groups.google.com/forum/#!msg/Snakemake/0tLS6KrXA5E/Oe5umTdluq4J)  
