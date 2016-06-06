@@ -12,3 +12,9 @@ If you are using wildcards within code you do not need the curly braces, so you 
 for kitten in wildcards.kittens:
     print(kitten)
     
+parameters useful:
+
+```
+--keep-going, -k      Go on with independent jobs if a job fails.
+```
+    
