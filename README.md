@@ -341,6 +341,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [paper: Analysis of computational footprinting methods for DNase sequencing experiments](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3772.html) [tool](http://www.regulatory-genomics.org/hint/introduction/) 
 * Two nature prime: [Genome-wide footprinting: ready for prime time?](http://www.nature.com/nmeth/journal/v13/n3/full/nmeth.3766.html) [Genomic footprinting](http://www.nature.com/nmeth/journal/v13/n3/full/nmeth.3768.html)
 * [PING](http://bioconductor.org/packages/release/bioc/html/PING.html) biocondcutor package: Probabilistic inference for Nucleosome Positioning with MNase-based or Sonicated Short-read Data
+* [Basset](https://github.com/davek44/Basset) Convolutional neural network analysis for predicting DNA sequence activity]
 
 ### Hi-C TAD
 * [TopDom : An efficient and Deterministic Method for identifying Topological Domains in Genomes](http://zhoulab.usc.edu/TopDom/)
