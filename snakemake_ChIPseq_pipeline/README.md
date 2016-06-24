@@ -88,4 +88,4 @@ snakemake --forceall --dag | dot -Tpng | display
 * Make the pipeline more flexiable. e.g. specify the folder name containing raw fastqs, now it is hard coded.
 * write a wrapper script for submitting jobs in `moab`. Figuring out dependencies and `--immediate-submit`
 
-`snakemake -k -j 1000 --forceall --cluster-config cluster.json --cluster "msub -V -N '{rule.name}_{wildcards.sample}' -l nodes={cluster.nodes}:ppn={cluster.cpu} -l mem={cluster.mem} -l walltime={cluster.time} -m {cluster.EmailNotice} -M {cluster.email}"
+`snakemake -k -j 1000 --forceall --cluster-config cluster.json --cluster "msub -V -N '{rule.name}_{wildcards.sample}' -l nodes={cluster.nodes}:ppn={cluster.cpu} -l mem={cluster.mem} -l walltime={cluster.time} -m {cluster.EmailNotice} -M {cluster.email}"`
