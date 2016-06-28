@@ -20,6 +20,7 @@ read threads below:
 https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/YfHgx6P5se4/CRk-d151GBwJ  
 https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/FsdT4ioRyNY/LCm6Xj8dIAAJ  
 https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/JAcOdGgWR_g/1nT9nsNkCgAJ  
+https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/KorE6c-OZg4/LVO_0jDBHlUJ
 
 
 [quote](https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/FsdT4ioRyNY/LCm6Xj8dIAAJ) from the snakemake developer:
