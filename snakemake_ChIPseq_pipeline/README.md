@@ -42,6 +42,23 @@ https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/Ko
 https://github.com/slowkow/snakefiles/blob/master/bsub.py  
 https://github.com/broadinstitute/viral-ngs/tree/master/pipes
 
+### jobscript
+An example of the jobscript
+
+```bash
+#!/bin/bash
+# properties = {properties}
+. /etc/profile.d/modules.sh
+module purge
+module load snakemake/python3.2/2.5.2.2
+{workflow.snakemakepath} --snakefile {workflow.snakefile} \
+--force -j{cores} \
+--directory {workdir} --nocolor --notemp --quiet --nolock {job.output} \
+&& touch "{jobfinished}" || touch "{jobfailed}"
+exit 0
+```
+
+
 ### [A working snakemake pipeline for ChIP-seq](https://github.com/crazyhottommy/ChIP-seq-analysis/tree/master/snakemake_ChIPseq_pipeline)
 
 The folder structure is like this:
