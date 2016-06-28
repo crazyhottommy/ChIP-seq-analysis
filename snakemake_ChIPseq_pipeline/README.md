@@ -16,6 +16,12 @@ One needs to think snakemake in a bottom-up way: snakemake will first look for t
 
 The `wildcards` is pretty confusing to me. read the posts in the google group by [searching wildcards](https://groups.google.com/forum/#!searchin/snakemake/wildcards) 
 
+read threads below:
+https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/YfHgx6P5se4/CRk-d151GBwJ  
+https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/FsdT4ioRyNY/LCm6Xj8dIAAJ  
+https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/JAcOdGgWR_g/1nT9nsNkCgAJ  
+
+
 [quote](https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/FsdT4ioRyNY/LCm6Xj8dIAAJ) from the snakemake developer:
 >The generation of the final target is nearly always the complex part of the workflow. You have to determine, which files exist and somehow tell Snakemake which files you want it to generate. `glob_wildcards` and `expand` helps a lot - it was really painful in the versions before it was implemented, but often you have to write some custom code, if it gets complicated
 
