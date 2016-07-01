@@ -343,7 +343,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [PING](http://bioconductor.org/packages/release/bioc/html/PING.html) biocondcutor package: Probabilistic inference for Nucleosome Positioning with MNase-based or Sonicated Short-read Data
 * [Basset](https://github.com/davek44/Basset) Convolutional neural network analysis for predicting DNA sequence activity]
 
-### Hi-C TAD
+### Chromatin Interaction data (ChIA-PET, Hi-C)
 * [TopDom : An efficient and Deterministic Method for identifying Topological Domains in Genomes](http://zhoulab.usc.edu/TopDom/)
 * [DBPnet: Inferring cooperation of DNA binding proteins in 3D genome](http://wanglab.ucsd.edu/star/DBPnet/index.html) 
 * [Systematic identification of cooperation between DNA binding proteins in 3D space](Systematic identification of cooperation between DNA binding proteins in 3D space)  
