@@ -352,3 +352,4 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [4D genome: a general repository for chromatin interaction data](http://4dgenome.research.chop.edu/)
 * [Computational Identification of Genomic Features That Influence 3D Chromatin Domain Formation](http://journals.plos.org/ploscompbiol/article?id=info:doi/10.1371/journal.pcbi.1004908)
 * [Feng Yue's lab](http://promoter.bx.psu.edu/hi-c/view.php) in PSU developed tools for Hi-C, 4C 
+* [QuIN: A Web Server for Querying and Visualizing Chromatin Interaction Networks](https://quin.jax.org/)
