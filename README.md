@@ -283,6 +283,10 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Super-enhancer database](http://www.bio-bigdata.com/SEA/)
 * [Genome-wide identification and characterization of HOT regions in the human genome](http://biorxiv.org/content/early/2016/01/07/036152.abstract)  
 
+### Interesting Enhancer papers
+* [Multiplex enhancer-reporter assays uncover unsophisticated TP53 enhancer logic](http://genome.cshlp.org/content/26/7/882)
+* 
+
 ### Enhancer target prediction 
 
 * [Assessing Computational Methods for Transcription Factor Target Gene Identification Based on ChIP-seq Data](http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1003342#pcbi.1003342.s019) 
