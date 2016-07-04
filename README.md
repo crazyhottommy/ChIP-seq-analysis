@@ -106,6 +106,7 @@ An example of different parameters for homer `findPeaks`:
 8. [GeNets](http://www.broadinstitute.org/genets#computations) from Broad. Looks very promising.
 9. [Bioconductor EnrichmentBrowser](https://www.bioconductor.org/packages/3.3/bioc/html/EnrichmentBrowser.html)
 10. [clusterProfiler](http://bioconductor.org/packages/release/bioc/vignettes/clusterProfiler/inst/doc/clusterProfiler.html) by Guangchuan Yu, the author of `ChIPseeker`.
+11. [fgsea bioconductor package](http://bioconductor.org/packages/devel/bioc/html/fgsea.html) Fast Gene Set Entrichment Analysis.
 
 
 ### Chromatin state Segmentation  
