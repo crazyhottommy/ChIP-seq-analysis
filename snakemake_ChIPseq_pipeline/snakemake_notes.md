@@ -18,3 +18,28 @@ parameters useful:
 --keep-going, -k      Go on with independent jobs if a job fails.
 ```
     
+### python versions
+`snakemake` is python3 based, if you want to execute python2 commands, you have to activate the python2x environment.
+In a future release, the environment will be baked in to snakemake so you can specify environment inside a rule.
+see [this issue and pull reques: Integration of conda package management into Snakemake](https://bitbucket.org/snakemake/snakemake/pull-requests/92/wip-integration-of-conda-package/diff)
+
+```python
+rule a:
+    output:
+        "test.out"
+    environment:
+        "envs/samtools.yaml"
+    shell:
+        "samtools --help > {output}"
+
+```
+
+with `envs/samtools.yaml` being e.g.
+
+```
+channels:
+  - bioconda
+  - r
+dependencies:
+  - samtools ==1.3
+```
