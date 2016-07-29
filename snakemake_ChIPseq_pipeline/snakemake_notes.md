@@ -43,3 +43,6 @@ channels:
 dependencies:
   - samtools ==1.3
 ```
+
+some threads that are useful:  
+* [unifying resources and cluster config](https://bitbucket.org/snakemake/snakemake/issues/279/unifying-resources-and-cluster-config)
