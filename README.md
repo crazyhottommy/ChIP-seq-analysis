@@ -197,6 +197,7 @@ I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational me
 17. [MCAST: scanning for cis-regulatory motif clusters](http://bioinformatics.oxfordjournals.org/content/early/2016/01/14/bioinformatics.btv750.short?rss=1) Part of MEME suite.
 18. [Sequence-based Discovery of Regulons](http://iregulon.aertslab.org/) iRegulon detects the TF, the targets and the motifs/tracks from a set of genes.
 19. [Regulatory genomic toolbox](http://www.regulatory-genomics.org/motif-analysis/introduction/)
+20. [Parse TF motifs from public databases, read into R, and scan using 'rtfbs'](https://github.com/Danko-Lab/rtfbs_db)
 
 ### Super-enhancer identification   
 
