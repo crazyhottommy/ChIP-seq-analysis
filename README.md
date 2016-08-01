@@ -297,6 +297,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [i-cisTarget](http://gbiomed.kuleuven.be/apps/lcb/i-cisTarget/)
 * [protocol iRegulon and i-cisTarget: Reconstructing Regulatory Networks Using Motif and Track Enrichment](http://www.ncbi.nlm.nih.gov/pubmed/26678384?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)  
 * [Model-based Analysis of Regulation of Gene Expression: MARGE](http://cistrome.org/MARGE/) from Shirley Liu's lab. MARGE is a robust methodology that leverages a comprehensive library of genome-wide H3K27ac ChIP-seq profiles to predict key regulated genes and cis-regulatory regions in human or mouse. 
+* [PrESSto: Promoter Enhancer Slider Selector Tool](http://pressto.binf.ku.dk/)
 
 
 ### Allele-specific analysis  
