@@ -353,7 +353,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 ### Chromatin Interaction data (ChIA-PET, Hi-C)
 * [TopDom : An efficient and Deterministic Method for identifying Topological Domains in Genomes](http://zhoulab.usc.edu/TopDom/)
 * [DBPnet: Inferring cooperation of DNA binding proteins in 3D genome](http://wanglab.ucsd.edu/star/DBPnet/index.html) 
-* [Systematic identification of cooperation between DNA binding proteins in 3D space](Systematic identification of cooperation between DNA binding proteins in 3D space)  
+* [Systematic identification of cooperation between DNA binding proteins in 3D space](http://www.nature.com/ncomms/2016/160727/ncomms12249/full/ncomms12249.html)
 * [DiffHiC](https://www.bioconductor.org/packages/release/bioc/html/diffHic.html) package maintained by Aaron Lun, who is the author of [csaw](https://bioconductor.org/packages/release/bioc/html/csaw.html) and [InteractionSet]( https://github.com/LTLA/InteractionSet) as well.
 * [protocol:Practical Analysis of Genome Contact Interaction Experiments](http://link.springer.com/protocol/10.1007/978-1-4939-3578-9_9)
 * [4D genome: a general repository for chromatin interaction data](http://4dgenome.research.chop.edu/)
