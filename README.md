@@ -25,6 +25,7 @@
 9. 2016 review [Recent advances in ChIP-seq analysis: from quality management to whole-genome annotation](http://bib.oxfordjournals.org/content/early/2016/03/15/bib.bbw023.full)
 10. [bioinformatics paper:Features that define the best ChIP-seq peak calling algorithms](http://bib.oxfordjournals.org/content/early/2016/05/10/bib.bbw035.short?rss=1) compares different peak callers for TFs and histones.
 11. [Systematic comparison of monoclonal versus polyclonal antibodies for mapping histone modifications by ChIP-seq](http://biorxiv.org/content/early/2016/05/19/054387) The binding patterns for H3K27ac differed substantially between polyclonal and monoclonal antibodies. However, this was most likely due to the distinct immunogen used rather than the clonality of the antibody. Altogether, we found that monoclonal antibodies as a class perform as well as polyclonal antibodies. Accordingly, we recommend the use of monoclonal antibodies in ChIP-seq experiments.
+12. A nice small review: [Unraveling the 3D genome: genomics tools for multiscale exploration](http://www.cell.com/trends/genetics/pdf/S0168-9525(15)00063-3.pdf)
 
     **Protocols**  
 1. [A computational pipeline for comparative ChIP-seq analyses](http://www.ncbi.nlm.nih.gov/pubmed/22179591)    
