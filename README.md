@@ -288,6 +288,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Super-enhancer database](http://www.bio-bigdata.com/SEA/)
 * [Genome-wide identification and characterization of HOT regions in the human genome](http://biorxiv.org/content/early/2016/01/07/036152.abstract)  
 * [EnhancerAtlas: a resource for enhancer annotation and analysis in 105 human cell/tissue types](http://www.enhanceratlas.org/)
+* [review: Computational Tools for Stem Cell Biology](http://www.sciencedirect.com/science/article/pii/S0167779916300567)
 
 ### Interesting Enhancer papers
 * [Multiplex enhancer-reporter assays uncover unsophisticated TP53 enhancer logic](http://genome.cshlp.org/content/26/7/882)
