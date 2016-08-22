@@ -317,6 +317,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [A Sicence paper:Survey of variation in human transcription factors reveals prevalent DNA binding changes](http://science.sciencemag.org/content/351/6280/1450)
 * paper [Estimating the functional impact of INDELs in transcription factor binding sites: a genome-wide landscape](http://biorxiv.org/content/early/2016/06/07/057604)
 * [paper: Mutational Biases Drive Elevated Rates of Substitution at Regulatory Sites across Cancer Types](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006207)
+* [paper: Recurrent promoter mutations in melanoma are defined by an extended context-specific mutational signature](http://biorxiv.org/content/early/2016/08/12/069351)
 
 ### co-occurring TFs
 
