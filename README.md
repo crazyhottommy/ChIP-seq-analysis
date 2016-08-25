@@ -267,6 +267,7 @@ It can also generate the heatmaps, but I personally use [ngs.plot](https://githu
 5. [Metaseq](https://pythonhosted.org/metaseq/example_session.html)
 6. [EnrichedHeatmaps](https://github.com/jokergoo/EnrichedHeatmap) from Zuguang Gu based on his own package `ComplexHeatmaps`. This is now my default go-to because of the flexiability of the package and the great user support. Thx!
 7. [A biostar post discussing the tools: Visualizations of ChIP-Seq data using Heatmaps](https://www.biostars.org/p/180314/)
+8. [A bioconductor package to produce metagene plots](http://bioconductor.org/packages/release/bioc/html/metagene.html)
 
 **One cavet is that the meta-plot (on the left) is an average view of ChIP-seq
 tag enrichment and may not reflect the real biological meaning for individual cases.**  
