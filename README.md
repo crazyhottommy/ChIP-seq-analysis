@@ -366,6 +366,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [DiffHiC](https://www.bioconductor.org/packages/release/bioc/html/diffHic.html) package maintained by Aaron Lun, who is the author of [csaw](https://bioconductor.org/packages/release/bioc/html/csaw.html) and [InteractionSet]( https://github.com/LTLA/InteractionSet) as well.
 * [protocol:Practical Analysis of Genome Contact Interaction Experiments](http://link.springer.com/protocol/10.1007/978-1-4939-3578-9_9)
 * [4D genome: a general repository for chromatin interaction data](http://4dgenome.research.chop.edu/)
+* [CCSI](http://songyanglab.sysu.edu.cn/ccsi/search.php): a database providing chromatin–chromatin spatial interaction information. only hg38 for human and mm10 for mouse.
+* [LOGIQA](http://www.ngs-qc.org/logiqa/) is a database hosting local and global quality scores assessed over long-range interaction assays (e.g. Hi-C).Based on the concept applied by the NGS-QC Generator over ChIP-seq and related datasets, LOGIQA infers quality indicators by the comparison of multiple sequence reads random sampling assays.
 * [Computational Identification of Genomic Features That Influence 3D Chromatin Domain Formation](http://journals.plos.org/ploscompbiol/article?id=info:doi/10.1371/journal.pcbi.1004908)
 * [Feng Yue's lab](http://promoter.bx.psu.edu/hi-c/view.php) in PSU developed tools for Hi-C, 4C 
 * [QuIN: A Web Server for Querying and Visualizing Chromatin Interaction Networks](https://quin.jax.org/)
