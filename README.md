@@ -372,3 +372,4 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Feng Yue's lab](http://promoter.bx.psu.edu/hi-c/view.php) in PSU developed tools for Hi-C, 4C 
 * [QuIN: A Web Server for Querying and Visualizing Chromatin Interaction Networks](https://quin.jax.org/)
 * [paper: Three-dimensional disorganization of the cancer genome occurs coincident with long-range genetic and epigenetic alterations](http://genome.cshlp.org/content/26/6/719)
+* [Exploring long-range genome interactions using the WashU Epigenome Browse](http://www.nature.com/nmeth/journal/v10/n5/full/nmeth.2440.html)
