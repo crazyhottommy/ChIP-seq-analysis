@@ -268,6 +268,7 @@ It can also generate the heatmaps, but I personally use [ngs.plot](https://githu
 6. [EnrichedHeatmaps](https://github.com/jokergoo/EnrichedHeatmap) from Zuguang Gu based on his own package `ComplexHeatmaps`. This is now my default go-to because of the flexiability of the package and the great user support. Thx!
 7. [A biostar post discussing the tools: Visualizations of ChIP-Seq data using Heatmaps](https://www.biostars.org/p/180314/)
 8. [A bioconductor package to produce metagene plots](http://bioconductor.org/packages/release/bioc/html/metagene.html)
+9. [Fluff is a Python package that contains several scripts to produce pretty, publication-quality figures for next-generation sequencing experiments](https://github.com/simonvh/fluff) I just found it 09/01/2016. looks promising especially for identifying the dynamic change.
 
 **One cavet is that the meta-plot (on the left) is an average view of ChIP-seq
 tag enrichment and may not reflect the real biological meaning for individual cases.**  
