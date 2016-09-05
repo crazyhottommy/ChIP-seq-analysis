@@ -122,6 +122,9 @@ An example of different parameters for homer `findPeaks`:
 6. [epilogos](http://epilogos.broadinstitute.org/) visualization and analysis of chromatin state model data.
 7. [Accurate promoter and enhancer identification in 127 ENCODE and Roadmap Epigenomics cell types and tissues by GenoSTAN](http://biorxiv.org/content/early/2016/02/24/041020)
 
+### deep learning in ChIP-seq
+* [Coda](https://github.com/kundajelab/coda) uses convolutional neural networks to learn a mapping from noisy to high-quality ChIP-seq data. These trained networks can then be used to remove noise and improve the quality of new ChIP-seq data. From Ashul lab.
+* [DeepChrome](https://github.com/QData/DeepChrome) is a unified CNN framework that automatically learns combinatorial interactions among histone modification marks to predict the gene expression. (Is it really better than a simple linear model?)
 
 ### Peak annotation 
 
