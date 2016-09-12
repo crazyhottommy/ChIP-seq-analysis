@@ -125,6 +125,7 @@ An example of different parameters for homer `findPeaks`:
 ### deep learning in ChIP-seq
 * [Coda](https://github.com/kundajelab/coda) uses convolutional neural networks to learn a mapping from noisy to high-quality ChIP-seq data. These trained networks can then be used to remove noise and improve the quality of new ChIP-seq data. From Ashul lab.
 * [DeepChrome](https://github.com/QData/DeepChrome) is a unified CNN framework that automatically learns combinatorial interactions among histone modification marks to predict the gene expression. (Is it really better than a simple linear model?)
+* [deep learning in biology](https://github.com/hussius/deeplearning-biology)
 
 ### Peak annotation 
 
