@@ -377,3 +377,5 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [QuIN: A Web Server for Querying and Visualizing Chromatin Interaction Networks](https://quin.jax.org/)
 * [paper: Three-dimensional disorganization of the cancer genome occurs coincident with long-range genetic and epigenetic alterations](http://genome.cshlp.org/content/26/6/719)
 * [Exploring long-range genome interactions using the WashU Epigenome Browse](http://www.nature.com/nmeth/journal/v10/n5/full/nmeth.2440.html)
+* [MAPPING OF LONG-RANGE CHROMATIN INTERACTIONS BY PROXIMITY LIGATION ASSISTED CHIP-SEQ](http://biorxiv.org/content/early/2016/09/09/074294)
+* [HiChIP: Efficient and sensitive analysis of protein-directed genome architecture](http://biorxiv.org/content/early/2016/09/08/073619) HiChIP improves the yield of conformation-informative reads by over 10-fold and lowers input requirement over 100-fold relative to ChIA-PE
