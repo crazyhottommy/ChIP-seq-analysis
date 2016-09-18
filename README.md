@@ -365,6 +365,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Basset](https://github.com/davek44/Basset) Convolutional neural network analysis for predicting DNA sequence activity]
 
 ### Chromatin Interaction data (ChIA-PET, Hi-C)
+* [ChIA-PET2](https://github.com/GuipengLi/ChIA-PET2) a versatile and flexible pipeline for analysing different variants of ChIA-PET data
 * [TopDom : An efficient and Deterministic Method for identifying Topological Domains in Genomes](http://zhoulab.usc.edu/TopDom/)
 * [DBPnet: Inferring cooperation of DNA binding proteins in 3D genome](http://wanglab.ucsd.edu/star/DBPnet/index.html) 
 * [Systematic identification of cooperation between DNA binding proteins in 3D space](http://www.nature.com/ncomms/2016/160727/ncomms12249/full/ncomms12249.html)
