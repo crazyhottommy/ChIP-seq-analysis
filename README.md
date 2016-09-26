@@ -314,6 +314,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [WASP: allele-specific software for robust molecular quantitative trait locus discovery](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3582.html)
 * [ABC -- (Allele-specific Binding from ChIP-Seq)](https://github.com/mlupien/ABC/)
 * [SNPsplit: Allele-specific splitting of alignments between genomes with known SNP genotypes](http://f1000research.com/articles/5-1479/v2)
+* [BaalChIP](http://bioconductor.org/packages/devel/bioc/html/BaalChIP.html): Bayesian analysis of allele-specific transcription factor binding in cancer genomes. bioconductor pacckage, seems to be very useful.
 
 ### SNPs affect on TF binding
 * [RegulomeDB](http://www.regulomedb.org/)  Use RegulomeDB to identify DNA features and regulatory elements in non-coding regions of the human genome by entering dbSNP id, chromosome regions or single Nucleotides.  
