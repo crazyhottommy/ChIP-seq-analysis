@@ -1,6 +1,6 @@
 # ChIP-seq-analysis
 [![Codewake](https://www.codewake.com/badges/ask_question.svg)](https://www.codewake.com/p/chip-seq-analysis)
-### Resources for ChIP-seq data 
+### Resources for ChIP-seq 
 1. [ENCODE: Encyclopedia of DNA Elements](https://www.encodeproject.org/)  
 2. [ENCODE Factorbook](https://www.encodeproject.org/)  
 3. [ChromNet ChIP-seq interactions](http://chromnet.cs.washington.edu/#/?search=&threshold=0.5)  
@@ -12,6 +12,7 @@
 8. [Blueprint epigenome](http://dcc.blueprint-epigenome.eu/#/home)
 9. [A collection of tools and papers for nucelosome positioning and TF ChIP-seq](http://generegulation.info/)
 10. [review paper:Deciphering ENCODE](http://www.cell.com/trends/genetics/fulltext/S0168-9525(16)00017-2)
+11. [EpiFactors](http://epifactors.autosome.ru/) is a database for epigenetic factors, corresponding genes and products.
 
 ### Papers on ChIP-seq
 1. [ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia](http://www.ncbi.nlm.nih.gov/pubmed/22955991) 
