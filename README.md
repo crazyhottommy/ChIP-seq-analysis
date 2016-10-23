@@ -141,7 +141,9 @@ An example of different parameters for homer `findPeaks`:
 
  >I used R package ChIPpeakAnno for annotating peaks, and found that it handle  the DNA strand in the wrong way. Maybe the developers were from the computer science but not biology background.
 
-4. [annotatr](https://github.com/rcavalcante/annotatr/) Annotation of Genomic Regions to Genomic Annotations 
+4. [annotatr](https://github.com/rcavalcante/annotatr/) Annotation of Genomic Regions to Genomic Annotations.
+
+5. [geneXtendeR](https://bioconductor.org/packages/release/bioc/html/geneXtendeR.html) computes optimal gene extensions tailored to the broadness of the specific epigenetic mark (e.g., H3K9me1, H3K27me3), as determined by a user-supplied ChIP-seq peak input file. As such, geneXtender maximizes the signal-to-noise ratio of locating genes closest to and directly under peaks
 
 * [DNAshapeR predicts DNA shape features in an ultra-fast, high-throughput manner from genomic sequencing data](http://tsupeichiu.github.io/DNAshapeR/)  
 
