@@ -387,3 +387,4 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Exploring long-range genome interactions using the WashU Epigenome Browse](http://www.nature.com/nmeth/journal/v10/n5/full/nmeth.2440.html)
 * [MAPPING OF LONG-RANGE CHROMATIN INTERACTIONS BY PROXIMITY LIGATION ASSISTED CHIP-SEQ](http://biorxiv.org/content/early/2016/09/09/074294)
 * [HiChIP: Efficient and sensitive analysis of protein-directed genome architecture](http://biorxiv.org/content/early/2016/09/08/073619) HiChIP improves the yield of conformation-informative reads by over 10-fold and lowers input requirement over 100-fold relative to ChIA-PE
+* [A Compendium of Chromatin Contact Maps Reveals Spatially Active Regions in the Human Genome](http://www.cell.com/cell-reports/fulltext/S2211-1247(16)31481-4?elsca1=etoc&amp;elsca2=email&amp;elsca3=2211-1247_20161115_17_8_&amp;elsca4=Cell%20Press%7CWebinar) paper from Bing Ren's group. 21 tissue-specific TADs.
