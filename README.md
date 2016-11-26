@@ -99,6 +99,9 @@ An example of different parameters for homer `findPeaks`:
 
 
 ### Gene set enrichment analysis for ChIP-seq peaks  
+
+[The Gene Ontology Handbook](http://link.springer.com/protocol/10.1007%2F978-1-4939-3743-1_13) Read it for basics for GO.
+
 1. [Broad Enrich](http://broad-enrich.med.umich.edu/)  
 2. [ChIP Enrich](http://chip-enrich.med.umich.edu/)  
 3. [GREAT](http://bejerano.stanford.edu/great/public/html/) predicts functions of cis-regulatory regions.  
