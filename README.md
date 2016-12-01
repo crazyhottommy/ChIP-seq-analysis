@@ -217,7 +217,14 @@ I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational me
 
 The fancy "supper-enhancer" term was first introduced by [Richard Young](http://younglab.wi.mit.edu/publications.htm) in Whitehead Institute. Basically, super-enhancers are enhancers that span large genomic regions(~12.5kb). The concept of super-enhancer is not new. One of the most famous example is the Locus Control Region (LCR) that controls the globin gene expression, and this has been known for decades.  
 
-A review in Nature Genetics [What are super-enhancers?](http://www.nature.com/ng/journal/v47/n1/full/ng.3167.html)
+A review in Nature Genetics [What are super-enhancers?](http://www.nature.com/ng/journal/v47/n1/full/ng.3167.html)  
+
+[paper: Genetic dissection of the α-globin super-enhancer in vivo](http://www.nature.com/ng/journal/v48/n8/full/ng.3605.html) 
+
+> By generating a series of mouse models, deleting each of the five regulatory elements of the α-globin super-enhancer individually and in informative combinations, we demonstrate that each constituent enhancer seems to act independently and in an additive fashion with respect to hematological phenotype, gene expression, chromatin structure and chromosome conformation, without clear evidence of synergistic or higher-order effects.
+
+[paper: Hierarchy within the mammary STAT5-driven Wap super-enhancer](http://www.nature.com/ng/journal/v48/n8/full/ng.3606.html)  
+[paper: Enhancers and super-enhancers have an equivalent regulatory role in embryonic stem cells through regulation of single or multiple genes](http://m.genome.cshlp.org/content/early/2016/11/28/gr.210930.116.abstract)
 
 
 From the [HOMER page](http://homer.salk.edu/homer/ngs/peaks.html)
