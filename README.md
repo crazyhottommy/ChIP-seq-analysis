@@ -227,6 +227,7 @@ A review in Nature Genetics [What are super-enhancers?](http://www.nature.com/ng
 [paper: Hierarchy within the mammary STAT5-driven Wap super-enhancer](http://www.nature.com/ng/journal/v48/n8/full/ng.3606.html)  
 [paper: Enhancers and super-enhancers have an equivalent regulatory role in embryonic stem cells through regulation of single or multiple genes](http://m.genome.cshlp.org/content/early/2016/11/28/gr.210930.116.abstract)
 
+[paper: Enhancers and super-enhancers have an equivalent regulatory role in embryonic stem cells through regulation of single or multiple genes](http://genome.cshlp.org/content/early/2016/11/28/gr.210930.116.abstract)
 
 From the [HOMER page](http://homer.salk.edu/homer/ngs/peaks.html)
 **How finding super enhancers works:**
