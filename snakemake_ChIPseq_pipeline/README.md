@@ -27,7 +27,7 @@ https://groups.google.com/forum/#!searchin/snakemake/glob_wildcards/snakemake/Ko
 >The generation of the final target is nearly always the complex part of the workflow. You have to determine, which files exist and somehow tell Snakemake which files you want it to generate. `glob_wildcards` and `expand` helps a lot - it was really painful in the versions before it was implemented, but often you have to write some custom code, if it gets complicated
 
 #### Read the following
-[snakemake book](https://www.gitbook.com/book/endrebak/the-snakemake-book/details)
+[snakemake book](https://www.gitbook.com/book/endrebak/the-snakemake-book/details)  
 [flexible bioinformatics pipelines with snakemake](http://watson.nci.nih.gov/~sdavis/blog/flexible_bioinformatics_pipelines_with_snakemake/)    
 [Build bioinformatics pipelines with Snakemake](https://slowkow.com/notes/snakemake-tutorial/)  
 [snakemake ChIP-seq pipeline example](https://hpc.nih.gov/apps/snakemake.html)  
