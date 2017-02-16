@@ -241,6 +241,7 @@ Example of a super enhancer plot:
 **Using ROSE from Young lab**   
 [ROSE: RANK ORDERING OF SUPER-ENHANCERS](http://younglab.wi.mit.edu/super_enhancer_code.html)  
 
+**[imPROSE](https://github.com/asntech/improse) - Integrated Methods for Prediction of Super-Enhancers
 
 ### Bedgraph, bigwig manipulation tools
 [WiggleTools](https://github.com/Ensembl/WiggleTools)  
