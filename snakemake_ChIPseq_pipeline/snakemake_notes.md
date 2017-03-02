@@ -17,7 +17,11 @@ parameters useful:
 ```
 --keep-going, -k      Go on with independent jobs if a job fails.
 ```
-    
+### test functions in a python console
+
+```bash
+from snakemake.io import glob_wildcards, expand
+```
 ### python versions
 `snakemake` is python3 based, if you want to execute python2 commands, you have to activate the python2x environment.
 In a future release, the environment will be baked in to snakemake so you can specify environment inside a rule.
