@@ -373,7 +373,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Single-cell ATAC-Seq](http://cole-trapnell-lab.github.io/projects/sc-atac/)  
 * [Global Prediction of Chromatin Accessibility Using RNA-seq from Small Number of Cells](http://www.biorxiv.org/content/early/2016/01/01/035816)  from RNA-seq to DNA accessibility. [tool on github](https://github.com/WeiqiangZhou/BIRD)  
 * [NucleoATAC](https://github.com/GreenleafLab/NucleoATAC):Python package for calling nucleosomes using ATAC-Seq data 
-* 
+* [chromVAR: Inferring transcription factor variation from single-cell epigenomic data](http://biorxiv.org/content/early/2017/02/21/110346) scATAC-seq
+* [ENCODE ATAC-seq guidelines](https://www.encodeproject.org/data-standards/atac-seq/)
 
 
 ### DNase-seq
