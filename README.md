@@ -74,6 +74,7 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 11. [epic: diffuse domain ChIP-Seq caller based on SICER]( https://github.com/endrebak/epic). It is a re-writen of SICER for faster processing using more CPUs. (Will try it for broad peak for sure).
 12. [Cistrome](http://cistrome.org/Cistrome/Cistrome_Project.html): The best place for wet lab scientist to check the binding sites. Developed by Shierly Liu lab in Harvard.
 13. [Accounting for GC-content bias reduces systematic errors and batch effects in ChIP-Seq peak callers](http://biorxiv.org/content/early/2016/12/01/090704) tool in [github](https://github.com/tengmx/gcapc)
+14. [SUPERmerge]((https://github.com/Bohdan-Khomtchouk/SUPERmerge):ChIP-seq coverage island analysis algorithm for broad histone marks
 
 **Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**  
 
