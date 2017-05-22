@@ -1,7 +1,7 @@
 # ChIP-seq-analysis
 [![Codewake](https://www.codewake.com/badges/ask_question.svg)](https://www.codewake.com/p/chip-seq-analysis)
 ### Resources for ChIP-seq 
-1. [ENCODE: Encyclopedia of DNA Elements](https://www.encodeproject.org/)  
+1. [ENCODE: Encyclopedia of DNA Elements](https://www.encodeproject.org/)  [ENCODExplorer](https://www.bioconductor.org/packages/release/bioc/html/ENCODExplorer.html): A compilation of metadata from ENCODE. A bioc package to access the meta data of ENCODE and download the raw files.
 2. [ENCODE Factorbook](https://www.encodeproject.org/)  
 3. [ChromNet ChIP-seq interactions](http://chromnet.cs.washington.edu/#/?search=&threshold=0.5)  
     paper: [Learning the human chromatin network using all ENCODE ChIP-seq datasets](http://biorxiv.org/content/early/2015/08/04/023911)  
