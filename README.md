@@ -373,6 +373,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 >Some may notice that the peaks produced look both like peaks produced from the TF ChIP-seq pipeline as well as the histone ChIP-seq pipeline. This is intentional, as ATAC-seq data looks both like TF data (narrow peaks of signal) as well as histone data (broader regions of openness).
 
+* [ATACseqQC ](http://bioconductor.org/packages/release/bioc/html/ATACseqQC.html) a bioconductor package for quality control of ATAC-seq data.
 * [RASQUAL](https://github.com/dg13/rasqual) (Robust Allele Specific QUAntification and quality controL) maps QTLs for sequenced based cellular traits by combining population and allele-specific signals. [paper: Fine-mapping cellular QTLs with RASQUAL and ATAC-seq](http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.3467.html) 
 * [ATAC-seq Forum](https://sites.google.com/site/atacseqpublic/home?pli=1)  
 * [Single-cell ATAC-Seq](http://cole-trapnell-lab.github.io/projects/sc-atac/)  
