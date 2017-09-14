@@ -348,6 +348,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * paper [Estimating the functional impact of INDELs in transcription factor binding sites: a genome-wide landscape](http://biorxiv.org/content/early/2016/06/07/057604)
 * [paper: Mutational Biases Drive Elevated Rates of Substitution at Regulatory Sites across Cancer Types](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006207)
 * [paper: Recurrent promoter mutations in melanoma are defined by an extended context-specific mutational signature](http://biorxiv.org/content/early/2016/08/12/069351)
+* [sasquatch](https://github.com/rschwess/sasquatch) Predicting the impact of regulatory SNPs from cell and tissue specific DNase-footprints
 
 ### co-occurring TFs
 
