@@ -130,6 +130,7 @@ An example of different parameters for homer `findPeaks`:
 6. [epilogos](http://epilogos.broadinstitute.org/) visualization and analysis of chromatin state model data.
 7. [Accurate promoter and enhancer identification in 127 ENCODE and Roadmap Epigenomics cell types and tissues by GenoSTAN](http://biorxiv.org/content/early/2016/02/24/041020)
 8. [StatePaintR](https://github.com/Simon-Coetzee/StatePaintR) StateHub-StatePaintR: rules-based chromatin state annotations.
+9. [IDEAS(https://github.com/yuzhang123/IDEAS/): an integrative and discriminative epigenome annotation system  http://sites.stat.psu.edu/~yzz2/IDEAS/
 
 ### deep learning in ChIP-seq
 * [Coda](https://github.com/kundajelab/coda) uses convolutional neural networks to learn a mapping from noisy to high-quality ChIP-seq data. These trained networks can then be used to remove noise and improve the quality of new ChIP-seq data. From Ashul lab.
