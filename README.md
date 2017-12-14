@@ -14,6 +14,7 @@
 10. [review paper:Deciphering ENCODE](http://www.cell.com/trends/genetics/fulltext/S0168-9525(16)00017-2)
 11. [EpiFactors](http://epifactors.autosome.ru/) is a database for epigenetic factors, corresponding genes and products.
 12. [biostar handbook](https://read.biostarhandbook.com/). My [ChIP-seq chapter](https://read.biostarhandbook.com/chip-seq/chip-seq-analysis.html) is out April 2017!
+13. [ReMap 2018](http://tagc.univ-mrs.fr/remap/) An integrative ChIP-seq analysis of regulatory regions. The ReMap atlas consits of 80 million peaks from 485 transcription factors (TFs), transcription coactivators (TCAs) and chromatin-remodeling factors (CRFs) from public data sets. The atlas is available to browse or download either for a given TF or cell line, or for the entire dataset. 
 
 ### Papers on ChIP-seq
 1. [ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia](http://www.ncbi.nlm.nih.gov/pubmed/22955991) 
@@ -75,6 +76,7 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 12. [Cistrome](http://cistrome.org/Cistrome/Cistrome_Project.html): The best place for wet lab scientist to check the binding sites. Developed by Shierly Liu lab in Harvard.
 13. [Accounting for GC-content bias reduces systematic errors and batch effects in ChIP-Seq peak callers](http://biorxiv.org/content/early/2016/12/01/090704) tool in [github](https://github.com/tengmx/gcapc)
 14. [SUPERmerge]((https://github.com/Bohdan-Khomtchouk/SUPERmerge):ChIP-seq coverage island analysis algorithm for broad histone marks
+
 
 **Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**  
 
