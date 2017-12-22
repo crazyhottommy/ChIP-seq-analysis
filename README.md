@@ -194,6 +194,11 @@ suggestions for finding motifs from histone modification ChIP-seq data from HOME
 
 Other strategy similar to `-nfr` was developed in this paper: [Dissecting neural differentiation regulatory networks through epigenetic footprinting](http://www.ncbi.nlm.nih.gov/pubmed/25533951). In the method part of the paper, the authors computed a depletion score within the peaks, and use the footprinted regions to do motif analysis. (Thanks [kadir](https://twitter.com/canerakdemir) for pointing out the paper)
 
+http://homer.ucsd.edu/homer/ngs/peakMotifs.html  
+
+>Region Size ("-size <#>", "-size <#>,<#>", "-size given", default: 200)
+The size of the region used for motif finding is important.  If analyzing ChIP-Seq peaks from a transcription factor, Chuck would recommend 50 bp for establishing the primary motif bound by a given transcription factor and 200 bp for finding both primary and "co-enriched" motifs for a transcription factor.  When looking at histone marked regions, **500-1000 bp is probably a good idea (i.e. H3K4me or H3/H4 acetylated regions)**.  In theory, HOMER can work with very large regions (i.e. 10kb), but with the larger the regions comes more sequence and longer execution time.  These regions will be based off the center of the peaks.  If you prefer an offset, you can specify "-size -300,100" to search a region of size 400 that is centered 100 bp upstream of the peak center (useful if doing motif finding on putative TSS regions).  If you have variable length regions, use the option "-size given" and HOMER will use the exact regions that were used as input.
+
 I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational method to Predict Active Regulatory Elements, specifically enhancers and promoters. H3K27ac and H3K4me can be used to define active enhancers.
 
 2. [MEME suite](http://meme.ebi.edu.au/meme/index.html). It is probably the most popular motif finding tool in the papers.  [protocol:Motif-based analysis of large nucleotide data sets using MEME-ChIP](http://www.nature.com/nprot/journal/v9/n6/full/nprot.2014.083.html)  
