@@ -41,6 +41,7 @@ I developed a Snakemake based ChIP-seq pipeline: [pyflow-ChIPseq](https://github
 3. [Spatial clustering for identification of ChIP-enriched regions (SICER) to map regions of histone methylation patterns in embryonic stem cells](http://www.ncbi.nlm.nih.gov/pubmed/24743992)
 4. [ENCODE tutorials](http://www.genome.gov/27553900) 
 5. [A User's Guide to the Encyclopedia of DNA Elements (ENCODE)](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001046)  
+6. [A toolbox of immunoprecipitation-grade monoclonal antibodies to human transcription factors](https://www.nature.com/articles/nmeth.4632) The data portal https://proteincapture.org/
 
 ### Quality Control
 Data downloaded from GEO usually are raw fastq files. One needs to do quality control (QC) on them.
