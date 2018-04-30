@@ -391,7 +391,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [ATACseqQC ](http://bioconductor.org/packages/release/bioc/html/ATACseqQC.html) a bioconductor package for quality control of ATAC-seq data.
 * [RASQUAL](https://github.com/dg13/rasqual) (Robust Allele Specific QUAntification and quality controL) maps QTLs for sequenced based cellular traits by combining population and allele-specific signals. [paper: Fine-mapping cellular QTLs with RASQUAL and ATAC-seq](http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.3467.html) 
 * [ATAC-seq Forum](https://sites.google.com/site/atacseqpublic/home?pli=1)  
-* [Single-cell ATAC-Seq](http://cole-trapnell-lab.github.io/projects/sc-atac/)  
+* [Single-cell ATAC-Seq](http://cole-trapnell-lab.github.io/projects/sc-atac/) 
+* [A rapid and robust method for single cell chromatin accessibility profiling](https://www.biorxiv.org/content/early/2018/04/27/309831)
 * [Global Prediction of Chromatin Accessibility Using RNA-seq from Small Number of Cells](http://www.biorxiv.org/content/early/2016/01/01/035816)  from RNA-seq to DNA accessibility. [tool on github](https://github.com/WeiqiangZhou/BIRD)  
 * [NucleoATAC](https://github.com/GreenleafLab/NucleoATAC):Python package for calling nucleosomes using ATAC-Seq data 
 * [chromVAR: Inferring transcription factor variation from single-cell epigenomic data](http://biorxiv.org/content/early/2017/02/21/110346) scATAC-seq
