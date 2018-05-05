@@ -398,6 +398,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [chromVAR: Inferring transcription factor variation from single-cell epigenomic data](http://biorxiv.org/content/early/2017/02/21/110346) scATAC-seq
 * [ENCODE ATAC-seq guidelines](https://www.encodeproject.org/data-standards/atac-seq/)
 * [Brockman](https://carldeboer.github.io/brockman.html) is a suite of command line tools and R functions to convert genomics data into DNA k-mer words representing the regions associated with a chromatin mark, and then analyzing these k-mer sets to see how samples differ from each other. This approach is primarily intended for single cell genomics data, and was tested most extensively on single cell ATAC-seq data
+* [Reproducible inference of transcription factor footprints in ATAC-seq and DNase-seq datasets via protocol-specific bias modeling](https://www.biorxiv.org/content/early/2018/03/19/284364)
+* [msCentipede](http://rajanil.github.io/msCentipede/) is an algorithm for accurately inferring transcription factor binding sites using chromatin accessibility data (Dnase-seq, ATAC-seq) and is written in Python2.x and Cython.
 
 ### DNase-seq
 * [pyDNase](https://github.com/jpiper/pyDNase) - a library for analyzing DNase-seq data. [paper: Wellington-bootstrap: differential DNase-seq footprinting identifies cell-type determining transcription factors](http://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2081-4)  
@@ -405,6 +407,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * Two nature prime: [Genome-wide footprinting: ready for prime time?](http://www.nature.com/nmeth/journal/v13/n3/full/nmeth.3766.html) [Genomic footprinting](http://www.nature.com/nmeth/journal/v13/n3/full/nmeth.3768.html)
 * [PING](http://bioconductor.org/packages/release/bioc/html/PING.html) biocondcutor package: Probabilistic inference for Nucleosome Positioning with MNase-based or Sonicated Short-read Data
 * [Basset](https://github.com/davek44/Basset) Convolutional neural network analysis for predicting DNA sequence activity]
+* [Analysis of optimized DNase-seq reveals intrinsic bias in transcription factor footprint identification](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4018771/)
 
 ### Chromatin Interaction data (ChIA-PET, Hi-C)
 * [ChIA-PET2](https://github.com/GuipengLi/ChIA-PET2) a versatile and flexible pipeline for analysing different variants of ChIA-PET data
