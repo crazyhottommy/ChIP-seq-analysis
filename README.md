@@ -230,6 +230,7 @@ I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational me
 21. [Romulus: Robust multi-state identification of transcription factor binding sites from DNase-seq data](https://github.com/ajank/Romulus): Romulus is a computational method to accurately identify individual transcription factor binding sites from genome sequence information and cell-type--specific experimental data, such as DNase-seq. It combines the strengths of its predecessors, CENTIPEDE and Wellington, while keeping the number of free parameters in the model robustly low. The method is unique in allowing for multiple binding states for a single transcription factor, differing in their cut profile and overall number of DNase I cuts.
 22. [moca](https://github.com/saketkc/moca): Tool for motif conservation analysis.
 23. [gimmemotifs](https://github.com/simonvh/gimmemotifs) Suite of motif tools, including a motif prediction pipeline for ChIP-seq experiments. looks very useful, will take a look!
+24. [YAMDA](https://github.com/daquang/YAMDA): thousandfold speedup of EM-based motif discovery using deep learning libraries and GPU
 
 ### Super-enhancer identification   
 
