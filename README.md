@@ -384,6 +384,11 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 [3CPET](http://www.bioconductor.org/packages/release/bioc/html/R3CPET.html): Finding Co-factor Complexes in Chia-PET experiment using a Hierarchical Dirichlet Process
 
+## single cell ChIP-seq
+
+* [Ultra-low input CUT&RUN (uliCUT&RUN) enables interrogation of TF binding from low cell numbers](https://www.biorxiv.org/content/early/2018/03/21/286351)
+
+* [Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state](https://www.nature.com/articles/nbt.3383)
 
 ### ATAC-seq
 
