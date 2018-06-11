@@ -390,6 +390,10 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 * [Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state](https://www.nature.com/articles/nbt.3383)
 
+### ChIP-exo
+
+[Characterizing protein-DNA binding event subtypes in ChIP-exo data](https://www.biorxiv.org/content/early/2018/02/16/266536)
+
 ### ATAC-seq
 
 >Some may notice that the peaks produced look both like peaks produced from the TF ChIP-seq pipeline as well as the histone ChIP-seq pipeline. This is intentional, as ATAC-seq data looks both like TF data (narrow peaks of signal) as well as histone data (broader regions of openness).
