@@ -388,8 +388,11 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 * [Ultra-low input CUT&RUN (uliCUT&RUN) enables interrogation of TF binding from low cell numbers](https://www.biorxiv.org/content/early/2018/03/21/286351)
 
+* [We describe Cleavage Under Targets and Release Using Nuclease (CUT&RUN), a chromatin profiling strategy in which antibody-targeted controlled cleavage by micrococcal nuclease releases specific protein-DNA complexes into the supernatant for paired-end DNA sequencing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5310842/) another cut&run method. maybe useful for scChIP-seq?
+
 * [Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state](https://www.nature.com/articles/nbt.3383)
 
+* [Calling Cards enable multiplexed identification of the genomic targets of DNA-binding proteins](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083092/) this is potentially can work with single cells.
 ### ChIP-exo
 
 [Characterizing protein-DNA binding event subtypes in ChIP-exo data](https://www.biorxiv.org/content/early/2018/02/16/266536)
