@@ -60,6 +60,7 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 
 **For cancer cells, an input control can be used to correct for copy-number bias.**
 
+* [tools used by IHEC consortium](http://ihec-epigenomes.org/research/tools/)
 
 [A quote from Tao Liu:](https://groups.google.com/forum/#!searchin/macs-announcement/h3k27ac/macs-announcement/9_LB5EsjS_Y/nwgsPN8lR-kJ) who develped MACS1/2
 
