@@ -394,6 +394,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Single-cell ChIP-seq reveals cell subpopulations defined by chromatin state](https://www.nature.com/articles/nbt.3383)
 
 * [Calling Cards enable multiplexed identification of the genomic targets of DNA-binding proteins](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083092/) this is potentially can work with single cells.
+
+* [Ultra-parallel ChIP-seq by barcoding of intact nuclei](https://www.biorxiv.org/content/early/2018/03/05/276469) as low as 1000 cells.
 ### ChIP-exo
 
 [Characterizing protein-DNA binding event subtypes in ChIP-exo data](https://www.biorxiv.org/content/early/2018/02/16/266536)
