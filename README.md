@@ -401,7 +401,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 ### ChIP-exo
 
-[Characterizing protein-DNA binding event subtypes in ChIP-exo data](https://www.biorxiv.org/content/early/2018/02/16/266536)
+* [Characterizing protein-DNA binding event subtypes in ChIP-exo data](https://www.biorxiv.org/content/early/2018/02/16/266536)
+* [paper: Simplified ChIP-exo assays](https://www.nature.com/articles/s41467-018-05265-7)
 
 ### ATAC-seq
 
