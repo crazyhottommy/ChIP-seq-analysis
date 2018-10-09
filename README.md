@@ -385,7 +385,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 [3CPET](http://www.bioconductor.org/packages/release/bioc/html/R3CPET.html): Finding Co-factor Complexes in Chia-PET experiment using a Hierarchical Dirichlet Process
 
-## single cell epigenomics
+## single/few cell epigenomics
 
 * [Ultra-low input CUT&RUN (uliCUT&RUN) enables interrogation of TF binding from low cell numbers](https://www.biorxiv.org/content/early/2018/03/21/286351)
 
@@ -398,6 +398,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Ultra-parallel ChIP-seq by barcoding of intact nuclei](https://www.biorxiv.org/content/early/2018/03/05/276469) as low as 1000 cells.
 
 * [single-cell chromatin overall omic-scale landscape sequencing (scCOOL-seq) to generate a genome-wide map of DNA methylation and chromatin accessibility at single-cell resolution](https://www.nature.com/articles/s41556-018-0123-2)
+
+* [High-Throughput ChIPmentation: freely scalable, single day ChIPseq data generation from very low cell-numbers](https://www.biorxiv.org/content/early/2018/09/27/426957)
 
 ### ChIP-exo
 
