@@ -386,7 +386,9 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 [3CPET](http://www.bioconductor.org/packages/release/bioc/html/R3CPET.html): Finding Co-factor Complexes in Chia-PET experiment using a Hierarchical Dirichlet Process
 
-## single/few cell epigenomics
+## New single/few cell epigenomics
+
+* [GeF-seq: A Simple Procedure for Base Pair Resolution ChIP-seq](https://www.ncbi.nlm.nih.gov/m/pubmed/30109604/)
 
 * [Ultra-low input CUT&RUN (uliCUT&RUN) enables interrogation of TF binding from low cell numbers](https://www.biorxiv.org/content/early/2018/03/21/286351)
 
