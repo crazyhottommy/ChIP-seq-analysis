@@ -81,8 +81,9 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 11. [epic: diffuse domain ChIP-Seq caller based on SICER]( https://github.com/endrebak/epic). It is a re-writen of SICER for faster processing using more CPUs. (Will try it for broad peak for sure).
 12. [Cistrome](http://cistrome.org/Cistrome/Cistrome_Project.html): The best place for wet lab scientist to check the binding sites. Developed by Shierly Liu lab in Harvard.
 13. [ChIP-Atlas](http://chip-atlas.org/) is an integrative and comprehensive database for visualizing and making use of public ChIP-seq data. ChIP-Atlas covers almost all public ChIP-seq data submitted to the SRA (Sequence Read Archives) in NCBI, DDBJ, or ENA, and is based on over 78,000 experiments.
-14. [Accounting for GC-content bias reduces systematic errors and batch effects in ChIP-Seq peak callers](http://biorxiv.org/content/early/2016/12/01/090704) tool in [github](https://github.com/tengmx/gcapc)
-145. [SUPERmerge]((https://github.com/Bohdan-Khomtchouk/SUPERmerge):ChIP-seq coverage island analysis algorithm for broad histone marks
+14. [A map of direct TF-DNA interactions in the human genome](https://unibind.uio.no/) UniBind is a comprehensive map of direct interactions between transcription factor (TFs) and DNA. High confidence TF binding site predictions were obtained from uniform processing of thousands of ChIP-seq data sets using the ChIP-eat software.
+15. [Accounting for GC-content bias reduces systematic errors and batch effects in ChIP-Seq peak callers](http://biorxiv.org/content/early/2016/12/01/090704) tool in [github](https://github.com/tengmx/gcapc)
+16. [SUPERmerge]((https://github.com/Bohdan-Khomtchouk/SUPERmerge):ChIP-seq coverage island analysis algorithm for broad histone marks
 
 
 **Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**  
