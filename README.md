@@ -91,6 +91,9 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 An example of different parameters for homer `findPeaks`:  
 ![](./images/variablePeaks.png)
 
+### Tutorial
+
+* [tutorial by Simon van Heeringen at bioinfosummer](https://github.com/simonvh/bioinfosummer)
 
 ### Binding does not infer functionality  
 
