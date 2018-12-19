@@ -34,6 +34,7 @@ I developed a Snakemake based ChIP-seq pipeline: [pyflow-ChIPseq](https://github
 11. [Systematic comparison of monoclonal versus polyclonal antibodies for mapping histone modifications by ChIP-seq](http://biorxiv.org/content/early/2016/05/19/054387) The binding patterns for H3K27ac differed substantially between polyclonal and monoclonal antibodies. However, this was most likely due to the distinct immunogen used rather than the clonality of the antibody. Altogether, we found that monoclonal antibodies as a class perform as well as polyclonal antibodies. Accordingly, we recommend the use of monoclonal antibodies in ChIP-seq experiments.
 12. A nice small review: [Unraveling the 3D genome: genomics tools for multiscale exploration](http://www.cell.com/trends/genetics/pdf/S0168-9525(15)00063-3.pdf)
 13. Three very interesting papers, [Developmental biology: Panoramic views of the early epigenome](http://www.nature.com/nature/journal/v537/n7621/full/nature19468.html)
+14. [ChIP off the old block: Beyond chromatin immunoprecipitation](https://www.sciencemag.org/features/2018/12/chip-old-block-beyond-chromatin-immunoprecipitation). A nice review of the past and future of ChIPseq.
 
     **Protocols**  
 1. [A computational pipeline for comparative ChIP-seq analyses](http://www.ncbi.nlm.nih.gov/pubmed/22179591)    
