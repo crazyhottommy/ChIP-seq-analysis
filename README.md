@@ -35,6 +35,7 @@ I developed a Snakemake based ChIP-seq pipeline: [pyflow-ChIPseq](https://github
 12. A nice small review: [Unraveling the 3D genome: genomics tools for multiscale exploration](http://www.cell.com/trends/genetics/pdf/S0168-9525(15)00063-3.pdf)
 13. Three very interesting papers, [Developmental biology: Panoramic views of the early epigenome](http://www.nature.com/nature/journal/v537/n7621/full/nature19468.html)
 14. [ChIP off the old block: Beyond chromatin immunoprecipitation](https://www.sciencemag.org/features/2018/12/chip-old-block-beyond-chromatin-immunoprecipitation). A nice review of the past and future of ChIPseq.
+15. [Histone Modifications: Insights into Their Influence on Gene Expression](https://www.sciencedirect.com/science/article/pii/S0092867418310481)
 
     **Protocols**  
 1. [A computational pipeline for comparative ChIP-seq analyses](http://www.ncbi.nlm.nih.gov/pubmed/22179591)    
