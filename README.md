@@ -86,6 +86,7 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 14. [A map of direct TF-DNA interactions in the human genome](https://unibind.uio.no/) UniBind is a comprehensive map of direct interactions between transcription factor (TFs) and DNA. High confidence TF binding site predictions were obtained from uniform processing of thousands of ChIP-seq data sets using the ChIP-eat software.
 15. [Accounting for GC-content bias reduces systematic errors and batch effects in ChIP-Seq peak callers](http://biorxiv.org/content/early/2016/12/01/090704) tool in [github](https://github.com/tengmx/gcapc)
 16. [SUPERmerge](https://github.com/Bohdan-Khomtchouk/SUPERmerge):ChIP-seq coverage island analysis algorithm for broad histone marks
+17. [PeakRanger](http://ranger.sourceforge.net/manual1.18.html) heard that it is good for broad peaks of H3K9me3 and H3K27me3.
 
 
 **Different parameters using the same program can produce drastic different sets of peaks especially for histone modifications with variable enrichment length and gaps between peaks. One needs to make a valid argument for parameters he uses**  
