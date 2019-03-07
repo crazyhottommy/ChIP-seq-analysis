@@ -411,6 +411,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 * [High-Throughput ChIPmentation: freely scalable, single day ChIPseq data generation from very low cell-numbers](https://www.biorxiv.org/content/early/2018/09/27/426957)
 
+* [CUT&Tag for efficient epigenomic profiling of small samples and single cells](https://www.biorxiv.org/content/10.1101/568915v1)
+
 ### ChIP-exo
 
 * [Characterizing protein-DNA binding event subtypes in ChIP-exo data](https://www.biorxiv.org/content/early/2018/02/16/266536)
