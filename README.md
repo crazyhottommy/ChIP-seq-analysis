@@ -419,6 +419,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 * [Mapping Histone Modifications in Low Cell Number and Single Cells Using Antibody-guided Chromatin Tagmentation (ACT-seq)](https://www.biorxiv.org/content/10.1101/571208v2) by Keji Zhao group.
 
+* [Single-cell chromatin immunocleavage sequencing (scChIC-seq) to profile histone modification](https://www.nature.com/articles/s41592-019-0361-7) by Keji Zhao group.
+
 ### ChIP-exo
 
 * [Characterizing protein-DNA binding event subtypes in ChIP-exo data](https://www.biorxiv.org/content/early/2018/02/16/266536)
