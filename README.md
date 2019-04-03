@@ -421,6 +421,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 * [Single-cell chromatin immunocleavage sequencing (scChIC-seq) to profile histone modification](https://www.nature.com/articles/s41592-019-0361-7) by Keji Zhao group.
 
+* [CoBATCH for high-throughput single-cell epigenomic profiling](https://www.biorxiv.org/content/10.1101/590661v1) Protein A in fusion to Tn5 transposase is enriched through specific antibodies to genomic regions and Tn5 generates indexed chromatin fragments ready for the library preparation and sequencing.
+
 ### ChIP-exo
 
 * [Characterizing protein-DNA binding event subtypes in ChIP-exo data](https://www.biorxiv.org/content/early/2018/02/16/266536)
