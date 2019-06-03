@@ -424,6 +424,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 * [CoBATCH for high-throughput single-cell epigenomic profiling](https://www.biorxiv.org/content/10.1101/590661v1) Protein A in fusion to Tn5 transposase is enriched through specific antibodies to genomic regions and Tn5 generates indexed chromatin fragments ready for the library preparation and sequencing.
 
+* [High-throughput single-cell ChIP-seq identifies heterogeneity of chromatin states in breast cancer](https://www.nature.com/articles/s41588-019-0424-9)
+
 ### ChIP-exo
 
 * [Characterizing protein-DNA binding event subtypes in ChIP-exo data](https://www.biorxiv.org/content/early/2018/02/16/266536)
