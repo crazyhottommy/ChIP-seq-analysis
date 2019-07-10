@@ -135,7 +135,7 @@ An example of different parameters for homer `findPeaks`:
 11. [fgsea bioconductor package](http://bioconductor.org/packages/devel/bioc/html/fgsea.html) Fast Gene Set Entrichment Analysis.
 12. [paper: A Comparison of Gene Set Analysis Methods in Terms of Sensitivity, Prioritization and Specificity](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0079217#pone-0079217-t001)
 13. [UniBind Enrichment Analysis](https://unibind.uio.no/enrichment/) predicts which sets of TFBSs from the UniBind database are enriched in a set of given genomic regions. Enrichment computations are performed using the LOLA tool.
-14 [BEHST](https://www.biorxiv.org/content/10.1101/168427v1) from Hoffman group: genomic set enrichment analysis enhanced through integration of chromatin long-range interactions
+14. [BEHST](https://www.biorxiv.org/content/10.1101/168427v1) from Hoffman group: genomic set enrichment analysis enhanced through integration of chromatin long-range interactions
 
 
 ### Chromatin state Segmentation  
