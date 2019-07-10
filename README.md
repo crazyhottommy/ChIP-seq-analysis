@@ -134,6 +134,8 @@ An example of different parameters for homer `findPeaks`:
 10. [clusterProfiler](http://bioconductor.org/packages/release/bioc/vignettes/clusterProfiler/inst/doc/clusterProfiler.html) by Guangchuan Yu, the author of `ChIPseeker`.
 11. [fgsea bioconductor package](http://bioconductor.org/packages/devel/bioc/html/fgsea.html) Fast Gene Set Entrichment Analysis.
 12. [paper: A Comparison of Gene Set Analysis Methods in Terms of Sensitivity, Prioritization and Specificity](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0079217#pone-0079217-t001)
+13. [UniBind Enrichment Analysis](https://unibind.uio.no/enrichment/) predicts which sets of TFBSs from the UniBind database are enriched in a set of given genomic regions. Enrichment computations are performed using the LOLA tool.
+14 [BEHST](https://www.biorxiv.org/content/10.1101/168427v1) from Hoffman group: genomic set enrichment analysis enhanced through integration of chromatin long-range interactions
 
 
 ### Chromatin state Segmentation  
@@ -353,6 +355,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Model-based Analysis of Regulation of Gene Expression: MARGE](http://cistrome.org/MARGE/) from Shirley Liu's lab. MARGE is a robust methodology that leverages a comprehensive library of genome-wide H3K27ac ChIP-seq profiles to predict key regulated genes and cis-regulatory regions in human or mouse. 
 * [PrESSto: Promoter Enhancer Slider Selector Tool](http://pressto.binf.ku.dk/)
 * [TargetFinder](https://github.com/shwhalen/targetfinder). paper: [Enhancer–promoter interactions are encoded by complex genomic signatures on looping chromatin](http://www.nature.com/ng/journal/v48/n5/full/ng.3539.html)
+* [C3D](https://github.com/mlupien/C3D) Cross Cell-type Correlation in DNaseI hypersensitivity. calculates correlations between open regions of chromatin based on DNase I hypersensitivity signals. Regions with high correlations are candidates for 3D interactions. It also performs association tests on each candidate and adjusts p-values. 
+* [ABC](https://www.biorxiv.org/content/10.1101/529990v1) Activity-by-Contact model of enhancer specificity from thousands of CRISPR perturbations. Blog post https://jesseengreitz.wordpress.com/2019/02/10/preprint-activity-by-contact-model/
 
 
 ### Allele-specific analysis  
