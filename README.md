@@ -277,7 +277,9 @@ Example of a super enhancer plot:
 [bigwig tool](https://github.com/CRG-Barcelona/bwtool/wiki)  
 [bigwig-python](https://github.com/brentp/bw-python)  
 [samtools](http://www.htslib.org/)    
-[bedtools](http://bedtools.readthedocs.org/en/latest/) my all-time favorite tool from Araon Quinlan' lab. Great documentation!   
+[bedtools](http://bedtools.readthedocs.org/en/latest/) my all-time favorite tool from Araon Quinlan' lab. Great documentation! 
+[pyBedGraph](https://www.biorxiv.org/content/10.1101/709683v1): a Python package for fast operations on 1-dimensional genomic signal tracks.
+[pyBigwig](https://github.com/deeptools/pyBigWig)
 [Hosting bigWig for UCSC visualization](http://crazyhottommy.blogspot.com/2014/02/hosting-bigwig-by-dropbox-for-ucsc.html)  
 [My first play with GRO-seq data, from sam to bedgraph for visualization](http://crazyhottommy.blogspot.com/2013/10/my-first-play-with-gro-seq-data-from.html)  
 [convert bam file to bigwig file and visualize in UCSC genome browser in a Box (GBiB)](http://crazyhottommy.blogspot.com/2014/10/convert-bam-file-to-bigwig-file-and.html)  
