@@ -36,7 +36,6 @@ I developed a Snakemake based ChIP-seq pipeline: [pyflow-ChIPseq](https://github
 13. Three very interesting papers, [Developmental biology: Panoramic views of the early epigenome](http://www.nature.com/nature/journal/v537/n7621/full/nature19468.html)
 14. [ChIP off the old block: Beyond chromatin immunoprecipitation](https://www.sciencemag.org/features/2018/12/chip-old-block-beyond-chromatin-immunoprecipitation). A nice review of the past and future of ChIPseq.
 15. [Histone Modifications: Insights into Their Influence on Gene Expression](https://www.sciencedirect.com/science/article/pii/S0092867418310481)
-
     **Protocols**  
 1. [A computational pipeline for comparative ChIP-seq analyses](http://www.ncbi.nlm.nih.gov/pubmed/22179591)    
 2. [Identifying ChIP-seq enrichment using MACS](http://www.nature.com/nprot/journal/v7/n9/full/nprot.2012.101.html)  
@@ -136,6 +135,7 @@ An example of different parameters for homer `findPeaks`:
 12. [paper: A Comparison of Gene Set Analysis Methods in Terms of Sensitivity, Prioritization and Specificity](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0079217#pone-0079217-t001)
 13. [UniBind Enrichment Analysis](https://unibind.uio.no/enrichment/) predicts which sets of TFBSs from the UniBind database are enriched in a set of given genomic regions. Enrichment computations are performed using the LOLA tool.
 14. [BEHST](https://www.biorxiv.org/content/10.1101/168427v1) from Hoffman group: genomic set enrichment analysis enhanced through integration of chromatin long-range interactions
+15. [ChEA3: transcription factor enrichment analysis by orthogonal omics integration](https://amp.pharm.mssm.edu/chea3)
 
 
 ### Chromatin state Segmentation  
