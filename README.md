@@ -272,6 +272,9 @@ Example of a super enhancer plot:
 
 **[imPROSE](https://github.com/asntech/improse) - Integrated Methods for Prediction of Super-Enhancers
 
+**[CREAM](https://github.com/bhklab/CREAM) (Clustering of Functional Regions Analysis Method) is a new method for identification of clusters of functional regions (COREs) within chromosomes.** published in Genome Research by Mathieu Lupien group. paper: Identifying clusters of cis-regulatory elements underpinning TAD structures and lineage-specific regulatory networks.
+
+
 ### Bedgraph, bigwig manipulation tools
 [WiggleTools](https://github.com/Ensembl/WiggleTools)  
 [bigwig tool](https://github.com/CRG-Barcelona/bwtool/wiki)  
