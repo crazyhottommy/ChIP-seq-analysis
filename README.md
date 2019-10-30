@@ -346,6 +346,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 * [Genome-wide identification and characterization of HOT regions in the human genome](http://biorxiv.org/content/early/2016/01/07/036152.abstract)  
 * [EnhancerAtlas: a resource for enhancer annotation and analysis in 105 human cell/tissue types](http://www.enhanceratlas.org/)
 * [review: Computational Tools for Stem Cell Biology](http://www.sciencedirect.com/science/article/pii/S0167779916300567)
+* [Integrative analysis of 10,000 epigenomic maps across 800 samples for regulatory genomics and disease dissection](https://www.biorxiv.org/content/10.1101/810291v2) from Manolis Kellis group.
+* [Index and biological spectrum of accessible DNA elements in the human genome](https://www.biorxiv.org/content/10.1101/822510v1) DHS sites from John A Stamatoyannopoulos group.
 
 ### Interesting Enhancer papers
 * [Multiplex enhancer-reporter assays uncover unsophisticated TP53 enhancer logic](http://genome.cshlp.org/content/26/7/882)
