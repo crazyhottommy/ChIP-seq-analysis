@@ -180,6 +180,9 @@ A review paper [A comprehensive comparison of tools for differential ChIP-seq an
 
 ![](./images/choose_diff_tool.png)
 
+
+* [ATAC-seq normalization method can significantly affect differential accessibility analysis and interpretation](https://epigeneticsandchromatin.biomedcentral.com/articles/10.1186/s13072-020-00342-y)
+
 1. [MultiGPS](http://mahonylab.org/software/multigps/)  
 
 2. [PePr](https://github.com/shawnzhangyx/PePr). It can also call peaks.  
