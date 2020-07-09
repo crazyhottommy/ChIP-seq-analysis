@@ -1,8 +1,9 @@
 # ChIP-seq-analysis
 
-### A pipeline
+### Snakemake pipelines
 
 I developed a Snakemake based ChIP-seq pipeline: [pyflow-ChIPseq](https://github.com/crazyhottommy/pyflow-ChIPseq).
+and ATACseq pipeline: [pyflow-ATACseq](https://github.com/crazyhottommy/pyflow-ATACseq)
 
 ### Resources for ChIP-seq 
 1. [ENCODE: Encyclopedia of DNA Elements](https://www.encodeproject.org/)  [ENCODExplorer](https://www.bioconductor.org/packages/release/bioc/html/ENCODExplorer.html): A compilation of metadata from ENCODE. A bioc package to access the meta data of ENCODE and download the raw files.
