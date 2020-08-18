@@ -181,6 +181,7 @@ A review paper [A comprehensive comparison of tools for differential ChIP-seq an
 
 
 * [ATAC-seq normalization method can significantly affect differential accessibility analysis and interpretation](https://epigeneticsandchromatin.biomedcentral.com/articles/10.1186/s13072-020-00342-y)
+* [Comparison of differential accessibility analysis strategies for ATAC-seq data](https://www.nature.com/articles/s41598-020-66998-4) https://github.com/Zhang-lab/BeCorrect to correct batch effect from the bedgraph files.
 
 1. [MultiGPS](http://mahonylab.org/software/multigps/)  
 
