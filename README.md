@@ -428,6 +428,8 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 * [CUT&Tag for efficient epigenomic profiling of small samples and single cells](https://www.biorxiv.org/content/10.1101/568915v1)
 
+* [CUT&Tag Data Processing and Analysis Tutorial](https://yezhengstat.github.io/CUTTag_tutorial/) protocols.io link https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-bjk2kkye
+
 * [Simultaneous quantification of protein-DNA contacts and transcriptomes in single cells](https://www.biorxiv.org/content/10.1101/529388v1) scDamID&T.
 
 * [Self-reporting transposons enable simultaneous readout of gene expression and transcription factor binding in single cells](https://www.biorxiv.org/content/10.1101/538553v2) piggyBac transposase.
