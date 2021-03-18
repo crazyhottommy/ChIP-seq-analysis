@@ -246,6 +246,8 @@ I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational me
 22. [moca](https://github.com/saketkc/moca): Tool for motif conservation analysis.
 23. [gimmemotifs](https://github.com/simonvh/gimmemotifs) Suite of motif tools, including a motif prediction pipeline for ChIP-seq experiments. looks very useful, will take a look!
 24. [YAMDA](https://github.com/daquang/YAMDA): thousandfold speedup of EM-based motif discovery using deep learning libraries and GPU
+25. [motif clustering](https://www.vierstra.org/resources/motif_clustering)
+26. [RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5737723/)
 
 ### Super-enhancer identification   
 
