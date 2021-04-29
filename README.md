@@ -222,16 +222,17 @@ The size of the region used for motif finding is important.  If analyzing ChIP-S
 I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational method to Predict Active Regulatory Elements, specifically enhancers and promoters. H3K27ac and H3K4me can be used to define active enhancers.
 
 2. [MEME suite](http://meme.ebi.edu.au/meme/index.html). It is probably the most popular motif finding tool in the papers.  [protocol:Motif-based analysis of large nucleotide data sets using MEME-ChIP](http://www.nature.com/nprot/journal/v9/n6/full/nprot.2014.083.html)  
-3. [JASPAR database](http://jaspar.binf.ku.dk/  )
-3. [pScan-ChIP](http://159.149.160.51/pscan_chip_dev/)  
-4. [MotifMap](http://motifmap.ics.uci.edu/#MotifSearch)  
-5. [RAST](http://rsat01.biologie.ens.fr/rsa-tools/index.html) Regulatory Sequence Analysis Tools.  
-6. [ENCODE TF motif database](http://compbio.mit.edu/encode-motifs/)  
-7. [oPOSSUM](http://opossum.cisreg.ca/oPOSSUM3/) is a web-based system for the detection of over-represented conserved transcription factor binding sites and binding site combinations in sets of genes or sequences.  
-8.  my post [how to get a genome-wide motif bed file](http://crazyhottommy.blogspot.com/2014/02/how-to-get-genome-wide-motif-bed-file.html) 
-9.  Many other tools [here](http://omictools.com/motif-discovery-c84-p1.html)
-10. [A review of ensemble methods for de novo motif discovery in ChIP-Seq data](http://bib.oxfordjournals.org/content/early/2015/04/17/bib.bbv022.abstract)  
-11. [melina2](http://melina2.hgc.jp/public/index.html). If you only have one sequence and want to know what TFs might bind
+3. [MEME R package](https://snystrom.github.io/memes-manual/)
+4. [JASPAR database](http://jaspar.binf.ku.dk/  )
+5. [pScan-ChIP](http://159.149.160.51/pscan_chip_dev/)  
+6. [MotifMap](http://motifmap.ics.uci.edu/#MotifSearch)  
+7. [RAST](http://rsat01.biologie.ens.fr/rsa-tools/index.html) Regulatory Sequence Analysis Tools.  
+8. [ENCODE TF motif database](http://compbio.mit.edu/encode-motifs/)  
+9. [oPOSSUM](http://opossum.cisreg.ca/oPOSSUM3/) is a web-based system for the detection of over-represented conserved transcription factor binding sites and binding site combinations in sets of genes or sequences.  
+10.  my post [how to get a genome-wide motif bed file](http://crazyhottommy.blogspot.com/2014/02/how-to-get-genome-wide-motif-bed-file.html) 
+11.  Many other tools [here](http://omictools.com/motif-discovery-c84-p1.html)
+12. [A review of ensemble methods for de novo motif discovery in ChIP-Seq data](http://bib.oxfordjournals.org/content/early/2015/04/17/bib.bbv022.abstract)  
+13. [melina2](http://melina2.hgc.jp/public/index.html). If you only have one sequence and want to know what TFs might bind
     there, this is a very useful tool.
 12. [STEME](https://pypi.python.org/pypi/STEME/). A python library for motif analysis. STEME started life as an approximation to the Expectation-Maximisation algorithm for the type of model used in motif finders such as MEME. **STEME’s EM approximation runs an order of magnitude more quickly than the MEME implementation for typical parameter settings**. STEME has now developed into a fully-fledged motif finder in its own right.  
 13. [CENTIPEDE: Transcription factor footprinting and binding site prediction](http://centipede.uchicago.edu/). [Tutorial](https://github.com/slowkow/CENTIPEDE.tutorial)  
