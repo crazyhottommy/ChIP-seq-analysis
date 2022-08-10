@@ -363,6 +363,7 @@ A paper from Genome Research [Ubiquitous heterogeneity and asymmetry of the chro
 
 ### Enhancer target prediction 
 
+* [DoRothEA: collection of human and mouse regulons](https://github.com/saezlab/dorothea) DoRothEA is a gene regulatory network containing signed transcription factor (TF) - target gene interactions. DoRothEA regulons, the collection of a TF and its transcriptional targets, were curated and collected from different types of evidence for both human and mouse. A confidence level was assigned to each TF-target interaction based on the number of supporting evidence.
 * [Assessing Computational Methods for Transcription Factor Target Gene Identification Based on ChIP-seq Data](http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1003342#pcbi.1003342.s019) 
 * [Protein binding and methylation on looping chromatin accurately predict distal regulatory interactions](http://biorxiv.org/content/early/2015/07/09/022293)
 * [i-cisTarget](http://gbiomed.kuleuven.be/apps/lcb/i-cisTarget/)
