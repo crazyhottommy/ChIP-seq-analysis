@@ -249,6 +249,7 @@ I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational me
 24. [YAMDA](https://github.com/daquang/YAMDA): thousandfold speedup of EM-based motif discovery using deep learning libraries and GPU
 25. [motif clustering](https://www.vierstra.org/resources/motif_clustering)
 26. [RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5737723/)
+27. [tangerMEME](https://github.com/jmschrei/tangermeme) is an extension of the MEME suite concept to biological sequence analysis when you have a collection of sequences and a predictive model.
 
 ### Super-enhancer identification   
 
