@@ -156,7 +156,10 @@ An example of different parameters for homer `findPeaks`:
 * [Coda](https://github.com/kundajelab/coda) uses convolutional neural networks to learn a mapping from noisy to high-quality ChIP-seq data. These trained networks can then be used to remove noise and improve the quality of new ChIP-seq data. From Ashul lab.
 * [DeepChrome](https://github.com/QData/DeepChrome) is a unified CNN framework that automatically learns combinatorial interactions among histone modification marks to predict the gene expression. (Is it really better than a simple linear model?)
 * [deep learning in biology](https://github.com/hussius/deeplearning-biology)
-
+* gReLU is a Python library to train, interpret, and apply deep learning models to DNA sequences. [Code documentation is available here.](https://github.com/Genentech/gReLU)
+* [tangerMEME](https://github.com/jmschrei/tangermeme) is an extension of the MEME suite concept to biological sequence analysis when you have a collection of sequences and a predictive model.
+* [Dissecting the cis-regulatory syntax of transcription initiation with deep learning](https://www.biorxiv.org/content/10.1101/2024.05.28.596138v1)
+  
 ### Peak annotation 
 
 1. Homer [`annotatePeak`](http://homer.salk.edu/homer/ngs/annotation.html) 
@@ -249,7 +252,7 @@ I just found [PARE](http://spundhir.github.io/PARE/). PARE is a computational me
 24. [YAMDA](https://github.com/daquang/YAMDA): thousandfold speedup of EM-based motif discovery using deep learning libraries and GPU
 25. [motif clustering](https://www.vierstra.org/resources/motif_clustering)
 26. [RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5737723/)
-27. [tangerMEME](https://github.com/jmschrei/tangermeme) is an extension of the MEME suite concept to biological sequence analysis when you have a collection of sequences and a predictive model.
+
 
 ### Super-enhancer identification   
 
