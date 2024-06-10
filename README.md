@@ -159,6 +159,7 @@ An example of different parameters for homer `findPeaks`:
 * gReLU is a Python library to train, interpret, and apply deep learning models to DNA sequences. [Code documentation is available here.](https://github.com/Genentech/gReLU)
 * [tangerMEME](https://github.com/jmschrei/tangermeme) is an extension of the MEME suite concept to biological sequence analysis when you have a collection of sequences and a predictive model.
 * [Dissecting the cis-regulatory syntax of transcription initiation with deep learning](https://www.biorxiv.org/content/10.1101/2024.05.28.596138v1)
+* Transfer learning reveals sequence determinants of the quantitative response to transcription factor dosage https://www.biorxiv.org/content/10.1101/2024.05.28.596078v1
   
 ### Peak annotation 
 
