@@ -296,6 +296,8 @@ Example of a super enhancer plot:
 [megadept](https://github.com/ChristopherWilks/megadepth) is pretty fast, can access bigWig files from the web, works on macOS, Linux & Windows, plus is also available via 
 @Bioconductor http://www.bioconductor.org/packages/release/bioc/html/megadepth.html which makes easy to use it in #rstats. For example, for quantifying expression of custom regions from recount3 data
 
+[Bigtools: a high-performance BigWig and BigBed library in rust](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btae350/7688332?login=false)
+
 
 
 ### Peaks overlapping significance test
