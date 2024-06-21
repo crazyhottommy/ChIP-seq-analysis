@@ -70,7 +70,7 @@ The IgG control is also fine, but because so little DNA is there, you might get 
 
 1. The most popular peak caller by Tao Liu: [MACS2](https://github.com/taoliu/MACS/). Now `--broad` flag supports broad peaks calling as well.
 
-2. [TF ChIP-seq peak calling using the Irreproducibility Discovery Rate (IDR) framework](https://sites.google.com/site/anshulkundaje/projects/idr) and many [Software Tools Used to Create the ENCODE Resource](https://genome.ucsc.edu/ENCODE/encodeTools.html)    
+2. [TF ChIP-seq peak calling using the Irreproducibility Discovery Rate (IDR) framework](https://github.com/nboley/idr) and many [Software Tools Used to Create the ENCODE Resource](https://genome.ucsc.edu/ENCODE/encodeTools.html)    
 3. [SICER](http://home.gwu.edu/~wpeng/Software.htm) for broad histone modification ChIP-seq
 4. [HOMER](http://homer.salk.edu/homer/ngs/peaks.html) can also used to call Transcription factor ChIP-seq peaks and histone 
     modification ChIP-seq peaks.
