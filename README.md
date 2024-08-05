@@ -19,7 +19,8 @@ and ATACseq pipeline: [pyflow-ATACseq](https://github.com/crazyhottommy/pyflow-A
 10. [review paper:Deciphering ENCODE](http://www.cell.com/trends/genetics/fulltext/S0168-9525(16)00017-2)
 11. [EpiFactors](http://epifactors.autosome.ru/) is a database for epigenetic factors, corresponding genes and products.
 12. [biostar handbook](https://read.biostarhandbook.com/). My [ChIP-seq chapter](https://read.biostarhandbook.com/chip-seq/chip-seq-analysis.html) is out April 2017!
-13. [ReMap 2018](http://tagc.univ-mrs.fr/remap/) An integrative ChIP-seq analysis of regulatory regions. The ReMap atlas consits of 80 million peaks from 485 transcription factors (TFs), transcription coactivators (TCAs) and chromatin-remodeling factors (CRFs) from public data sets. The atlas is available to browse or download either for a given TF or cell line, or for the entire dataset. 
+13. [ReMap 2018](http://tagc.univ-mrs.fr/remap/) An integrative ChIP-seq analysis of regulatory regions. The ReMap atlas consits of 80 million peaks from 485 transcription factors (TFs), transcription coactivators (TCAs) and chromatin-remodeling factors (CRFs) from public data sets. The atlas is available to browse or download either for a given TF or cell line, or for the entire dataset.
+14. GTRDGene Transcription Regulation Database https://gtrd.biouml.org/#!
 
 ### Papers on ChIP-seq
 1. [ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia](http://www.ncbi.nlm.nih.gov/pubmed/22955991) 
